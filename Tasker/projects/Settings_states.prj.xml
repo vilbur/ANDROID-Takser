@@ -34,15 +34,14 @@ GSM:1131.10353665 / 6</Str>
 	<Project sr="proj0" ve="2">
 		<cdate>1579025830350</cdate>
 		<name>Settings-states</name>
-		<pids>45,43</pids>
-		<tids>47,48,46</tids>
+		<pids>43,45</pids>
+		<tids>48,47,46</tids>
 	</Project>
 	<Task sr="task46">
 		<cdate>1579026247201</cdate>
-		<edate>1579027209593</edate>
+		<edate>1579097581551</edate>
 		<id>46</id>
-		<nme>Work</nme>
-		<pri>100</pri>
+		<nme>State.Work</nme>
 		<Action sr="act0" ve="7">
 			<code>523</code>
 			<Str sr="arg0" ve="3">Task=profile-work</Str>
@@ -86,9 +85,10 @@ GSM:1131.10353665 / 6</Str>
 	</Task>
 	<Task sr="task47">
 		<cdate>1579027193217</cdate>
-		<edate>1579027197414</edate>
+		<edate>1579037587087</edate>
 		<id>47</id>
-		<nme>Outside</nme>
+		<nme>State.Outside</nme>
+		<pri>1006</pri>
 		<Action sr="act0" ve="7">
 			<code>523</code>
 			<Str sr="arg0" ve="3">Task=profile-outside</Str>
@@ -125,9 +125,10 @@ GSM:1131.10353665 / 6</Str>
 	</Task>
 	<Task sr="task48">
 		<cdate>1579027246771</cdate>
-		<edate>1579027253859</edate>
+		<edate>1579037550907</edate>
 		<id>48</id>
-		<nme>Home</nme>
+		<nme>State.Home</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>523</code>
 			<Str sr="arg0" ve="3">Task=profile-home</Str>
