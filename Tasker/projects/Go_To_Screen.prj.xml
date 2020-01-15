@@ -2,8 +2,54 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579037703270</cdate>
 		<name>Go To Screen</name>
-		<tids>54,57,64,58,55</tids>
+		<tids>54,17,64,55,57,58,18</tids>
 	</Project>
+	<Task sr="task17">
+		<cdate>1578740068039</cdate>
+		<edate>1579107186524</edate>
+		<id>17</id>
+		<nme>goTo.Settings.BiometricsAndSecurity</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>com.android.settings.Settings$BiometricsAndSecuritySettingsActivity</appClass>
+				<appPkg>com.android.settings</appPkg>
+				<label>Settings
+FallbackHome:Biometrics and security</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<cls>com.teslacoilsw.launcher.NovaLauncher</cls>
+			<pkg>com.teslacoilsw.launcher</pkg>
+		</Img>
+	</Task>
+	<Task sr="task18">
+		<cdate>1578740068039</cdate>
+		<edate>1579107422670</edate>
+		<id>18</id>
+		<nme>goTo.Settings.Location</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>com.android.settings.Settings$BiometricsAndSecuritySettingsActivity</appClass>
+				<appPkg>com.android.settings</appPkg>
+				<label>Settings
+FallbackHome:Biometrics and security</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<cls>com.teslacoilsw.launcher.NovaLauncher</cls>
+			<pkg>com.teslacoilsw.launcher</pkg>
+		</Img>
+	</Task>
 	<Task sr="task54">
 		<cdate>1578740068039</cdate>
 		<edate>1579097466943</edate>
@@ -584,7 +630,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task64">
 		<cdate>1578740068039</cdate>
-		<edate>1579059553399</edate>
+		<edate>1579058886961</edate>
 		<id>64</id>
 		<nme>goTo.Nova.Backup</nme>
 		<pri>100</pri>
