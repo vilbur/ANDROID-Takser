@@ -1,69 +1,9 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
-	<dmetric>720.0,1502.0</dmetric>
 	<Project sr="proj0" ve="2">
 		<cdate>1579039415348</cdate>
 		<name>Backup</name>
-		<scenes>Popup</scenes>
-		<tids>63,60,61</tids>
+		<tids>61,63,60</tids>
 	</Project>
-	<Scene sr="scenePopup">
-		<cdate>1579039382880</cdate>
-		<edate>1579039382880</edate>
-		<heightLand>-1</heightLand>
-		<heightPort>375</heightPort>
-		<nme>Popup</nme>
-		<widthLand>-1</widthLand>
-		<widthPort>450</widthPort>
-		<TextElement sr="elements0" ve="3">
-			<flags>4</flags>
-			<geom>9,0,441,108,6,0,294,72</geom>
-			<Str sr="arg0" ve="3">Title</Str>
-			<Str sr="arg1" ve="3">Title</Str>
-			<Int sr="arg2" val="22"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FF80CBC4</Str>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="3"/>
-			<Int sr="arg7"/>
-			<Int sr="arg8"/>
-		</TextElement>
-		<RectElement sr="elements1">
-			<flags>4</flags>
-			<geom>0,108,450,4,-1,-1,-1,-1</geom>
-			<Str sr="arg0" ve="3">Header</Str>
-			<Int sr="arg1" val="0"/>
-			<Str sr="arg2" ve="3">#77333333</Str>
-			<Str sr="arg3" ve="3"/>
-			<Int sr="arg4" val="0"/>
-			<Str sr="arg5" ve="3">#FF000000</Str>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-		</RectElement>
-		<TextElement sr="elements2" ve="3">
-			<clickTask>-936</clickTask>
-			<flags>5</flags>
-			<geom>10,118,429,219,-1,-1,-1,-1</geom>
-			<Str sr="arg0" ve="3">Text1</Str>
-			<Str sr="arg1" ve="3">Text</Str>
-			<Int sr="arg2" val="18"/>
-			<Int sr="arg3" val="100"/>
-			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="1"/>
-			<Int sr="arg8"/>
-		</TextElement>
-		<PropertiesElement sr="props">
-			<Int sr="arg0" val="1"/>
-			<Int sr="arg1" val="0"/>
-			<Str sr="arg2" ve="3">#FF000000</Str>
-			<Int sr="arg3" val="0"/>
-			<Str sr="arg4" ve="3">Popup</Str>
-			<Str sr="arg5" ve="3"/>
-			<Img sr="arg6" ve="2"/>
-			<Str sr="arg7" ve="3"/>
-		</PropertiesElement>
-	</Scene>
 	<Task sr="task60">
 		<cdate>1578740068039</cdate>
 		<edate>1579084164093</edate>

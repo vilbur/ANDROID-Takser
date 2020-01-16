@@ -1,7 +1,7 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
 	<Project sr="proj0" ve="2">
 		<cdate>1579106276020</cdate>
-		<name>WifiConnection</name>
+		<name>WiFi Connection</name>
 		<tids>13</tids>
 	</Project>
 	<Task sr="task13">
@@ -9,7 +9,7 @@
 		<edate>1578846913168</edate>
 		<id>13</id>
 		<nme>WiFi.connect.Ikea</nme>
-		<pri>7</pri>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>425</code>
 			<Int sr="arg0" val="1"/>

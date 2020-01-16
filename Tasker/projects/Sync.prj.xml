@@ -2,11 +2,11 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579032856019</cdate>
 		<name>Sync</name>
-		<tids>50,51,53,49</tids>
+		<tids>50,49,53,51</tids>
 	</Project>
 	<Task sr="task49">
 		<cdate>1579032931854</cdate>
-		<edate>1579104069488</edate>
+		<edate>1579146457048</edate>
 		<id>49</id>
 		<nme>Sync._runFileManager</nme>
 		<pri>100</pri>
@@ -24,7 +24,7 @@
 	</Task>
 	<Task sr="task50">
 		<cdate>1579033061869</cdate>
-		<edate>1579104083184</edate>
+		<edate>1579146485566</edate>
 		<id>50</id>
 		<nme>Sync._pressStartButton</nme>
 		<Action sr="act0" ve="7">
@@ -82,7 +82,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task51">
 		<cdate>1579033190465</cdate>
-		<edate>1579104044949</edate>
+		<edate>1579146450103</edate>
 		<id>51</id>
 		<nme>Sync.execute</nme>
 		<pri>100</pri>
@@ -111,7 +111,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task53">
 		<cdate>1579034977158</cdate>
-		<edate>1579037421298</edate>
+		<edate>1579146545862</edate>
 		<id>53</id>
 		<nme>Sync. _repeat</nme>
 		<pri>100</pri>

@@ -1,8 +1,8 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
 	<Project sr="proj0" ve="2">
 		<cdate>1579098176446</cdate>
-		<name>Sleep-as-android</name>
-		<tids>6,4,2,5,8</tids>
+		<name>Sleep as android</name>
+		<tids>4,2,8,6,5</tids>
 	</Project>
 	<Task sr="task2">
 		<cdate>1578398462218</cdate>
@@ -28,7 +28,7 @@
 	</Task>
 	<Task sr="task4">
 		<cdate>1578398462218</cdate>
-		<edate>1579105761596</edate>
+		<edate>1579189664255</edate>
 		<id>4</id>
 		<nme>SleepAsAndroid.wakeup</nme>
 		<pri>6</pri>
