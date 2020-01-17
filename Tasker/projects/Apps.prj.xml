@@ -1,14 +1,14 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
 	<dmetric>720.0,1502.0</dmetric>
-	<Profile sr="prof28" ve="2">
-		<cdate>1579182534025</cdate>
-		<edate>1579189582537</edate>
+	<Profile sr="prof30" ve="2">
+		<cdate>1579254417266</cdate>
+		<edate>1579254445191</edate>
 		<flags>8</flags>
-		<id>28</id>
-		<mid0>24</mid0>
+		<id>30</id>
+		<mid0>31</mid0>
 		<App sr="con0" ve="2">
 			<cls0>com.z9.jur.czechrepublicradiostations.ceskaradia.activity.MainActivity</cls0>
-			<flags>3</flags>
+			<flags>2</flags>
 			<label0>Czech Republic radio stations</label0>
 			<pkg0>com.z9.jur.czechrepublicradiostations.ceskaradia</pkg0>
 		</App>
@@ -16,20 +16,20 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579181182955</cdate>
 		<name>Apps</name>
-		<pids>28</pids>
-		<scenes>RadioExit</scenes>
-		<tids>22,24,25</tids>
+		<pids>30</pids>
+		<scenes>Radio.dialog</scenes>
+		<tids>31,32,25</tids>
 	</Project>
-	<Scene sr="sceneRadioExit">
+	<Scene sr="sceneRadio.dialog">
 		<cdate>1579180166441</cdate>
-		<edate>1579182893113</edate>
+		<edate>1579254498421</edate>
 		<heightLand>-1</heightLand>
 		<heightPort>328</heightPort>
-		<nme>RadioExit</nme>
+		<nme>Radio.dialog</nme>
 		<widthLand>-1</widthLand>
 		<widthPort>467</widthPort>
 		<ButtonElement sr="elements0" ve="3">
-			<clickTask>22</clickTask>
+			<clickTask>32</clickTask>
 			<flags>12</flags>
 			<geom>159,151,152,80,169,327,152,80</geom>
 			<Str sr="arg0" ve="3">Button1</Str>
@@ -52,24 +52,25 @@
 			<Str sr="arg7" ve="3"/>
 		</PropertiesElement>
 	</Scene>
-	<Task sr="task22">
-		<cdate>1579180259474</cdate>
-		<edate>1579180259474</edate>
-		<id>22</id>
-		<pri>7</pri>
+	<Task sr="task25">
+		<cdate>1579181490278</cdate>
+		<edate>1579254595569</edate>
+		<id>25</id>
+		<nme>Radio.exit</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>49</code>
-			<Str sr="arg0" ve="3">RadioExit</Str>
+			<Str sr="arg0" ve="3">Radio.dialog</Str>
 		</Action>
 	</Task>
-	<Task sr="task24">
+	<Task sr="task31">
 		<cdate>1579181435026</cdate>
-		<edate>1579182481251</edate>
-		<id>24</id>
-		<nme>Radio.show</nme>
+		<edate>1579254623257</edate>
+		<id>31</id>
+		<nme>Radio.showDialog</nme>
 		<Action sr="act0" ve="7">
 			<code>47</code>
-			<Str sr="arg0" ve="3">RadioExit</Str>
+			<Str sr="arg0" ve="3">Radio.dialog</Str>
 			<Int sr="arg1" val="3"/>
 			<Int sr="arg2" val="100"/>
 			<Int sr="arg3" val="100"/>
@@ -79,15 +80,14 @@
 			<Int sr="arg7" val="1"/>
 		</Action>
 	</Task>
-	<Task sr="task25">
-		<cdate>1579181490278</cdate>
-		<edate>1579181896235</edate>
-		<id>25</id>
-		<nme>Radio.exit</nme>
-		<pri>100</pri>
+	<Task sr="task32">
+		<cdate>1579180259474</cdate>
+		<edate>1579180259474</edate>
+		<id>32</id>
+		<pri>7</pri>
 		<Action sr="act0" ve="7">
 			<code>49</code>
-			<Str sr="arg0" ve="3">RadioExit</Str>
+			<Str sr="arg0" ve="3">RadioExitg</Str>
 		</Action>
 	</Task>
 </TaskerData>

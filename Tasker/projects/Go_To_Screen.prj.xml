@@ -2,7 +2,7 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579037703270</cdate>
 		<name>Go To Screen</name>
-		<tids>54,58,17,64,55,18,57</tids>
+		<tids>55,64,57,17,54,58,18</tids>
 		<Kid sr="Kid">
 			<flgs>1</flgs>
 			<launchID>54</launchID>
@@ -37,16 +37,17 @@ FallbackHome:Biometrics and security</label>
 	</Task>
 	<Task sr="task18">
 		<cdate>1578740068039</cdate>
-		<edate>1579122990428</edate>
+		<edate>1579254133407</edate>
 		<id>18</id>
 		<nme>goTo.Settings.Location</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>20</code>
 			<App sr="arg0">
-				<appClass></appClass>
-				<appPkg>com.android.settings/com.android.settings.Settings$LocationSettingsActivity</appPkg>
-				<label>com.android.settings/com.android.settings.Settings$LocationSettingsActivity</label>
+				<appClass>com.android.settings.Settings$LocationSettingsActivity</appClass>
+				<appPkg>com.android.settings</appPkg>
+				<label>Settings
+FallbackHome:Location</label>
 			</App>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="0"/>
@@ -529,10 +530,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task57">
 		<cdate>1578740068039</cdate>
-		<edate>1579084189450</edate>
+		<edate>1579207564366</edate>
 		<id>57</id>
-		<nme>goTo.Settings.BackupGoogle</nme>
-		<pri>100</pri>
+		<nme>goTo.Google.Backup</nme>
+		<pri>7</pri>
 		<Action sr="act0" ve="7">
 			<code>20</code>
 			<App sr="arg0">
@@ -546,16 +547,15 @@ FallbackHome:Backup and reset</label>
 			<Int sr="arg3" val="0"/>
 		</Action>
 		<Img sr="icn" ve="2">
-			<cls>com.teslacoilsw.launcher.NovaLauncher</cls>
-			<pkg>com.teslacoilsw.launcher</pkg>
+			<nme>mw_action_backup</nme>
 		</Img>
 	</Task>
 	<Task sr="task58">
 		<cdate>1578740068039</cdate>
-		<edate>1579190612035</edate>
+		<edate>1579207480339</edate>
 		<id>58</id>
 		<nme>goTo.Settings.BackupData</nme>
-		<pri>100</pri>
+		<pri>7</pri>
 		<Action sr="act0" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
@@ -638,16 +638,15 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 		</Action>
 		<Img sr="icn" ve="2">
-			<cls>com.teslacoilsw.launcher.NovaLauncher</cls>
-			<pkg>com.teslacoilsw.launcher</pkg>
+			<nme>mw_action_backup</nme>
 		</Img>
 	</Task>
 	<Task sr="task64">
 		<cdate>1578740068039</cdate>
-		<edate>1579058886961</edate>
+		<edate>1579207507347</edate>
 		<id>64</id>
 		<nme>goTo.Nova.Backup</nme>
-		<pri>100</pri>
+		<pri>7</pri>
 		<Action sr="act0" ve="7">
 			<code>20</code>
 			<App sr="arg0">
@@ -721,8 +720,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 		</Action>
 		<Img sr="icn" ve="2">
-			<cls>com.teslacoilsw.launcher.NovaLauncher</cls>
-			<pkg>com.teslacoilsw.launcher</pkg>
+			<nme>mw_action_backup</nme>
 		</Img>
 	</Task>
 </TaskerData>
