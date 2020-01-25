@@ -1,0 +1,43 @@
+<TaskerData sr="" dvi="1" tv="5.9.1">
+	<Profile sr="prof8" ve="2">
+		<cdate>1578398350582</cdate>
+		<clp>true</clp>
+		<edate>1579023451996</edate>
+		<flags>8</flags>
+		<id>8</id>
+		<mid0>12</mid0>
+		<nme>Sleep Tracking Start</nme>
+		<Event sr="con0" ve="2">
+			<code>801067335</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Sleep tracking started</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<com.urbandroid.sleep.taskerplugin.extra.EVENT>com.urbandroid.sleep.alarmclock.SLEEP_TRACKING_STARTED</com.urbandroid.sleep.taskerplugin.extra.EVENT>
+					<com.urbandroid.sleep.taskerplugin.extra.EVENT-type>java.lang.String</com.urbandroid.sleep.taskerplugin.extra.EVENT-type>
+					<com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE>21894</com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE>
+					<com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE-type>java.lang.Integer</com.urbandroid.sleep.taskerplugin.extra.INT_VERSION_CODE-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.urbandroid.sleep</Str>
+			<Str sr="arg2" ve="3">com.urbandroid.sleep.addon.taskerplugin.ui.EditEventActivity</Str>
+		</Event>
+	</Profile>
+	<Task sr="task12">
+		<cdate>1578398462218</cdate>
+		<edate>1578973071139</edate>
+		<id>12</id>
+		<nme>SleepAsAndroid-sleep</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="1000"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+		</Action>
+	</Task>
+</TaskerData>
