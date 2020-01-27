@@ -1,0 +1,209 @@
+<TaskerData sr="" dvi="1" tv="5.9.1">
+	<Profile sr="prof43" ve="2">
+		<cdate>1579026055299</cdate>
+		<clp>true</clp>
+		<edate>1579509877484</edate>
+		<flags>8</flags>
+		<id>43</id>
+		<mid0>48</mid0>
+		<mid1>47</mid1>
+		<nme>State-home</nme>
+		<State sr="con0" ve="2">
+			<code>7</code>
+			<Str sr="arg0" ve="3">GSM:1228.18234881 / 0
+GSM:1228.18234971 / 2</Str>
+			<Str sr="arg1" ve="3"/>
+		</State>
+	</Profile>
+	<Profile sr="prof45" ve="2">
+		<cdate>1579026220618</cdate>
+		<clp>true</clp>
+		<edate>1579166768965</edate>
+		<flags>8</flags>
+		<id>45</id>
+		<mid0>46</mid0>
+		<mid1>47</mid1>
+		<nme>State-work-ikea</nme>
+		<State sr="con0" ve="2">
+			<code>7</code>
+			<Str sr="arg0" ve="3">GSM:1131.10353668 / 4
+GSM:1131.10353665 / 6</Str>
+			<Str sr="arg1" ve="3"/>
+		</State>
+	</Profile>
+	<Profile sr="prof64" ve="2">
+		<cdate>1579026055299</cdate>
+		<clp>true</clp>
+		<edate>1579509918343</edate>
+		<flags>8</flags>
+		<id>64</id>
+		<mid0>48</mid0>
+		<mid1>47</mid1>
+		<nme>State-home-HradecKralove</nme>
+		<State sr="con0" ve="2">
+			<code>7</code>
+			<Str sr="arg0" ve="3">GSM:1612.128115456 / 3</Str>
+			<Str sr="arg1" ve="3"/>
+		</State>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1579025830350</cdate>
+		<name>Settings States</name>
+		<pids>64,45,43</pids>
+		<tids>48,46,47</tids>
+	</Project>
+	<Task sr="task46">
+		<cdate>1579026247201</cdate>
+		<edate>1579937756760</edate>
+		<id>46</id>
+		<nme>State.Work-Ikea</nme>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Profile-work</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>hand22_sc48</nme>
+				<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>808</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>810</code>
+			<Int sr="arg0" val="5"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>425</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>812</code>
+			<Int sr="arg0" val="30"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>294</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hand22_sc48</nme>
+			<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
+		</Img>
+	</Task>
+	<Task sr="task47">
+		<cdate>1579027193217</cdate>
+		<edate>1579937770811</edate>
+		<id>47</id>
+		<nme>State.Outside</nme>
+		<pri>1006</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Profile-outside</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>leaf3</nme>
+				<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>812</code>
+			<Int sr="arg0" val="20"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>808</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>425</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>294</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>leaf3</nme>
+			<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
+		</Img>
+	</Task>
+	<Task sr="task48">
+		<cdate>1579027246771</cdate>
+		<edate>1579860090765</edate>
+		<id>48</id>
+		<nme>State.Home</nme>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Profile-home</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>home6</nme>
+				<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>812</code>
+			<Int sr="arg0" val="30"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>808</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>810</code>
+			<Int sr="arg0" val="5"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>425</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>294</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>home6</nme>
+			<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
+		</Img>
+	</Task>
+</TaskerData>

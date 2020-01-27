@@ -6,7 +6,7 @@
 	</Project>
 	<Task sr="task13">
 		<cdate>1578384578237</cdate>
-		<edate>1578846913168</edate>
+		<edate>1580025493186</edate>
 		<id>13</id>
 		<nme>WiFi.connect.Ikea</nme>
 		<pri>100</pri>
@@ -29,7 +29,7 @@
 		<Action sr="act3" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="1"/>
+			<Int sr="arg1" val="3"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -38,17 +38,17 @@
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<ActionId>Pripojit Online</ActionId>
+					<ActionId>48,544</ActionId>
 					<ActionId-type>java.lang.String</ActionId-type>
 					<ActionType>16</ActionType>
 					<ActionType-type>java.lang.String</ActionType-type>
 					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
 					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
-					<FieldSelectionType>0</FieldSelectionType>
+					<FieldSelectionType>5</FieldSelectionType>
 					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
 					<IsFirstAction>false</IsFirstAction>
 					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<IsTaskerAction>false</IsTaskerAction>
+					<IsTaskerAction>true</IsTaskerAction>
 					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
 					<NearbyText>&lt;null&gt;</NearbyText>
 					<NearbyText-type>java.lang.String</NearbyText-type>
@@ -62,9 +62,10 @@
 					<StoredAction-type>java.lang.String</StoredAction-type>
 					<TextToWrite>&lt;null&gt;</TextToWrite>
 					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Text
-Value: Pripojit Online
-Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Point
+Value: 48,544
+Action : Click
+Is Tasker Action: true</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
 Error Code

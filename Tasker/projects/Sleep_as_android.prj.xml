@@ -2,8 +2,23 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579098176446</cdate>
 		<name>Sleep as android</name>
-		<tids>4,2,8,6,5</tids>
+		<tids>18,5,2,6,4,8</tids>
+		<Img sr="icon" ve="2">
+			<cls>com.urbandroid.sleep.alarmclock.AlarmClock</cls>
+			<pkg>com.urbandroid.sleep</pkg>
+		</Img>
 	</Project>
+	<Task sr="task18">
+		<cdate>1579980262235</cdate>
+		<edate>1579980274770</edate>
+		<id>18</id>
+		<nme>testxxx</nme>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">TEST</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
 	<Task sr="task2">
 		<cdate>1578398462218</cdate>
 		<edate>1579105747215</edate>
@@ -28,7 +43,7 @@
 	</Task>
 	<Task sr="task4">
 		<cdate>1578398462218</cdate>
-		<edate>1579189664255</edate>
+		<edate>1579981911440</edate>
 		<id>4</id>
 		<nme>SleepAsAndroid.wakeup</nme>
 		<pri>6</pri>
@@ -99,7 +114,7 @@
 	</Task>
 	<Task sr="task5">
 		<cdate>1578398056406</cdate>
-		<edate>1579105923172</edate>
+		<edate>1579981949401</edate>
 		<id>5</id>
 		<nme>SleepAsAndroid.radio.play</nme>
 		<pri>7</pri>
