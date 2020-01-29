@@ -2,13 +2,13 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579275962567</cdate>
 		<name>Material Design Examples</name>
-		<tids>65,69,68,71,73,72,70,66,67</tids>
+		<tids>72,67,71,66,68,70,69,73,65</tids>
 	</Project>
 	<Task sr="task65">
 		<cdate>1579276018350</cdate>
-		<edate>1579276532508</edate>
+		<edate>1580245984498</edate>
 		<id>65</id>
-		<nme>Dialog</nme>
+		<nme>MDE.Dialog</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>607566781</code>
@@ -89,9 +89,9 @@ Dialog is dismissed: Dismissed is returned
 	</Task>
 	<Task sr="task66">
 		<cdate>1579276018350</cdate>
-		<edate>1579283756082</edate>
+		<edate>1580245996953</edate>
 		<id>66</id>
-		<nme>CustomDialog</nme>
+		<nme>MDE.CustomDialog</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>1703324132</code>
@@ -141,10 +141,10 @@ Any extra data is returned here (dialog button, back pressed, etc)
 	</Task>
 	<Task sr="task67">
 		<cdate>1579277431407</cdate>
-		<edate>1579282837444</edate>
+		<edate>1580246006497</edate>
 		<id>67</id>
-		<nme>Dismiss</nme>
-		<pri>7</pri>
+		<nme>MDE.Dismiss</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>2014384257</code>
 			<Bundle sr="arg0">
@@ -171,9 +171,9 @@ Any extra data is returned here (dialog button, back pressed, etc)
 	</Task>
 	<Task sr="task68">
 		<cdate>1579277459892</cdate>
-		<edate>1579282943656</edate>
+		<edate>1580246018254</edate>
 		<id>68</id>
-		<nme>Navigation Drawer</nme>
+		<nme>MDE.SleepAsAndroid.sleep</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>81327508</code>
@@ -242,9 +242,9 @@ Returns the name of the currently selected profile in the drawer
 	</Task>
 	<Task sr="task69">
 		<cdate>1579281568016</cdate>
-		<edate>1579282829791</edate>
+		<edate>1580246027907</edate>
 		<id>69</id>
-		<nme>Slidebar</nme>
+		<nme>MDE.Sidebar</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>2037300819</code>
@@ -294,11 +294,6 @@ Returns the name of the currently selected profile in the drawer
 					<com.yourcompany.yourapp.extra.STRING_TYPE-type>java.lang.String</com.yourcompany.yourapp.extra.STRING_TYPE-type>
 					<com.yourcompany.yourcondition.extra.INT_VERSION_CODE>128</com.yourcompany.yourcondition.extra.INT_VERSION_CODE>
 					<com.yourcompany.yourcondition.extra.INT_VERSION_CODE-type>java.lang.Integer</com.yourcompany.yourcondition.extra.INT_VERSION_CODE-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%sb_command
-Sidebar item pressed: Command is returned
-
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.yourcompany.yourapp.extra.STRING_COMMAND com.yourcompany.yourapp.extra.STRING_BCOLOR com.yourcompany.yourapp.extra.STRING_ICONS</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
@@ -312,9 +307,10 @@ Sidebar item pressed: Command is returned
 	</Task>
 	<Task sr="task70">
 		<cdate>1579281686900</cdate>
-		<edate>1579281752966</edate>
+		<edate>1580246060853</edate>
 		<id>70</id>
-		<nme>Material Handle</nme>
+		<nme>MDE.Material Handle</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>1951439581</code>
 			<Bundle sr="arg0">
@@ -325,7 +321,7 @@ Sidebar item pressed: Command is returned
 					<com.yourcompany.yourapp.extra.BOOLEAN_CLICK-type>java.lang.Boolean</com.yourcompany.yourapp.extra.BOOLEAN_CLICK-type>
 					<com.yourcompany.yourapp.extra.BOOLEAN_MOVE>false</com.yourcompany.yourapp.extra.BOOLEAN_MOVE>
 					<com.yourcompany.yourapp.extra.BOOLEAN_MOVE-type>java.lang.Boolean</com.yourcompany.yourapp.extra.BOOLEAN_MOVE-type>
-					<com.yourcompany.yourapp.extra.BOOLEAN_PERSISTENT>false</com.yourcompany.yourapp.extra.BOOLEAN_PERSISTENT>
+					<com.yourcompany.yourapp.extra.BOOLEAN_PERSISTENT>true</com.yourcompany.yourapp.extra.BOOLEAN_PERSISTENT>
 					<com.yourcompany.yourapp.extra.BOOLEAN_PERSISTENT-type>java.lang.Boolean</com.yourcompany.yourapp.extra.BOOLEAN_PERSISTENT-type>
 					<com.yourcompany.yourapp.extra.BOOLEAN_SWIPE>false</com.yourcompany.yourapp.extra.BOOLEAN_SWIPE>
 					<com.yourcompany.yourapp.extra.BOOLEAN_SWIPE-type>java.lang.Boolean</com.yourcompany.yourapp.extra.BOOLEAN_SWIPE-type>
@@ -376,9 +372,9 @@ Sidebar item pressed: Command is returned
 	</Task>
 	<Task sr="task71">
 		<cdate>1579281795970</cdate>
-		<edate>1579282082398</edate>
+		<edate>1580246076050</edate>
 		<id>71</id>
-		<nme>Input Activity</nme>
+		<nme>MDE.Input Activity</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>218774671</code>
@@ -462,9 +458,9 @@ Back button pressed: Cancel is returned
 	</Task>
 	<Task sr="task72">
 		<cdate>1579282088256</cdate>
-		<edate>1579282827664</edate>
+		<edate>1580246087763</edate>
 		<id>72</id>
-		<nme>List Activity</nme>
+		<nme>MDE.List  Activity</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>1813905127</code>
@@ -526,17 +522,6 @@ Back button pressed: Cancel is returned
 					<com.yourcompany.yourapp.extra.STRING_TYPE-type>java.lang.String</com.yourcompany.yourapp.extra.STRING_TYPE-type>
 					<com.yourcompany.yourcondition.extra.INT_VERSION_CODE>128</com.yourcompany.yourcondition.extra.INT_VERSION_CODE>
 					<com.yourcompany.yourcondition.extra.INT_VERSION_CODE-type>java.lang.Integer</com.yourcompany.yourcondition.extra.INT_VERSION_CODE-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ls_list()
-List is finished: Array of all items in the list is returned
-
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ls_command
-List item is clicked: Text for that item is returned
-
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ls_index
-List item is clicked: Index for that item is returned
-
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.yourcompany.yourapp.extra.STRING_MESSAGE com.yourcompany.yourapp.extra.STRING_ITEMS com.yourcompany.yourapp.extra.STRING_COLOR com.yourcompany.yourapp.extra.STRING_COMMAND com.yourcompany.yourapp.extra.STRING_BCOLOR com.yourcompany.yourapp.extra.STRING_BOTTOM com.yourcompany.yourapp.extra.STRING_BOTTOM_COMMAND com.yourcompany.yourapp.extra.STRING_TCOLOR com.yourcompany.yourapp.extra.STRING_SCOLOR com.yourcompany.yourapp.extra.STRING_ICONS com.yourcompany.yourapp.extra.STRING_BOTTOM_ICON</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
@@ -550,9 +535,9 @@ List item is clicked: Index for that item is returned
 	</Task>
 	<Task sr="task73">
 		<cdate>1579282949671</cdate>
-		<edate>1579283100337</edate>
+		<edate>1580246099254</edate>
 		<id>73</id>
-		<nme>Map Activity - Not Working</nme>
+		<nme>MDE.Map Activity - Not Working</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>120773346</code>

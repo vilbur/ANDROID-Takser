@@ -1,9 +1,11 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
 	<Profile sr="prof42" ve="2">
 		<cdate>1580232474220</cdate>
-		<edate>1580235276357</edate>
+		<clp>true</clp>
+		<edate>1580239748912</edate>
 		<flags>8</flags>
 		<id>42</id>
+		<limit>true</limit>
 		<mid0>84</mid0>
 		<State sr="con0" ve="2">
 			<code>10</code>
@@ -14,7 +16,7 @@
 		<cdate>1579098176446</cdate>
 		<name>Sleep as android</name>
 		<pids>42</pids>
-		<tids>2,5,85,4,86,8,84,6</tids>
+		<tids>86,6,84,85,2,5,8,4</tids>
 		<Img sr="icon" ve="2">
 			<cls>com.urbandroid.sleep.alarmclock.AlarmClock</cls>
 			<pkg>com.urbandroid.sleep</pkg>
@@ -22,9 +24,9 @@
 	</Project>
 	<Task sr="task2">
 		<cdate>1578398462218</cdate>
-		<edate>1580236651882</edate>
+		<edate>1580245744232</edate>
 		<id>2</id>
-		<nme>SleepAsAndroid.sleep</nme>
+		<nme>SAA.sleep</nme>
 		<Action sr="act0" ve="7">
 			<code>774351906</code>
 			<Bundle sr="arg0">
@@ -79,12 +81,23 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.urbandroid.sleep.addon.taskerplugin.ui.EditActionActivity</Str>
 			<Int sr="arg3" val="0"/>
 		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SAA.lullabiesPlay</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
 	</Task>
 	<Task sr="task4">
 		<cdate>1578398462218</cdate>
 		<edate>1579981911440</edate>
 		<id>4</id>
-		<nme>SleepAsAndroid.wakeup</nme>
+		<nme>SAA.wakeup</nme>
 		<pri>6</pri>
 		<stayawake>true</stayawake>
 		<Action sr="act0" ve="7">
@@ -103,7 +116,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">SleepAsAndroid.radio.play</Str>
+			<Str sr="arg0" ve="3">SAA.radio.play</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -155,7 +168,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<cdate>1578398056406</cdate>
 		<edate>1580105287461</edate>
 		<id>5</id>
-		<nme>SleepAsAndroid.radio.play</nme>
+		<nme>SAA.radio.play</nme>
 		<pri>7</pri>
 		<Action sr="act0" ve="7">
 			<code>877</code>
@@ -178,7 +191,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<cdate>1578398131556</cdate>
 		<edate>1579105971028</edate>
 		<id>6</id>
-		<nme>SleepAsAndroid.radio.stop</nme>
+		<nme>SAA.radio.stop</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>877</code>
@@ -198,7 +211,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<cdate>1578398056406</cdate>
 		<edate>1579105993928</edate>
 		<id>8</id>
-		<nme>SleepAsAndroid.radio.restart</nme>
+		<nme>SAA.radio.restart</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>877</code>
@@ -219,9 +232,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task84">
 		<cdate>1580233218434</cdate>
-		<edate>1580236615445</edate>
+		<edate>1580245687217</edate>
 		<id>84</id>
-		<nme>SleepAsAndroid.shouldTrackingStart</nme>
+		<nme>SAA.shouldTrackingStart</nme>
 		<Action sr="act0" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
@@ -234,7 +247,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">SleepAsAndroid.sleep</Str>
+			<Str sr="arg0" ve="3">SAA.sleep</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -246,17 +259,27 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task85">
 		<cdate>1580236746965</cdate>
-		<edate>1580237092737</edate>
+		<edate>1580245678746</edate>
 		<id>85</id>
-		<nme>SAA.LullabiesPlay</nme>
+		<nme>SAA.lullabiesPlay</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%BT_CONNECTED</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>307</code>
-			<Int sr="arg0" val="7"/>
+			<Int sr="arg0" val="15"/>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 		</Action>
-		<Action sr="act1" ve="7">
+		<Action sr="act2" ve="7">
 			<code>90406179</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -274,7 +297,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.urbandroid.sleep.addon.taskerplugin.ui.EditActionActivity</Str>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act3" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">SAA.lullabiesStop</Str>
 			<Int sr="arg1">
@@ -285,17 +308,20 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
+		<Action sr="act4" ve="7">
+			<code>38</code>
+		</Action>
 	</Task>
 	<Task sr="task86">
 		<cdate>1580236818606</cdate>
-		<edate>1580236993753</edate>
+		<edate>1580245522616</edate>
 		<id>86</id>
 		<nme>SAA.lullabiesStop</nme>
 		<Action sr="act0" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="15"/>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
