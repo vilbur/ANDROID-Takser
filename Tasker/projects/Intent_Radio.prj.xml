@@ -2,7 +2,7 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579793453560</cdate>
 		<name>Intent Radio</name>
-		<tids>134,135,136</tids>
+		<tids>136,135,134</tids>
 		<Img sr="icon" ve="2">
 			<cls>org.smblott.intentradio.IntentRadio</cls>
 			<pkg>org.smblott.intentradioio</pkg>
@@ -10,18 +10,43 @@
 	</Project>
 	<Task sr="task134">
 		<cdate>1578398056406</cdate>
-		<edate>1580274679456</edate>
+		<edate>1580286007379</edate>
 		<id>134</id>
 		<nme>IR.radio.play</nme>
-		<pri>7</pri>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%radios</Str>
+			<Str sr="arg1" ve="3">Color,http://icecast6.play.cz/color192.mp3,
+Swiss Groove, http://167.114.244.122/;,</Str>
+			<Str sr="arg2" ve="3">,</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%radio_name</Str>
+			<Str sr="arg1" ve="3">%radios(3)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%radio_url</Str>
+			<Str sr="arg1" ve="3">%radios(4)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
 			<code>877</code>
 			<Str sr="arg0" ve="3">org.smblott.intentradio.PLAY</Str>
 			<Int sr="arg1" val="0"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
+			<Str sr="arg4" ve="3">url:%radio_url</Str>
+			<Str sr="arg5" ve="3">name:Radio: %radio_name</Str>
 			<Str sr="arg6" ve="3"/>
 			<Str sr="arg7" ve="3"/>
 			<Str sr="arg8" ve="3"/>
