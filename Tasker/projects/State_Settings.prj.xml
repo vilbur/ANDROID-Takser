@@ -2,7 +2,7 @@
 	<Profile sr="prof43" ve="2">
 		<cdate>1579026055299</cdate>
 		<clp>true</clp>
-		<edate>1579509877484</edate>
+		<edate>1580381645087</edate>
 		<flags>8</flags>
 		<id>43</id>
 		<mid0>48</mid0>
@@ -10,8 +10,8 @@
 		<nme>State-home</nme>
 		<State sr="con0" ve="2">
 			<code>7</code>
-			<Str sr="arg0" ve="3">GSM:1228.18234881 / 0
-GSM:1228.18234971 / 2</Str>
+			<Str sr="arg0" ve="3">LTE:230.2.18234971 / 0
+LTE:230.2.18234881 / 4</Str>
 			<Str sr="arg1" ve="3"/>
 		</State>
 	</Profile>
@@ -50,75 +50,150 @@ GSM:1131.10353665 / 6</Str>
 		<cdate>1579025830350</cdate>
 		<name>State Settings</name>
 		<pids>64,45,43</pids>
-		<tids>46,48,47</tids>
+		<psort>ActiveAlpha</psort>
+		<tids>48,47,180,46</tids>
 	</Project>
-	<Task sr="task46">
-		<cdate>1579026247201</cdate>
-		<edate>1579937756760</edate>
-		<id>46</id>
-		<nme>State.Work-Ikea</nme>
+	<Task sr="task180">
+		<cdate>1579027193217</cdate>
+		<edate>1580384369378</edate>
+		<id>180</id>
+		<nme>State.setter</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>523</code>
-			<Str sr="arg0" ve="3">Profile-work</Str>
-			<Str sr="arg1" ve="3"/>
-			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3"/>
-			<Img sr="arg2" ve="2">
-				<nme>hand22_sc48</nme>
-				<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
-			</Img>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="1"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-			<Int sr="arg8" val="0"/>
-			<Str sr="arg9" ve="3"/>
+			<code>808</code>
+			<Int sr="arg0" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATES_DATA(2)</lhs>
+					<op>2</op>
+					<rhs>OFF</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>808</code>
-			<Int sr="arg0" val="0"/>
+			<Int sr="arg0" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATES_DATA(2)</lhs>
+					<op>2</op>
+					<rhs>ON</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>810</code>
-			<Int sr="arg0" val="5"/>
+			<Int sr="arg0">
+				<var>%STATES_DATA(3)</var>
+			</Int>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
 		<Action sr="act3" ve="7">
-			<code>425</code>
-			<Int sr="arg0" val="1"/>
-		</Action>
-		<Action sr="act4" ve="7">
 			<code>812</code>
 			<Int sr="arg0" val="30"/>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 		</Action>
+		<Action sr="act4" ve="7">
+			<code>425</code>
+			<Int sr="arg0" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATES_DATA(5)</lhs>
+					<op>2</op>
+					<rhs>ON</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
 		<Action sr="act5" ve="7">
+			<code>425</code>
+			<Int sr="arg0" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATES_DATA(5)</lhs>
+					<op>2</op>
+					<rhs>OFF</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>433</code>
+			<Int sr="arg0" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATES_DATA(6)</lhs>
+					<op>2</op>
+					<rhs>ON</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>433</code>
+			<Int sr="arg0" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATES_DATA(6)</lhs>
+					<op>2</op>
+					<rhs>OFF</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>294</code>
+			<Int sr="arg0" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATES_DATA(7)</lhs>
+					<op>2</op>
+					<rhs>ON</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
 			<code>294</code>
 			<Int sr="arg0" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%STATES_DATA(7)</lhs>
+					<op>2</op>
+					<rhs>OFF</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
-		<Img sr="icn" ve="2">
-			<nme>hand22_sc48</nme>
-			<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
-		</Img>
 	</Task>
-	<Task sr="task47">
-		<cdate>1579027193217</cdate>
-		<edate>1580299144501</edate>
-		<id>47</id>
-		<nme>State.Outside</nme>
-		<pri>1006</pri>
+	<Task sr="task46">
+		<cdate>1579026247201</cdate>
+		<edate>1580384885936</edate>
+		<id>46</id>
+		<nme>State.Work-Ikea</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%STATES_DATA</Str>
+			<Str sr="arg1" ve="3">Profile-WORK OFF 5 30 ON OFF OFF</Str>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">State.setter</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>523</code>
-			<Str sr="arg0" ve="3">Profile-outside</Str>
+			<Str sr="arg0" ve="3">%STATES_DATA(1)</Str>
 			<Str sr="arg1" ve="3"/>
 			<Str sr="arg10" ve="3"/>
 			<Str sr="arg11" ve="3"/>
 			<Img sr="arg2" ve="2">
-				<nme>leaf3</nme>
+				<nme>hand22_sc48</nme>
 				<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
 			</Img>
 			<Int sr="arg3" val="0"/>
@@ -129,37 +204,83 @@ GSM:1131.10353665 / 6</Str>
 			<Int sr="arg8" val="0"/>
 			<Str sr="arg9" ve="3"/>
 		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hand22_sc48</nme>
+			<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
+		</Img>
+	</Task>
+	<Task sr="task47">
+		<cdate>1579027193217</cdate>
+		<edate>1580384955877</edate>
+		<id>47</id>
+		<nme>State.Outside</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%STATES_DATA</Str>
+			<Str sr="arg1" ve="3">Profile-OUTSIDE ON 10 10 OFF OFF OFF</Str>
+			<Str sr="arg2" ve="3"/>
+		</Action>
 		<Action sr="act1" ve="7">
-			<code>812</code>
-			<Int sr="arg0" val="20"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
+			<code>130</code>
+			<Str sr="arg0" ve="3">State.setter</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
 		</Action>
 		<Action sr="act2" ve="7">
-			<code>808</code>
-			<Int sr="arg0" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>425</code>
-			<Int sr="arg0" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>294</code>
-			<Int sr="arg0" val="0"/>
+			<code>523</code>
+			<Str sr="arg0" ve="3">%STATES_DATA(1)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>animal_butterfly5_sc48</nme>
+				<pkg>net.dinglisch.android.ipack.orangewhitepearlhd</pkg>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
 		</Action>
 		<Img sr="icn" ve="2">
-			<nme>leaf3</nme>
-			<pkg>net.dinglisch.android.ipack.bluewhitepearlhd</pkg>
+			<nme>animal_butterfly5_sc48</nme>
+			<pkg>net.dinglisch.android.ipack.orangewhitepearlhd</pkg>
 		</Img>
 	</Task>
 	<Task sr="task48">
 		<cdate>1579027246771</cdate>
-		<edate>1579860090765</edate>
+		<edate>1580385013045</edate>
 		<id>48</id>
 		<nme>State.Home</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%STATES_DATA</Str>
+			<Str sr="arg1" ve="3">Profile-HOME OFF 5 30 ON OFF ON</Str>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">State.setter</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>523</code>
-			<Str sr="arg0" ve="3">Profile-home</Str>
+			<Str sr="arg0" ve="3">%STATES_DATA(1)</Str>
 			<Str sr="arg1" ve="3"/>
 			<Str sr="arg10" ve="3"/>
 			<Str sr="arg11" ve="3"/>
@@ -174,31 +295,6 @@ GSM:1131.10353665 / 6</Str>
 			<Int sr="arg7" val="0"/>
 			<Int sr="arg8" val="0"/>
 			<Str sr="arg9" ve="3"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>812</code>
-			<Int sr="arg0" val="30"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>808</code>
-			<Int sr="arg0" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>810</code>
-			<Int sr="arg0" val="5"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>425</code>
-			<Int sr="arg0" val="1"/>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>294</code>
-			<Int sr="arg0" val="1"/>
 		</Action>
 		<Img sr="icn" ve="2">
 			<nme>home6</nme>
