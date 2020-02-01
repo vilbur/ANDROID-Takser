@@ -2,14 +2,14 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579039415348</cdate>
 		<name>Backup</name>
-		<tids>61,75,63,74,60,76</tids>
+		<tids>60,75,61,74,63,76</tids>
 		<Img sr="icon" ve="2">
 			<nme>mw_action_backup</nme>
 		</Img>
 	</Project>
 	<Task sr="task60">
 		<cdate>1578740068039</cdate>
-		<edate>1580307244704</edate>
+		<edate>1580538121682</edate>
 		<id>60</id>
 		<nme>Backup.Settings.run</nme>
 		<pri>100</pri>
@@ -26,14 +26,6 @@ FallbackHome:Backup and restore</label>
 			<Int sr="arg3" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="500"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -86,15 +78,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
 		</Action>
-		<Action sr="act3" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="500"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act2" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -147,7 +131,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act3" ve="7">
 			<code>774351906</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -178,7 +162,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.join.tasker.activity.ActivityConfigActions</Str>
 			<Int sr="arg3" val="60"/>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act4" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">BACKUPING OF Android settings</Str>
 			<Int sr="arg1" val="0"/>
@@ -189,7 +173,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task61">
 		<cdate>1579039552721</cdate>
-		<edate>1580307276702</edate>
+		<edate>1580537884190</edate>
 		<id>61</id>
 		<nme>Backup.GoogleAccount.run</nme>
 		<pri>100</pri>
@@ -206,14 +190,6 @@ FallbackHome:Backup and reset</label>
 			<Int sr="arg3" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="500"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -265,20 +241,12 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
 		</Action>
-		<Action sr="act3" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="500"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act2" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">BACKUPING OF Google settings</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act3" ve="7">
 			<code>25</code>
 			<Int sr="arg0" val="0"/>
 		</Action>
@@ -288,7 +256,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task63">
 		<cdate>1578740068039</cdate>
-		<edate>1580307306506</edate>
+		<edate>1580537927821</edate>
 		<id>63</id>
 		<nme>Backup.Nova.run</nme>
 		<pri>100</pri>
@@ -357,14 +325,6 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 		</Action>
 		<Action sr="act2" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="500"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -417,7 +377,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act3" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -470,6 +430,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
 		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="500"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
 		<Action sr="act5" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="500"/>
@@ -479,6 +447,12 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act6" ve="7">
+			<code>245</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>245</code>
+		</Action>
+		<Action sr="act8" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">BACKUPING OF Nova Launcher</Str>
 			<Int sr="arg1" val="0"/>
@@ -489,7 +463,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task74">
 		<cdate>1579377576619</cdate>
-		<edate>1579552027335</edate>
+		<edate>1580537728010</edate>
 		<id>74</id>
 		<nme>Backup.Nova._clickBack</nme>
 		<pri>100</pri>
@@ -631,7 +605,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task75">
 		<cdate>1579372094750</cdate>
-		<edate>1579552040573</edate>
+		<edate>1580537769393</edate>
 		<id>75</id>
 		<nme>Backup.Nova._launchSettingsOnFirstPage</nme>
 		<pri>100</pri>
@@ -741,10 +715,15 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<Action sr="act5" ve="7">
 			<code>38</code>
 		</Action>
+		<Action sr="act6" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">1st Page</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
 	</Task>
 	<Task sr="task76">
 		<cdate>1579546067927</cdate>
-		<edate>1580307151000</edate>
+		<edate>1580538114643</edate>
 		<id>76</id>
 		<nme>Backup.runAll</nme>
 		<pri>7</pri>
@@ -761,7 +740,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>30</code>
-			<Int sr="arg0" val="500"/>
+			<Int sr="arg0" val="200"/>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -780,7 +759,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>30</code>
-			<Int sr="arg0" val="500"/>
+			<Int sr="arg0" val="200"/>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>

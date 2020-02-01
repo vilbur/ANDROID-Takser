@@ -1,16 +1,41 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
 	<Project sr="proj0" ve="2">
-		<cdate>1579793421146</cdate>
-		<name>Volume</name>
-		<tids>18,8,65,68,4</tids>
-		<tsort>Alpha</tsort>
-		<Img sr="icon" ve="2">
-			<nme>mw_av_volume_up</nme>
-		</Img>
+		<cdate>1580563236879</cdate>
+		<name>Say</name>
+		<tids>7,2,18,8,65,15</tids>
 	</Project>
+	<Task sr="task15">
+		<cdate>1580564026398</cdate>
+		<edate>1580564259310</edate>
+		<id>15</id>
+		<nme>SAY.test</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SAY</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">Loud hello world</Str>
+			<Str sr="arg3" ve="3">15</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SAY</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">Silent hello world</Str>
+			<Str sr="arg3" ve="3">1</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
 	<Task sr="task18">
 		<cdate>1580519649642</cdate>
-		<edate>1580562995849</edate>
+		<edate>1580563388162</edate>
 		<id>18</id>
 		<nme>VOL.set</nme>
 		<Action sr="act0" ve="7">
@@ -140,51 +165,63 @@
 			</ConditionList>
 		</Action>
 	</Task>
-	<Task sr="task4">
-		<cdate>1579590683712</cdate>
-		<edate>1580563019662</edate>
-		<id>4</id>
-		<nme>VOL.increaseLevel</nme>
+	<Task sr="task2">
+		<cdate>1580563340428</cdate>
+		<edate>1580564297422</edate>
+		<id>2</id>
+		<nme>SAY</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>888</code>
-			<Str sr="arg0" ve="3">%index</Str>
-			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>307</code>
-			<Int sr="arg0">
-				<var>%index</var>
-			</Int>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">%index</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
+			<code>130</code>
+			<Str sr="arg0" ve="3">SAY.volumeSet</Str>
 			<Int sr="arg1">
-				<var>%par2</var>
+				<var>%priority</var>
 			</Int>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>135</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="1"/>
-			<Str sr="arg2" ve="3"/>
+			<Str sr="arg2" ve="3">%par2</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%index</lhs>
-					<op>9</op>
-					<rhs>%par1</rhs>
+					<lhs>%par2</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="100"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">default:default</Str>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">VOL.load</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>12</op>
+					<rhs></rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
@@ -218,33 +255,29 @@
 			<Int sr="arg5" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task68">
-		<cdate>1580557335085</cdate>
-		<edate>1580562985779</edate>
-		<id>68</id>
-		<nme>VOL.test</nme>
-		<pri>100</pri>
+	<Task sr="task7">
+		<cdate>1580563505294</cdate>
+		<edate>1580564312227</edate>
+		<id>7</id>
+		<nme>SAY.volumeSet</nme>
 		<Action sr="act0" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">VOL.set</Str>
+			<Str sr="arg0" ve="3">VOL.save</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3">7</Str>
+			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">VOL.set</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
+			<code>307</code>
+			<Int sr="arg0">
+				<var>%par1</var>
 			</Int>
-			<Str sr="arg2" ve="3">0</Str>
-			<Str sr="arg3" ve="3">MEDIA</Str>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task8">
