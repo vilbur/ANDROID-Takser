@@ -1,0 +1,90 @@
+<TaskerData sr="" dvi="1" tv="5.9.1">
+	<Profile sr="prof174" ve="2">
+		<cdate>1580338699823</cdate>
+		<clp>true</clp>
+		<edate>1580441385191</edate>
+		<flags>8</flags>
+		<id>174</id>
+		<mid0>175</mid0>
+		<nme>Shake-up-down</nme>
+		<Event sr="con0" ve="2">
+			<code>3001</code>
+			<pri>0</pri>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="2"/>
+			<Int sr="arg2" val="2"/>
+		</Event>
+	</Profile>
+	<Task sr="task175">
+		<cdate>1580338724278</cdate>
+		<edate>1580441198862</edate>
+		<id>175</id>
+		<nme>previousAppOnShake</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>1795842217</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AppLabel>&lt;null&gt;</AppLabel>
+					<AppLabel-type>java.lang.String</AppLabel-type>
+					<AppNickname>%LAST_APP_NAME</AppNickname>
+					<AppNickname-type>java.lang.String</AppNickname-type>
+					<ContainsAllAppLabel>false</ContainsAllAppLabel>
+					<ContainsAllAppLabel-type>java.lang.Boolean</ContainsAllAppLabel-type>
+					<ContainsAllAppNickname>true</ContainsAllAppNickname>
+					<ContainsAllAppNickname-type>java.lang.Boolean</ContainsAllAppNickname-type>
+					<ContainsAllPackageName>false</ContainsAllPackageName>
+					<ContainsAllPackageName-type>java.lang.Boolean</ContainsAllPackageName-type>
+					<ExactAppLabel>false</ExactAppLabel>
+					<ExactAppLabel-type>java.lang.Boolean</ExactAppLabel-type>
+					<ExactAppNickname>false</ExactAppNickname>
+					<ExactAppNickname-type>java.lang.Boolean</ExactAppNickname-type>
+					<ExactPackageName>false</ExactPackageName>
+					<ExactPackageName-type>java.lang.Boolean</ExactPackageName-type>
+					<OptionAlwaysStartNewCopy>false</OptionAlwaysStartNewCopy>
+					<OptionAlwaysStartNewCopy-type>java.lang.Boolean</OptionAlwaysStartNewCopy-type>
+					<OptionExcludeFromRecents>false</OptionExcludeFromRecents>
+					<OptionExcludeFromRecents-type>java.lang.Boolean</OptionExcludeFromRecents-type>
+					<PackageName>&lt;null&gt;</PackageName>
+					<PackageName-type>java.lang.String</PackageName-type>
+					<RegexAppLabel>false</RegexAppLabel>
+					<RegexAppLabel-type>java.lang.Boolean</RegexAppLabel-type>
+					<RegexAppNickname>false</RegexAppNickname>
+					<RegexAppNickname-type>java.lang.Boolean</RegexAppNickname-type>
+					<RegexPackageName>false</RegexPackageName>
+					<RegexPackageName-type>java.lang.Boolean</RegexPackageName-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Name or Nickname: "%LAST_APP_NAME"
+Contains All Name or Nickname: true</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%alactivity
+Launcher Activity Name
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%allabel
+Label
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%alnicklabel
+Nickname or Label
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%alnickname
+Nickname
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%alpackage
+Package Name
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>AppNickname plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>6d722d1e-fd4c-43b5-8c56-5a2f6516d828</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoapps.intent.IntentLaunchApp</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoapps</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoapps.activity.ActivityConfigLaunchApp</Str>
+			<Int sr="arg3" val="60"/>
+		</Action>
+	</Task>
+</TaskerData>

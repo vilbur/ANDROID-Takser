@@ -51,11 +51,11 @@ GSM:1131.10353665 / 6</Str>
 		<name>State Settings</name>
 		<pids>64,45,43</pids>
 		<psort>ActiveAlpha</psort>
-		<tids>48,47,180,46</tids>
+		<tids>48,180,46,47</tids>
 	</Project>
 	<Task sr="task180">
 		<cdate>1579027193217</cdate>
-		<edate>1580384369378</edate>
+		<edate>1580460940030</edate>
 		<id>180</id>
 		<nme>State.setter</nme>
 		<pri>100</pri>
@@ -165,7 +165,7 @@ GSM:1131.10353665 / 6</Str>
 	</Task>
 	<Task sr="task46">
 		<cdate>1579026247201</cdate>
-		<edate>1580384885936</edate>
+		<edate>1580460958434</edate>
 		<id>46</id>
 		<nme>State.Work-Ikea</nme>
 		<pri>100</pri>
@@ -211,10 +211,10 @@ GSM:1131.10353665 / 6</Str>
 	</Task>
 	<Task sr="task47">
 		<cdate>1579027193217</cdate>
-		<edate>1580384955877</edate>
+		<edate>1580460979849</edate>
 		<id>47</id>
 		<nme>State.Outside</nme>
-		<pri>100</pri>
+		<pri>1006</pri>
 		<Action sr="act0" ve="7">
 			<code>354</code>
 			<Str sr="arg0" ve="3">%STATES_DATA</Str>
@@ -257,10 +257,9 @@ GSM:1131.10353665 / 6</Str>
 	</Task>
 	<Task sr="task48">
 		<cdate>1579027246771</cdate>
-		<edate>1580385013045</edate>
+		<edate>1580460964608</edate>
 		<id>48</id>
 		<nme>State.Home</nme>
-		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>354</code>
 			<Str sr="arg0" ve="3">%STATES_DATA</Str>
