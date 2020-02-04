@@ -2,7 +2,7 @@
 	<Profile sr="prof12" ve="2">
 		<cdate>1579965973923</cdate>
 		<clp>true</clp>
-		<edate>1580538654366</edate>
+		<edate>1580666015599</edate>
 		<flags>8</flags>
 		<id>12</id>
 		<mid0>11</mid0>
@@ -24,12 +24,39 @@ Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT
 			<Str sr="arg1" ve="3"/>
 		</Event>
 	</Profile>
+	<Profile sr="prof35" ve="2">
+		<cdate>1580701712792</cdate>
+		<clp>true</clp>
+		<edate>1580702873563</edate>
+		<flags>8</flags>
+		<id>35</id>
+		<limit>true</limit>
+		<mid0>39</mid0>
+		<Event sr="con0" ve="2">
+			<code>2078</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%app_icon
+Icon
+Icon for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%app_name
+Name
+Name of the App&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%app_package
+Package
+Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3"/>
+		</Event>
+	</Profile>
 	<Profile sr="prof51" ve="2">
 		<cdate>1580549999330</cdate>
 		<clp>true</clp>
-		<edate>1580550826319</edate>
+		<edate>1580551243391</edate>
 		<flags>8</flags>
 		<id>51</id>
+		<limit>true</limit>
 		<mid0>53</mid0>
 		<Event sr="con0" ve="2">
 			<code>3001</code>
@@ -59,12 +86,17 @@ Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT
 	<Project sr="proj0" ve="2">
 		<cdate>1579965656119</cdate>
 		<name>Apps</name>
-		<pids>51,12,6</pids>
-		<tids>11,53,5</tids>
+		<pids>51,35,12,6</pids>
+		<tids>53,11,5,39</tids>
+		<tsort>Alpha</tsort>
+		<Img sr="icon" ve="2">
+			<cls>com.android.vending.AssetBrowserActivity</cls>
+			<pkg>com.android.vending</pkg>
+		</Img>
 	</Project>
 	<Task sr="task11">
 		<cdate>1579965688664</cdate>
-		<edate>1580538654366</edate>
+		<edate>1580704683192</edate>
 		<id>11</id>
 		<nme>Apps.getAppInfo</nme>
 		<pri>6</pri>
@@ -138,6 +170,23 @@ Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT
 		<Action sr="act4" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">Last app: %LAST_APP_NAME</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task39">
+		<cdate>1580701745507</cdate>
+		<edate>1580703796268</edate>
+		<id>39</id>
+		<nme>~APP.debug.appInfoToClipboard</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%app_icon</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>105</code>
+			<Str sr="arg0" ve="3">%app_icon</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>

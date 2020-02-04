@@ -2,7 +2,7 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579807560182</cdate>
 		<name>Split Screen</name>
-		<tids>88,87,9,95,90,94</tids>
+		<tids>95,94,88,87,90,9</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<nme>mw_action_view_stream</nme>
@@ -118,7 +118,7 @@ Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT
 	</Task>
 	<Task sr="task90">
 		<cdate>1579860571819</cdate>
-		<edate>1580675871534</edate>
+		<edate>1580676079916</edate>
 		<id>90</id>
 		<nme>SPLIT</nme>
 		<pri>100</pri>
@@ -207,6 +207,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="200"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
 			<code>1795842217</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
