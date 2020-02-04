@@ -1,8 +1,9 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
+	<dmetric>720.0,1502.0</dmetric>
 	<Profile sr="prof139" ve="2">
 		<cdate>1580763134487</cdate>
 		<clp>true</clp>
-		<edate>1580762080887</edate>
+		<edate>1580804204198</edate>
 		<flags>8</flags>
 		<id>139</id>
 		<limit>true</limit>
@@ -74,11 +75,12 @@
 	<Profile sr="prof141" ve="2">
 		<cdate>1580763134508</cdate>
 		<clp>true</clp>
-		<edate>1580755778884</edate>
+		<edate>1580804203848</edate>
 		<flags>8</flags>
 		<id>141</id>
 		<limit>true</limit>
-		<mid0>136</mid0>
+		<mid0>102</mid0>
+		<mid1>179</mid1>
 		<nme>swipe UP</nme>
 		<Event sr="con0" ve="2">
 			<code>1957681000</code>
@@ -110,10 +112,12 @@
 	<Profile sr="prof142" ve="2">
 		<cdate>1580763134513</cdate>
 		<clp>true</clp>
-		<edate>1580762083132</edate>
+		<edate>1580807890305</edate>
 		<flags>8</flags>
 		<id>142</id>
+		<limit>true</limit>
 		<mid0>102</mid0>
+		<nme>GEST ON\OFF</nme>
 		<State sr="con0" ve="2">
 			<code>125</code>
 		</State>
@@ -121,9 +125,10 @@
 	<Profile sr="prof143" ve="2">
 		<cdate>1580763134514</cdate>
 		<clp>true</clp>
-		<edate>1580750145430</edate>
+		<edate>1580804207181</edate>
 		<flags>8</flags>
 		<id>143</id>
+		<limit>true</limit>
 		<mid0>134</mid0>
 		<nme>swipe LEFT</nme>
 		<Event sr="con0" ve="2">
@@ -153,20 +158,246 @@
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigGestureEvent</Str>
 		</Event>
 	</Profile>
+	<Profile sr="prof164" ve="2">
+		<cdate>1580798982873</cdate>
+		<clp>true</clp>
+		<edate>1580801215453</edate>
+		<flags>8</flags>
+		<id>164</id>
+		<limit>true</limit>
+		<mid0>145</mid0>
+		<nme>~Debug - on Chrome starts</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.google.android.apps.chrome.Main</cls0>
+			<flags>2</flags>
+			<label0>Chrome</label0>
+			<pkg0>com.android.chrome</pkg0>
+		</App>
+	</Profile>
+	<Profile sr="prof173" ve="2">
+		<cdate>1580801197165</cdate>
+		<clp>true</clp>
+		<edate>1580807786290</edate>
+		<flags>8</flags>
+		<id>173</id>
+		<limit>true</limit>
+		<mid0>138</mid0>
+		<nme>tap</nme>
+		<Event sr="con0" ve="2">
+			<code>970930553</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.balda.meteotask.extra.INT_VERSION_CODE>95</com.balda.meteotask.extra.INT_VERSION_CODE>
+					<com.balda.meteotask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.meteotask.extra.INT_VERSION_CODE-type>
+					<com.balda.meteotask.extra.OPERATION>6</com.balda.meteotask.extra.OPERATION>
+					<com.balda.meteotask.extra.OPERATION-type>java.lang.Integer</com.balda.meteotask.extra.OPERATION-type>
+					<com.balda.touchtask.extra.PACKAGES>&lt;StringArrayList sr=""&gt;&lt;_arrlst_com.balda.touchtask.extra.PACKAGES0&gt;com.android.chrome&lt;/_arrlst_com.balda.touchtask.extra.PACKAGES0&gt;&lt;/StringArrayList&gt;</com.balda.touchtask.extra.PACKAGES>
+					<com.balda.touchtask.extra.PACKAGES-type>java.util.ArrayList</com.balda.touchtask.extra.PACKAGES-type>
+					<com.balda.touchtask.extra.TYPE>1</com.balda.touchtask.extra.TYPE>
+					<com.balda.touchtask.extra.TYPE-type>java.lang.Integer</com.balda.touchtask.extra.TYPE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Long tap in Chrome</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.touchtask.extra.PACKAGES</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.balda.touchtask</Str>
+			<Str sr="arg2" ve="3">com.balda.touchtask.ui.QueryUiAction</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof181" ve="2">
+		<cdate>1580802959339</cdate>
+		<clp>true</clp>
+		<edate>1580804206031</edate>
+		<flags>8</flags>
+		<id>181</id>
+		<limit>true</limit>
+		<mid0>138</mid0>
+		<nme>swipe DOWN RIGHT</nme>
+		<Event sr="con0" ve="2">
+			<code>1957681000</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<Gesture>&lt;StringArray sr=""&gt;&lt;_array_Gesture0&gt;16&lt;/_array_Gesture0&gt;&lt;/StringArray&gt;</Gesture>
+					<Gesture-type>[Ljava.lang.String;</Gesture-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Gesture: Down And Right</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Gesture plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>3cd8b395-2567-4980-b19c-b2c9dc7d2ab8</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentGestureEvent</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigGestureEvent</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof200" ve="2">
+		<cdate>1580809122348</cdate>
+		<clp>true</clp>
+		<edate>1580834788189</edate>
+		<flags>8</flags>
+		<id>200</id>
+		<limit>true</limit>
+		<mid0>138</mid0>
+		<Event sr="con0" ve="2">
+			<code>5683503</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ActionTypes>&lt;StringArray sr=""&gt;&lt;_array_ActionTypes0&gt;1&lt;/_array_ActionTypes0&gt;&lt;/StringArray&gt;</ActionTypes>
+					<ActionTypes-type>[Ljava.lang.String;</ActionTypes-type>
+					<ElementText>&lt;null&gt;</ElementText>
+					<ElementText-type>java.lang.String</ElementText-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Action Types: Clicks</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionTypes plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>85cabdd5-7a58-4d12-bd45-15c73ae560ec</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentInputActionEvent</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigInputActionEvent</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof201" ve="2">
+		<cdate>1580814549699</cdate>
+		<clp>true</clp>
+		<edate>1580835120931</edate>
+		<flags>8</flags>
+		<id>201</id>
+		<mid0>138</mid0>
+		<mid1>192</mid1>
+		<State sr="con0" ve="2">
+			<code>200029840</code>
+			<pin>true</pin>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<OnlyClickable>false</OnlyClickable>
+					<OnlyClickable-type>java.lang.Boolean</OnlyClickable-type>
+					<OnlyVisible>false</OnlyVisible>
+					<OnlyVisible-type>java.lang.Boolean</OnlyVisible-type>
+					<UIUpdateApps>&lt;StringArray sr=""&gt;&lt;_array_UIUpdateApps0&gt;com.android.chrome&lt;/_array_UIUpdateApps0&gt;&lt;/StringArray&gt;</UIUpdateApps>
+					<UIUpdateApps-type>[Ljava.lang.String;</UIUpdateApps-type>
+					<UIUpdateFields></UIUpdateFields>
+					<UIUpdateFields-type>java.lang.String</UIUpdateFields-type>
+					<UIUpdateText></UIUpdateText>
+					<UIUpdateText-type>java.lang.String</UIUpdateText-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Apps: Chrome</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>UIUpdateApps plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>38faa282-68f1-4454-bdb3-0d89d559288b</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentUIState</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigUIState</Str>
+		</State>
+	</Profile>
+	<Profile sr="prof202" ve="2">
+		<cdate>1580817441390</cdate>
+		<clp>true</clp>
+		<edate>1580834512236</edate>
+		<flags>8</flags>
+		<id>202</id>
+		<limit>true</limit>
+		<mid0>138</mid0>
+		<Event sr="con0" ve="2">
+			<code>386825958</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.balda.meteotask.extra.INT_VERSION_CODE>95</com.balda.meteotask.extra.INT_VERSION_CODE>
+					<com.balda.meteotask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.meteotask.extra.INT_VERSION_CODE-type>
+					<com.balda.meteotask.extra.OPERATION>5</com.balda.meteotask.extra.OPERATION>
+					<com.balda.meteotask.extra.OPERATION-type>java.lang.Integer</com.balda.meteotask.extra.OPERATION-type>
+					<com.balda.touchtask.extra.REGEX>false</com.balda.touchtask.extra.REGEX>
+					<com.balda.touchtask.extra.REGEX-type>java.lang.Boolean</com.balda.touchtask.extra.REGEX-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Update of Any</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.balda.touchtask</Str>
+			<Str sr="arg2" ve="3">com.balda.touchtask.ui.QueryUiUpdate</Str>
+		</Event>
+	</Profile>
 	<Project sr="proj0" ve="2">
 		<cdate>1580684457553</cdate>
 		<name>Gestures</name>
-		<pids>139,142,140,143,141</pids>
+		<pids>140,164,139,173,181,202,141,143,142,200,201</pids>
 		<psort>Alpha</psort>
-		<tids>134,136,119,102,103,135,120,131,138,117</tids>
+		<scenes>GEST.debug.dialog</scenes>
+		<tids>102,192,145,120,117,138,146,179,135,103,134,168,169,136,131,144,182,189,119</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<nme>mw_device_screen_rotation</nme>
 		</Img>
 	</Project>
+	<Scene sr="sceneGEST.debug.dialog">
+		<cdate>1580798762267</cdate>
+		<edate>1580799706078</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>1502</heightPort>
+		<nme>GEST.debug.dialog</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>720</widthPort>
+		<ButtonElement sr="elements0" ve="3">
+			<clickTask>168</clickTask>
+			<flags>4</flags>
+			<geom>120,50,400,200,135,51,484,50</geom>
+			<Str sr="arg0" ve="3">swipe on adresa bar 120,50   520,50</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFC36B07</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#20FFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">GEST.dialog.debugUI</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
 	<Task sr="task102">
 		<cdate>1580724675827</cdate>
-		<edate>1580746760063</edate>
+		<edate>1580803819968</edate>
 		<id>102</id>
 		<nme>GEST.toggle</nme>
 		<Action sr="act0" ve="7">
@@ -215,10 +446,28 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Gestures %GESTURES_ACTIVE</Str>
+			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>3</op>
+					<rhs>quiet</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%GEST_DEBUG</lhs>
+					<op>8</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
 	</Task>
 	<Task sr="task103">
 		<cdate>1580725242713</cdate>
-		<edate>1580748398112</edate>
+		<edate>1580796955146</edate>
 		<id>103</id>
 		<nme>GEST.profiles.toggle</nme>
 		<Action sr="act0" ve="7">
@@ -234,14 +483,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task117">
 		<cdate>1580748789976</cdate>
-		<edate>1580758619485</edate>
+		<edate>1580797721461</edate>
 		<id>117</id>
 		<nme>GEST.~set.SWIPE_Y</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%SW_S_Y</Str>
-			<Str sr="arg1" ve="3">350</Str>
+			<Str sr="arg0" ve="3">%SSY</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -249,8 +498,8 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%SW_E_Y</Str>
-			<Str sr="arg1" ve="3">350</Str>
+			<Str sr="arg0" ve="3">%SEY</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -259,22 +508,33 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task119">
 		<cdate>1580747860615</cdate>
-		<edate>1580765678273</edate>
+		<edate>1580803879295</edate>
 		<id>119</id>
 		<nme>GEST.swipe</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">GEST.toggle</Str>
+			<Str sr="arg0" ve="3">GEST.~set.SWIPE_Y</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
+			<Str sr="arg2" ve="3">114</Str>
+			<Str sr="arg3" ve="3">114</Str>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">GEST.toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">quiet</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>778682267</code>
 			<se>false</se>
 			<Bundle sr="arg0">
@@ -286,9 +546,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 					<Password>&lt;null&gt;</Password>
 					<Password-type>java.lang.String</Password-type>
 					<com.twofortyfouram.locale.intent.extra.BLURB>Gesture Type: Swipe
-Start Point: %SSX,350
-End Point: %SEX,350
-Duration: 500</com.twofortyfouram.locale.intent.extra.BLURB>
+Start Point: %SSX,%SSY
+End Point: %SEX,%SEY
+Duration: 200</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
 					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
@@ -302,7 +562,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
 					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<parameters>{"endPoint":"%SEX,350","initialPoint":"%SSX,350","duration":"500","generatedValues":{}}</parameters>
+					<parameters>{"endPoint":"%SEX,%SEY","initialPoint":"%SSX,%SSY","duration":"200","generatedValues":{}}</parameters>
 					<parameters-type>java.lang.String</parameters-type>
 					<plugininstanceid>603f8bb9-f3f3-4285-bf33-406494b0ec6d</plugininstanceid>
 					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
@@ -314,13 +574,13 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigGestures</Str>
 			<Int sr="arg3" val="60"/>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act3" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">GEST.toggle</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3"/>
+			<Str sr="arg2" ve="3">quiet</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -328,14 +588,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task120">
 		<cdate>1580748789976</cdate>
-		<edate>1580765754688</edate>
+		<edate>1580797449468</edate>
 		<id>120</id>
 		<nme>GEST.~set.SWIPE_X</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%SSX</Str>
-			<Str sr="arg1" ve="3">650</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -344,7 +604,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<Action sr="act1" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%SEX</Str>
-			<Str sr="arg1" ve="3">50</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -378,7 +638,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task134">
 		<cdate>1580747860615</cdate>
-		<edate>1580765751261</edate>
+		<edate>1580799766713</edate>
 		<id>134</id>
 		<nme>GEST swipe LEFT</nme>
 		<pri>6</pri>
@@ -388,8 +648,8 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
+			<Str sr="arg2" ve="3">520</Str>
+			<Str sr="arg3" ve="3">50</Str>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
@@ -399,15 +659,15 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3">650</Str>
-			<Str sr="arg3" ve="3">50</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task135">
 		<cdate>1580724675827</cdate>
-		<edate>1580746751386</edate>
+		<edate>1580797186084</edate>
 		<id>135</id>
 		<nme>GEST.toggle.GESTURES_ACTIVE</nme>
 		<pri>100</pri>
@@ -445,19 +705,25 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<Action sr="act4" ve="7">
 			<code>38</code>
 		</Action>
-		<Action sr="act5" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">Gestures %GESTURES_ACTIVE</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
 	</Task>
 	<Task sr="task136">
 		<cdate>1580747860615</cdate>
-		<edate>1580763668989</edate>
+		<edate>1580803727774</edate>
 		<id>136</id>
 		<nme>GEST swipe RIGHT</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">GEST.~set.SWIPE_X</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">50</Str>
+			<Str sr="arg3" ve="3">520</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">GEST.swipe</Str>
 			<Int sr="arg1">
@@ -471,18 +737,91 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task138">
 		<cdate>1580724130350</cdate>
-		<edate>1580756254850</edate>
+		<edate>1580808103899</edate>
 		<id>138</id>
 		<nme>GEST.test</nme>
-		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>548</code>
-			<Str sr="arg0" ve="3">GEST TEST</Str>
+			<Str sr="arg0" ve="3">Test ENTER</Str>
 			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task144">
+		<cdate>1580796897690</cdate>
+		<edate>1580796946894</edate>
+		<id>144</id>
+		<nme>GEST.GEST_DEBUG</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%GEST_DEBUG</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+	</Task>
+	<Task sr="task145">
+		<cdate>1580797529952</cdate>
+		<edate>1580798913444</edate>
+		<id>145</id>
+		<nme>GEST.~debug.dialog</nme>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">GEST.debug.dialog</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task146">
+		<cdate>1580724675827</cdate>
+		<edate>1580797586871</edate>
+		<id>146</id>
+		<nme>GEST.toggle.testing</nme>
+		<Action sr="act0" ve="7">
+			<code>1687767515</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<EnableGestureMode>3</EnableGestureMode>
+					<EnableGestureMode-type>java.lang.String</EnableGestureMode-type>
+					<EnableKeySurpressMode>0</EnableKeySurpressMode>
+					<EnableKeySurpressMode-type>java.lang.String</EnableKeySurpressMode-type>
+					<KeyCode>&lt;StringArray sr=""/&gt;</KeyCode>
+					<KeyCode-type>[Ljava.lang.String;</KeyCode-type>
+					<ManualKeyCodes>&lt;null&gt;</ManualKeyCodes>
+					<ManualKeyCodes-type>java.lang.String</ManualKeyCodes-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Gestures: Toggle
+Key Suppress: Don't Change</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>EnableGestureMode EnableKeySurpressMode plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>7ead197c-e6ae-456f-9055-52db34b53b0b</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentModes</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigModes</Str>
+			<Int sr="arg3" val="2"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">GEST swipe RIGHT</Str>
+			<Str sr="arg0" ve="3">GEST.toggle.GESTURES_ACTIVE</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -490,6 +829,274 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Gestures %GESTURES_ACTIVE</Str>
+			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>3</op>
+					<rhs>quiet</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%GEST_DEBUG</lhs>
+					<op>8</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task168">
+		<cdate>1580799407038</cdate>
+		<edate>1580799407038</edate>
+		<id>168</id>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>net.dinglisch.android.taskerm.Tasker</appClass>
+				<appPkg>net.dinglisch.android.taskerm</appPkg>
+				<label>Tasker</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task169">
+		<cdate>1580747860615</cdate>
+		<edate>1580800703227</edate>
+		<id>169</id>
+		<nme>GEST.swipe-tmp</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">GEST.~set.SWIPE_Y</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">114</Str>
+			<Str sr="arg3" ve="3">114</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">GEST.toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">quiet</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>778682267</code>
+			<se>false</se>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<GestureType>0</GestureType>
+					<GestureType-type>java.lang.String</GestureType-type>
+					<Password>&lt;null&gt;</Password>
+					<Password-type>java.lang.String</Password-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Gesture Type: Swipe
+Start Point: %SSX,%SSY
+End Point: %SEX,%SEY
+Duration: 200</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>parameters GestureType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<parameters>{"endPoint":"%SEX,%SEY","initialPoint":"%SSX,%SSY","duration":"200","generatedValues":{}}</parameters>
+					<parameters-type>java.lang.String</parameters-type>
+					<plugininstanceid>603f8bb9-f3f3-4285-bf33-406494b0ec6d</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentGestures</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigGestures</Str>
+			<Int sr="arg3" val="60"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">GEST.toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">quiet</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task179">
+		<cdate>1580802389336</cdate>
+		<edate>1580802565405</edate>
+		<id>179</id>
+		<nme>CHROME.showTabs</nme>
+		<Action sr="act0" ve="7">
+			<code>1732635924</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ActionId>com.android.chrome:id/tab_switcher_button</ActionId>
+					<ActionId-type>java.lang.String</ActionId-type>
+					<ActionType>16</ActionType>
+					<ActionType-type>java.lang.String</ActionType-type>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<FieldSelectionType>1</FieldSelectionType>
+					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
+					<IsFirstAction>false</IsFirstAction>
+					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
+					<IsTaskerAction>true</IsTaskerAction>
+					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
+					<NearbyText>&lt;null&gt;</NearbyText>
+					<NearbyText-type>java.lang.String</NearbyText-type>
+					<Password>&lt;null&gt;</Password>
+					<Password-type>java.lang.String</Password-type>
+					<RepeatInterval>&lt;null&gt;</RepeatInterval>
+					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
+					<RepeatTimes>&lt;null&gt;</RepeatTimes>
+					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
+					<StoredAction>&lt;null&gt;</StoredAction>
+					<StoredAction-type>java.lang.String</StoredAction-type>
+					<TextToWrite>&lt;null&gt;</TextToWrite>
+					<TextToWrite-type>java.lang.String</TextToWrite-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
+Value: com.android.chrome:id/tab_switcher_button
+Action : Click
+Is Tasker Action: true</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>6ba6c944-373c-45fd-8301-471c50687403</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
+			<Int sr="arg3" val="23"/>
+		</Action>
+	</Task>
+	<Task sr="task182">
+		<cdate>1580747860615</cdate>
+		<edate>1580803921010</edate>
+		<id>182</id>
+		<nme>GEST swipe UP</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">GEST.toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">quiet</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">CHROME.showTabs</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">32</Str>
+			<Str sr="arg3" ve="3">700</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task189">
+		<cdate>1580724130350</cdate>
+		<edate>1580835507053</edate>
+		<id>189</id>
+		<nme>GEST.~temp</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>1732635924</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ActionId>com.android.chrome:id/url_bar</ActionId>
+					<ActionId-type>java.lang.String</ActionId-type>
+					<ActionType>16</ActionType>
+					<ActionType-type>java.lang.String</ActionType-type>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<FieldSelectionType>1</FieldSelectionType>
+					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
+					<IsFirstAction>false</IsFirstAction>
+					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
+					<IsTaskerAction>false</IsTaskerAction>
+					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
+					<NearbyText>&lt;null&gt;</NearbyText>
+					<NearbyText-type>java.lang.String</NearbyText-type>
+					<Password>&lt;null&gt;</Password>
+					<Password-type>java.lang.String</Password-type>
+					<RepeatInterval>&lt;null&gt;</RepeatInterval>
+					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
+					<RepeatTimes>&lt;null&gt;</RepeatTimes>
+					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
+					<StoredAction>&lt;null&gt;</StoredAction>
+					<StoredAction-type>java.lang.String</StoredAction-type>
+					<TextToWrite>&lt;null&gt;</TextToWrite>
+					<TextToWrite-type>java.lang.String</TextToWrite-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
+Value: com.android.chrome:id/url_bar
+Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>ad55c966-0fbc-4be0-a29a-5d4699e46d5b</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
+			<Int sr="arg3" val="23"/>
+		</Action>
+	</Task>
+	<Task sr="task192">
+		<cdate>1580724130350</cdate>
+		<edate>1580806818161</edate>
+		<id>192</id>
+		<nme>GEST.test-exit</nme>
+		<pri>1006</pri>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Test EXIT</Str>
+			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>
 </TaskerData>
