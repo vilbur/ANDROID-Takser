@@ -1,8 +1,7 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
 	<Profile sr="prof121" ve="2">
 		<cdate>1580245921451</cdate>
-		<clp>true</clp>
-		<edate>1580416301556</edate>
+		<edate>1580938626421</edate>
 		<flags>8</flags>
 		<id>121</id>
 		<mid0>114</mid0>
@@ -69,11 +68,12 @@
 	<Profile sr="prof172" ve="2">
 		<cdate>1580338059021</cdate>
 		<clp>true</clp>
-		<edate>1580389170935</edate>
+		<edate>1580934108238</edate>
 		<flags>8</flags>
 		<id>172</id>
+		<limit>true</limit>
 		<mid0>186</mid0>
-		<nme>IR.shakeToStop</nme>
+		<nme>IR Shake To Stop</nme>
 		<Event sr="con0" ve="2">
 			<code>3001</code>
 			<pri>0</pri>
@@ -112,11 +112,12 @@
 	<Profile sr="prof183" ve="2">
 		<cdate>1580381737613</cdate>
 		<clp>true</clp>
-		<edate>1580385790572</edate>
+		<edate>1580934125982</edate>
 		<flags>8</flags>
 		<id>183</id>
+		<limit>true</limit>
 		<mid0>151</mid0>
-		<nme>IR.shakeToNextRadio</nme>
+		<nme>IR Shake To Next Radio</nme>
 		<Event sr="con0" ve="2">
 			<code>3001</code>
 			<pri>0</pri>
@@ -128,8 +129,8 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579098176446</cdate>
 		<name>Sleep as android</name>
-		<pids>166,172,170,183,121,177</pids>
-		<tids>79,65,151,152,178,18,186,171,118,116,165,2,7,8,86,185,4,153,114</tids>
+		<pids>166,177,170,183,172,121</pids>
+		<tids>152,7,79,8,2,186,116,165,65,99,151,171,185,18,178,4,114,153,118,86</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>com.urbandroid.sleep.alarmclock.AlarmClock</cls>
@@ -138,7 +139,7 @@
 	</Project>
 	<Task sr="task114">
 		<cdate>1580233218434</cdate>
-		<edate>1580927198730</edate>
+		<edate>1580938665735</edate>
 		<id>114</id>
 		<nme>SAA.onChargingStart</nme>
 		<Action sr="act0" ve="7">
@@ -169,7 +170,7 @@ If "Setting States" project is installed.</label>
 				</Condition>
 				<Condition sr="c1" ve="3">
 					<lhs>%STATE_PROFILE</lhs>
-					<op>3</op>
+					<op>0</op>
 					<rhs>HOME</rhs>
 				</Condition>
 			</ConditionList>
@@ -286,7 +287,7 @@ If "Setting States" project is installed.</label>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">IR.play</Str>
+			<Str sr="arg0" ve="3">IR.playback.play</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -298,9 +299,9 @@ If "Setting States" project is installed.</label>
 	</Task>
 	<Task sr="task152">
 		<cdate>1578398056406</cdate>
-		<edate>1580926469628</edate>
+		<edate>1580929182974</edate>
 		<id>152</id>
-		<nme>IR.play</nme>
+		<nme>IR.playback.play</nme>
 		<Action sr="act0" ve="7">
 			<code>425</code>
 			<Int sr="arg0" val="1"/>
@@ -313,11 +314,15 @@ If "Setting States" project is installed.</label>
 			</ConditionList>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>354</code>
-			<Str sr="arg0" ve="3">%RADIO_LIST</Str>
-			<Str sr="arg1" ve="3">Color,http://icecast6.play.cz/color192.mp3,
-Swiss Groove, http://167.114.244.122/;,</Str>
-			<Str sr="arg2" ve="3">,</Str>
+			<code>130</code>
+			<Str sr="arg0" ve="3">IR.~set.RADIO_LIST</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
 		</Action>
 		<Action sr="act10" ve="7">
 			<code>559</code>
@@ -426,9 +431,9 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 	</Task>
 	<Task sr="task153">
 		<cdate>1578398131556</cdate>
-		<edate>1580404261213</edate>
+		<edate>1580929221090</edate>
 		<id>153</id>
-		<nme>IR.stop</nme>
+		<nme>IR.playback.stop</nme>
 		<pri>1006</pri>
 		<Action sr="act0" ve="7">
 			<code>877</code>
@@ -517,7 +522,7 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 		<edate>1580928577518</edate>
 		<id>178</id>
 		<nme>SAA.onTrackingStop</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%SAA_IS_TRACKING_RUNNING</Str>
@@ -535,7 +540,7 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">IR.play</Str>
+			<Str sr="arg0" ve="3">IR.playback.play</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -546,7 +551,7 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">VOL.increaseLevel</Str>
+			<Str sr="arg0" ve="3">VOL.increase</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -695,7 +700,7 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 		<nme>IR.profiles-toggle</nme>
 		<Action sr="act0" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToStop</Str>
+			<Str sr="arg0" ve="3">IR Shake To Stop</Str>
 			<Int sr="arg1" val="1"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -707,7 +712,7 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToStop</Str>
+			<Str sr="arg0" ve="3">IR Shake To Stop</Str>
 			<Int sr="arg1" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -719,7 +724,7 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToNextRadio</Str>
+			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
 			<Int sr="arg1" val="1"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -731,7 +736,7 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToNextRadio</Str>
+			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
 			<Int sr="arg1" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -744,18 +749,18 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 	</Task>
 	<Task sr="task186">
 		<cdate>1580388710677</cdate>
-		<edate>1580404249607</edate>
+		<edate>1580929269812</edate>
 		<id>186</id>
 		<nme>IR.shakeToStop</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToNextRadio</Str>
+			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">IR.stop</Str>
+			<Str sr="arg0" ve="3">IR.playback.stop</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -828,9 +833,9 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 	</Task>
 	<Task sr="task4">
 		<cdate>1579590683712</cdate>
-		<edate>1580928377148</edate>
+		<edate>1580930328925</edate>
 		<id>4</id>
-		<nme>VOL.increaseLevel</nme>
+		<nme>VOL.increase</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>548</code>
@@ -1045,6 +1050,19 @@ Swiss Groove, http://167.114.244.122/;,</Str>
 			<Str sr="arg1" ve="3">com.urbandroid.sleep</Str>
 			<Str sr="arg2" ve="3">com.urbandroid.sleep.addon.taskerplugin.ui.EditActionActivity</Str>
 			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task99">
+		<cdate>1580928809289</cdate>
+		<edate>1580929069403</edate>
+		<id>99</id>
+		<nme>IR.~set.RADIO_LIST</nme>
+		<Action sr="act0" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%RADIO_LIST</Str>
+			<Str sr="arg1" ve="3">Color,http://icecast6.play.cz/color192.mp3,
+Swiss Groove, http://167.114.244.122/;,</Str>
+			<Str sr="arg2" ve="3">,</Str>
 		</Action>
 	</Task>
 </TaskerData>

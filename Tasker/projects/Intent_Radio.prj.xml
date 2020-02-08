@@ -2,12 +2,12 @@
 	<Profile sr="prof156" ve="2">
 		<cdate>1580292327270</cdate>
 		<clp>true</clp>
-		<edate>1580928702757</edate>
+		<edate>1580934149250</edate>
 		<flags>8</flags>
 		<id>156</id>
 		<mid0>152</mid0>
 		<mid1>153</mid1>
-		<nme>IR.BLUETOOTH-CONNECTED</nme>
+		<nme>IR Bluetooth Connected</nme>
 		<State sr="con0" ve="2">
 			<code>3</code>
 			<Str sr="arg0" ve="3"/>
@@ -17,11 +17,12 @@
 	<Profile sr="prof172" ve="2">
 		<cdate>1580338059021</cdate>
 		<clp>true</clp>
-		<edate>1580389170935</edate>
+		<edate>1580934108238</edate>
 		<flags>8</flags>
 		<id>172</id>
+		<limit>true</limit>
 		<mid0>186</mid0>
-		<nme>IR.shakeToStop</nme>
+		<nme>IR Shake To Stop</nme>
 		<Event sr="con0" ve="2">
 			<code>3001</code>
 			<pri>0</pri>
@@ -33,11 +34,12 @@
 	<Profile sr="prof183" ve="2">
 		<cdate>1580381737613</cdate>
 		<clp>true</clp>
-		<edate>1580385790572</edate>
+		<edate>1580934125982</edate>
 		<flags>8</flags>
 		<id>183</id>
+		<limit>true</limit>
 		<mid0>151</mid0>
-		<nme>IR.shakeToNextRadio</nme>
+		<nme>IR Shake To Next Radio</nme>
 		<Event sr="con0" ve="2">
 			<code>3001</code>
 			<pri>0</pri>
@@ -46,24 +48,11 @@
 			<Int sr="arg2" val="2"/>
 		</Event>
 	</Profile>
-	<Profile sr="prof187" ve="2">
-		<cdate>1580389557684</cdate>
-		<clp>true</clp>
-		<edate>1580404174982</edate>
-		<flags>8</flags>
-		<id>187</id>
-		<limit>true</limit>
-		<mid0>151</mid0>
-		<State sr="con0" ve="2">
-			<code>120</code>
-			<Int sr="arg0" val="1"/>
-		</State>
-	</Profile>
 	<Project sr="proj0" ve="2">
 		<cdate>1579793453560</cdate>
 		<name>Intent Radio</name>
-		<pids>172,183,187,156</pids>
-		<tids>185,153,151,186,152,99,155,154,188</tids>
+		<pids>172,156,183</pids>
+		<tids>153,152,185,151,99,186,154,155,188</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>org.smblott.intentradio.IntentRadio</cls>
@@ -347,7 +336,7 @@
 		<nme>IR.profiles-toggle</nme>
 		<Action sr="act0" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToStop</Str>
+			<Str sr="arg0" ve="3">IR Shake To Stop</Str>
 			<Int sr="arg1" val="1"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -359,7 +348,7 @@
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToStop</Str>
+			<Str sr="arg0" ve="3">IR Shake To Stop</Str>
 			<Int sr="arg1" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -371,7 +360,7 @@
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToNextRadio</Str>
+			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
 			<Int sr="arg1" val="1"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -383,7 +372,7 @@
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToNextRadio</Str>
+			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
 			<Int sr="arg1" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -402,7 +391,7 @@
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">IR.shakeToNextRadio</Str>
+			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">

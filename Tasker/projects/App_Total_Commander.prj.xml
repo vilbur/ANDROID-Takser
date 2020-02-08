@@ -1,10 +1,10 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
 	<Profile sr="prof38" ve="2">
 		<cdate>1580131932329</cdate>
-		<clp>true</clp>
-		<edate>1580648389511</edate>
+		<edate>1580930430800</edate>
 		<flags>8</flags>
 		<id>38</id>
+		<limit>true</limit>
 		<mid0>17</mid0>
 		<Event sr="con0" ve="2">
 			<code>18927444</code>
@@ -52,7 +52,7 @@ Variable Names: fn,tc_path</com.twofortyfouram.locale.intent.extra.BLURB>
 		<cdate>1580124295294</cdate>
 		<name>App Total Commander</name>
 		<pids>38</pids>
-		<tids>67,78,17,71,70,73</tids>
+		<tids>71,17,67,78,73,70</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>com.ghisler.android.TotalCommander.TotalCommander</cls>
@@ -61,7 +61,7 @@ Variable Names: fn,tc_path</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Project>
 	<Task sr="task17">
 		<cdate>1580124316149</cdate>
-		<edate>1580659334869</edate>
+		<edate>1580930430800</edate>
 		<id>17</id>
 		<nme>TC.openFolder - delete</nme>
 		<pri>6</pri>
@@ -354,13 +354,13 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task73">
 		<cdate>1580659384234</cdate>
-		<edate>1580662230884</edate>
+		<edate>1580930491405</edate>
 		<id>73</id>
-		<nme>TC ★ Tasker</nme>
+		<nme>TC Bookmarks Tasker</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">TC.★.open</Str>
+			<Str sr="arg0" ve="3">TC.bookmarks.open</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -372,9 +372,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task78">
 		<cdate>1580659481636</cdate>
-		<edate>1580662540184</edate>
+		<edate>1580930535433</edate>
 		<id>78</id>
-		<nme>TC.★.open</nme>
+		<nme>TC.bookmarks.open</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>548</code>
