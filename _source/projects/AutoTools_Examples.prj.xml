@@ -1,0 +1,10 @@
+<TaskerData sr="" dvi="1" tv="5.9.1">
+	<Project sr="proj0" ve="2">
+		<cdate>1581254336498</cdate>
+		<name>AutoTools Examples</name>
+		<Img sr="icon" ve="2">
+			<cls>com.joaomgcd.autotools.activity.ActivityLauncher</cls>
+			<pkg>com.joaomgcd.autotools</pkg>
+		</Img>
+	</Project>
+</TaskerData>

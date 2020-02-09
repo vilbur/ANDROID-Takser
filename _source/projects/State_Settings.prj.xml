@@ -1,10 +1,27 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
+	<Profile sr="prof198" ve="2">
+		<cdate>1581172307298</cdate>
+		<clp>true</clp>
+		<edate>1581172753654</edate>
+		<flags>8</flags>
+		<id>198</id>
+		<mid0>48</mid0>
+		<mid1>47</mid1>
+		<nme>State-home-new-test</nme>
+		<State sr="con0" ve="2">
+			<code>7</code>
+			<Str sr="arg0" ve="3">LTE:230.2.18234881 / 4
+LTE:230.2.18234971 / 4</Str>
+			<Str sr="arg1" ve="3"/>
+		</State>
+	</Profile>
 	<Profile sr="prof43" ve="2">
 		<cdate>1579026055299</cdate>
 		<clp>true</clp>
-		<edate>1581014364435</edate>
+		<edate>1581172260000</edate>
 		<flags>8</flags>
 		<id>43</id>
+		<limit>true</limit>
 		<mid0>48</mid0>
 		<mid1>47</mid1>
 		<nme>State-home</nme>
@@ -14,7 +31,7 @@
 LTE:230.2.18234971 / 0
 LTE:230.2.18234972 / 0
 LTE:230.2.18241794 / 4</Str>
-			<Str sr="arg1" ve="3"/>
+			<Str sr="arg1" ve="3">LTE:230.2.18234881</Str>
 		</State>
 	</Profile>
 	<Profile sr="prof45" ve="2">
@@ -51,7 +68,7 @@ LTE:230.2.10353668 / 6</Str>
 	<Profile sr="prof66" ve="2">
 		<cdate>1580629468068</cdate>
 		<clp>true</clp>
-		<edate>1580978036458</edate>
+		<edate>1581172031930</edate>
 		<flags>8</flags>
 		<id>66</id>
 		<limit>true</limit>
@@ -59,14 +76,14 @@ LTE:230.2.10353668 / 6</Str>
 		<nme>State-outside-test</nme>
 		<State sr="con0" ve="2">
 			<code>7</code>
-			<Str sr="arg0" ve="3">LTE:230.2.18234972 / 0</Str>
-			<Str sr="arg1" ve="3">LTE:230.2.18234881</Str>
+			<Str sr="arg0" ve="3">LTE:230.2.18234881 / 4</Str>
+			<Str sr="arg1" ve="3"/>
 		</State>
 	</Profile>
 	<Project sr="proj0" ve="2">
 		<cdate>1579025830350</cdate>
 		<name>State Settings</name>
-		<pids>64,45,43,66</pids>
+		<pids>43,45,66,198,64</pids>
 		<psort>ActiveAlpha</psort>
 		<tids>48,180,47,46</tids>
 	</Project>

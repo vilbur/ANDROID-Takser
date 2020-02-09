@@ -1,3 +1,4 @@
 *.bak
 .komodotools
-/Tasker/userguide/*
+/_source/cache
+/_source/userguide
