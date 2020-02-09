@@ -1,7 +1,6 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
 	<Profile sr="prof198" ve="2">
 		<cdate>1581172307298</cdate>
-		<clp>true</clp>
 		<edate>1581172753654</edate>
 		<flags>8</flags>
 		<id>198</id>
@@ -83,9 +82,9 @@ LTE:230.2.10353668 / 6</Str>
 	<Project sr="proj0" ve="2">
 		<cdate>1579025830350</cdate>
 		<name>State Settings</name>
-		<pids>43,45,66,198,64</pids>
+		<pids>64,45,43,66,198</pids>
 		<psort>ActiveAlpha</psort>
-		<tids>48,180,47,46</tids>
+		<tids>180,47,46,48</tids>
 	</Project>
 	<Task sr="task180">
 		<cdate>1579027193217</cdate>
@@ -253,7 +252,7 @@ LTE:230.2.10353668 / 6</Str>
 	</Task>
 	<Task sr="task47">
 		<cdate>1579027193217</cdate>
-		<edate>1580985553274</edate>
+		<edate>1581275344036</edate>
 		<id>47</id>
 		<nme>State.Outside</nme>
 		<pri>1006</pri>
@@ -274,6 +273,22 @@ LTE:230.2.10353668 / 6</Str>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
+		<Action sr="act2" ve="7">
+			<code>1874460827</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>2</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>java.lang.Integer</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Disable Autosync</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.ttxapps.drivesync</Str>
+			<Str sr="arg2" ve="3">com.ttxapps.syncapp.locale.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
 		<Img sr="icn" ve="2">
 			<nme>animal_butterfly5_sc48</nme>
 			<pkg>net.dinglisch.android.ipack.orangewhitepearlhd</pkg>
@@ -281,7 +296,7 @@ LTE:230.2.10353668 / 6</Str>
 	</Task>
 	<Task sr="task48">
 		<cdate>1579027246771</cdate>
-		<edate>1581014395913</edate>
+		<edate>1581275328839</edate>
 		<id>48</id>
 		<nme>State.Home</nme>
 		<Action sr="act0" ve="7">
@@ -300,6 +315,22 @@ LTE:230.2.10353668 / 6</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>1874460827</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>1</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>java.lang.Integer</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Enable Autosync</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.ttxapps.drivesync</Str>
+			<Str sr="arg2" ve="3">com.ttxapps.syncapp.locale.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
 		</Action>
 		<Img sr="icn" ve="2">
 			<nme>home6</nme>
