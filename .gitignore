@@ -1,4 +1,5 @@
 *.bak
 .komodotools
+/_source/.icn
 /_source/cache
 /_source/userguide
