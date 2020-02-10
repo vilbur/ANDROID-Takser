@@ -3,9 +3,10 @@
 	<Profile sr="prof156" ve="2">
 		<cdate>1580292327270</cdate>
 		<clp>true</clp>
-		<edate>1581074236782</edate>
+		<edate>1581343766315</edate>
 		<flags>8</flags>
 		<id>156</id>
+		<limit>true</limit>
 		<mid0>152</mid0>
 		<mid1>153</mid1>
 		<nme>IR Bluetooth Connected</nme>
@@ -15,46 +16,112 @@
 			<Str sr="arg1" ve="3"/>
 		</State>
 	</Profile>
-	<Profile sr="prof172" ve="2">
-		<cdate>1580338059021</cdate>
+	<Profile sr="prof3" ve="2">
+		<cdate>1581340976869</cdate>
 		<clp>true</clp>
-		<edate>1580934108238</edate>
+		<edate>1581350766597</edate>
 		<flags>8</flags>
-		<id>172</id>
-		<limit>true</limit>
-		<mid0>186</mid0>
-		<nme>IR Shake To Stop</nme>
+		<id>3</id>
+		<mid0>6</mid0>
+		<nme>IR dialog - radio selected</nme>
 		<Event sr="con0" ve="2">
-			<code>3001</code>
+			<code>18927444</code>
 			<pri>0</pri>
-			<Int sr="arg0" val="1"/>
-			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="3"/>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<Command>IR</Command>
+					<Command-type>java.lang.String</Command-type>
+					<CommandCaseInsensitive>false</CommandCaseInsensitive>
+					<CommandCaseInsensitive-type>java.lang.Boolean</CommandCaseInsensitive-type>
+					<CommandExact>false</CommandExact>
+					<CommandExact-type>java.lang.Boolean</CommandExact-type>
+					<CommandRegex>false</CommandRegex>
+					<CommandRegex-type>java.lang.Boolean</CommandRegex-type>
+					<VariableArray>false</VariableArray>
+					<VariableArray-type>java.lang.Boolean</VariableArray-type>
+					<VariableNames>radio_selected</VariableNames>
+					<VariableNames-type>java.lang.String</VariableNames-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Command Filter: IR
+Variable Names: radio_selected</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<config_CustomCommandsApp>&lt;null&gt;</config_CustomCommandsApp>
+					<config_CustomCommandsApp-type>java.lang.String</config_CustomCommandsApp-type>
+					<config_CustomCommandsCommand>&lt;null&gt;</config_CustomCommandsCommand>
+					<config_CustomCommandsCommand-type>java.lang.String</config_CustomCommandsCommand-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Command VariableNames plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>15e0d71c-91b7-40a9-bdf9-6fcfb4ca64cb</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoappshub.intent.IntentCommand</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoappshub</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoappshub.activity.ActivityConfigCommand</Str>
 		</Event>
 	</Profile>
-	<Profile sr="prof183" ve="2">
-		<cdate>1580381737613</cdate>
+	<Profile sr="prof31" ve="2">
+		<cdate>1581350615424</cdate>
 		<clp>true</clp>
-		<edate>1580934125982</edate>
+		<edate>1581350831292</edate>
 		<flags>8</flags>
-		<id>183</id>
-		<limit>true</limit>
-		<mid0>151</mid0>
-		<nme>IR Shake To Next Radio</nme>
+		<id>31</id>
+		<mid0>153</mid0>
+		<nme>IR dialog - stop</nme>
 		<Event sr="con0" ve="2">
-			<code>3001</code>
+			<code>18927444</code>
 			<pri>0</pri>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="2"/>
-			<Int sr="arg2" val="2"/>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<Command>cmdtest</Command>
+					<Command-type>java.lang.String</Command-type>
+					<CommandCaseInsensitive>false</CommandCaseInsensitive>
+					<CommandCaseInsensitive-type>java.lang.Boolean</CommandCaseInsensitive-type>
+					<CommandExact>false</CommandExact>
+					<CommandExact-type>java.lang.Boolean</CommandExact-type>
+					<CommandRegex>false</CommandRegex>
+					<CommandRegex-type>java.lang.Boolean</CommandRegex-type>
+					<VariableArray>false</VariableArray>
+					<VariableArray-type>java.lang.Boolean</VariableArray-type>
+					<VariableNames>command</VariableNames>
+					<VariableNames-type>java.lang.String</VariableNames-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Command Filter: cmdtest
+Variable Names: command</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<config_CustomCommandsApp>&lt;null&gt;</config_CustomCommandsApp>
+					<config_CustomCommandsApp-type>java.lang.String</config_CustomCommandsApp-type>
+					<config_CustomCommandsCommand>&lt;null&gt;</config_CustomCommandsCommand>
+					<config_CustomCommandsCommand-type>java.lang.String</config_CustomCommandsCommand-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>20000</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Command VariableNames plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>64e36445-f1dd-4fc3-b6ad-e8ec824cee19</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoappshub.intent.IntentCommand</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoappshub</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoappshub.activity.ActivityConfigCommand</Str>
 		</Event>
 	</Profile>
 	<Project sr="proj0" ve="2">
 		<cdate>1579793453560</cdate>
 		<name>Intent Radio</name>
-		<pids>156,172,183</pids>
+		<pids>31,3,156</pids>
 		<scenes>IR.dialog</scenes>
-		<tids>153,224,152,99,212,185,151,32,186,191,132,154,115,188,155</tids>
+		<tids>99,191,212,152,224,32,153,115,154,6,155,151,33,132,30</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>org.smblott.intentradio.IntentRadio</cls>
@@ -72,20 +139,84 @@
 	</Scene>
 	<Task sr="task115">
 		<cdate>1581006684640</cdate>
-		<edate>1581242911358</edate>
+		<edate>1581350556450</edate>
 		<id>115</id>
-		<nme>IR.~dialog.show</nme>
+		<nme>IR.dialog</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>47</code>
-			<Str sr="arg0" ve="3">IR.dialog</Str>
-			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="100"/>
-			<Int sr="arg3" val="43"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="1"/>
-			<Int sr="arg6" val="1"/>
-			<Int sr="arg7" val="1"/>
+			<code>130</code>
+			<Str sr="arg0" ve="3">IR.~get.RADIO_LIST</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1165325195</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AlwaysRefreshPreset>false</AlwaysRefreshPreset>
+					<AlwaysRefreshPreset-type>java.lang.Boolean</AlwaysRefreshPreset-type>
+					<ScreenPreset>material_design_radio_list</ScreenPreset>
+					<ScreenPreset-type>java.lang.String</ScreenPreset-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Screen Preset: Material Design Radio List
+Display Mode: Dialog
+Source: /storage/emulated/0/AutoTools/material_design_radio_list/page.html
+Toast Duration: 5000
+Background Color: #00FFFFFF
+Width: 312
+Height: 354
+Gravity: Center
+Animation: Fade In
+Show Duration: 500
+Hide Duration: 250
+Button One Command Prefix: cmdtest
+Button One Command: stop
+Button Two Command Prefix: IR-UI
+Button One Label: STOP
+Button Two Label: PLAY 
+Return Index: true
+Accent Color: #F57F17
+Body Color: #FFFFFF
+Action Bar Color: #FFFFFF
+Title Font Color: #333333
+Item Label Font Color: #7F7F7F
+Unselected Radio Color: #757575
+Divider Color: #D2D2D2
+Dialog Title: Choose radio
+List Items: %NAMES() 
+Touch Commands: true
+List Item Touch Command Prefix: IR
+Scrollable List: true
+Scrollable Height: 200
+Item Separator: ,</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>parameters ScreenPreset plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<parameters>{"inputJavascriptInject":{},"loadAllLinksInternally":false,"overlayToastDuration":"5000","timeout":30000,"webScreenOverlay":{"overlayHidDuration":"250","overlayReturnToOriginalPosition":false,"overlayShowDuration":"500"},"webscreebKeepScreenOn":false,"webscreenColors":{"webscreenInitialBackgroundColor":"#00FFFFFF"},"webscreenCommands":{"continueOnError":false,"onlyLocalCommands":false,"waitForCommand":false,"webscreenCloseOnAutoAppsCommand":false},"webscreenDialog":{"dimBackground":false,"hideDialogShadow":false},"webscreenDialogMode":"2","webscreenHtmlInject":{"webscreenReturnHtmlInjection":false},"webscreenPreset":"material_design_radio_list","webscreenSource":"/storage/emulated/0/AutoTools/material_design_radio_list/page.html","webscreenWindow":{"dialogAnimation":"4","dialogGravity":"17","dialogHeight":"354","dialogUseFullHeight":false,"dialogWidth":"312"},"generatedValues":{"inputwebscreengenerateditemSeparator":",","inputwebscreengeneratedlistitemcommandprefix":"IR","inputwebscreengeneratedaccentcolor":"#F57F17","inputwebscreengenerateddividercolor":"#D2D2D2","inputwebscreengenerateditemColor":"#7F7F7F","inputwebscreengeneratedbuttononecommand":"stop","inputwebscreengeneratedcommandprefix":"IR-UI","inputwebscreengeneratedbodyColor":"#FFFFFF","inputwebscreengeneratedbuttonOneLabel":"STOP","inputwebscreengenerateddropshadow":false,"inputwebscreengeneratedscrollableheight":"200","inputwebscreengeneratedradioColor":"#757575","inputwebscreengenerateditems":"%NAMES() ","inputwebscreengeneratedbuttonTwoLabel":"PLAY ","inputwebscreengeneratedtitle":"Choose radio","inputwebscreengeneratedscrollable":true,"inputwebscreengeneratedtitleColor":"#333333","inputwebscreengeneratedreturnindex":true,"inputwebscreengeneratedactionBarColor":"#FFFFFF","inputwebscreengeneratedtouchcommand":true,"inputwebscreengeneratedbuttononecommandprefix":"cmdtest"}}</parameters>
+					<parameters-type>java.lang.String</parameters-type>
+					<plugininstanceid>476be3d6-ec68-4e5d-ba87-a26e4d10510d</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentWebScreen</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigWebScreen</Str>
+			<Int sr="arg3" val="30"/>
 		</Action>
 	</Task>
 	<Task sr="task132">
@@ -101,14 +232,14 @@
 	</Task>
 	<Task sr="task151">
 		<cdate>1580291660594</cdate>
-		<edate>1581243185686</edate>
+		<edate>1581349340311</edate>
 		<id>151</id>
 		<nme>IR.playback.next</nme>
-		<pri>6</pri>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%RADIO_CURRENT</Str>
-			<Str sr="arg1" ve="3">%RADIO_CURRENT+2</Str>
+			<Str sr="arg1" ve="3">%RADIO_CURRENT+1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="1"/>
 			<Int sr="arg4" val="0"/>
@@ -128,10 +259,10 @@
 	</Task>
 	<Task sr="task152">
 		<cdate>1578398056406</cdate>
-		<edate>1581288381795</edate>
+		<edate>1581346670016</edate>
 		<id>152</id>
 		<nme>IR.playback.start</nme>
-		<pri>100</pri>
+		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<label>re-set current radio</label>
@@ -168,17 +299,6 @@
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">IR.~get.RADIO_LIST</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>130</code>
 			<Str sr="arg0" ve="3">WIFI.waitForConnection</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
@@ -188,7 +308,7 @@
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act3" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">IR.~sentIntent</Str>
 			<Int sr="arg1">
@@ -202,7 +322,7 @@
 	</Task>
 	<Task sr="task153">
 		<cdate>1578398131556</cdate>
-		<edate>1581046740586</edate>
+		<edate>1581345168752</edate>
 		<id>153</id>
 		<nme>IR.playback.stop</nme>
 		<pri>1006</pri>
@@ -227,17 +347,6 @@
 			<Int sr="arg3" val="0"/>
 		</Action>
 		<Action sr="act2" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">IR.~profiles-toggle</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3">OFF</Str>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">Radio stops</Str>
 			<Int sr="arg1" val="0"/>
@@ -245,7 +354,7 @@
 	</Task>
 	<Task sr="task154">
 		<cdate>1578398056406</cdate>
-		<edate>1581006965604</edate>
+		<edate>1581340740939</edate>
 		<id>154</id>
 		<nme>IR.playback.restart</nme>
 		<pri>100</pri>
@@ -265,7 +374,7 @@
 	</Task>
 	<Task sr="task155">
 		<cdate>1580288673131</cdate>
-		<edate>1580986771275</edate>
+		<edate>1581349343864</edate>
 		<id>155</id>
 		<nme>Intent Radio</nme>
 		<pri>100</pri>
@@ -311,102 +420,13 @@
 			<nme>hl_aaa_ext_music_1</nme>
 		</Img>
 	</Task>
-	<Task sr="task185">
-		<cdate>1580385377190</cdate>
-		<edate>1581282389566</edate>
-		<id>185</id>
-		<nme>IR.~profiles-toggle</nme>
-		<Action sr="act0" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">IR Shake To Stop</Str>
-			<Int sr="arg1" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>2</op>
-					<rhs>ON</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">IR Shake To Stop</Str>
-			<Int sr="arg1" val="0"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>2</op>
-					<rhs>OFF</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
-			<Int sr="arg1" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>2</op>
-					<rhs>ON</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
-			<Int sr="arg1" val="0"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>2</op>
-					<rhs>OFF</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-	</Task>
-	<Task sr="task186">
-		<cdate>1580388710677</cdate>
-		<edate>1581242992572</edate>
-		<id>186</id>
-		<nme>IR.profile.shakeToStop</nme>
-		<pri>6</pri>
-		<Action sr="act0" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">IR Shake To Next Radio</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">IR.playback.stop</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task188">
-		<cdate>1580389593897</cdate>
-		<edate>1581242962543</edate>
-		<id>188</id>
-		<nme>IR.profile.onOrientation</nme>
-		<Action sr="act0" ve="7">
-			<code>171</code>
-			<Int sr="arg0" val="6604"/>
-			<Int sr="arg1" val="391"/>
-			<Int sr="arg2" val="50"/>
-			<Int sr="arg3" val="3"/>
-		</Action>
-	</Task>
 	<Task sr="task191">
 		<cdate>1581121669747</cdate>
-		<edate>1581202991162</edate>
+		<edate>1581345949253</edate>
 		<id>191</id>
 		<nme>VOL.isMusicPlaying</nme>
 		<pri>100</pri>
+		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>1961654256</code>
 			<Bundle sr="arg0">
@@ -441,9 +461,10 @@
 	</Task>
 	<Task sr="task212">
 		<cdate>1578398056406</cdate>
-		<edate>1581270330806</edate>
+		<edate>1581346549621</edate>
 		<id>212</id>
 		<nme>IR.~playback.canRadioStart</nme>
+		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">VOL.isMusicPlaying</Str>
@@ -456,8 +477,19 @@
 			<Int sr="arg5" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>37</code>
+			<label>Continue playing if radio play already</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%RADIO_IS_PLAYING</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>137</code>
-			<label>Stop
+			<label>Else stop
 if bluetooth is not connected
 or media stream is used already</label>
 			<Int sr="arg0" val="0"/>
@@ -479,9 +511,10 @@ or media stream is used already</label>
 	</Task>
 	<Task sr="task224">
 		<cdate>1578398056406</cdate>
-		<edate>1581286117670</edate>
+		<edate>1581346661883</edate>
 		<id>224</id>
 		<nme>IR.~sentIntent</nme>
+		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>877</code>
 			<Str sr="arg0" ve="3">org.smblott.intentradio.PLAY</Str>
@@ -524,12 +557,34 @@ or media stream is used already</label>
 			<Int sr="arg7" val="0"/>
 		</Action>
 	</Task>
+	<Task sr="task30">
+		<cdate>1581349532723</cdate>
+		<edate>1581350422212</edate>
+		<id>30</id>
+		<nme>Intent Radio UI</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">IR.dialog</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_av_radio</nme>
+		</Img>
+	</Task>
 	<Task sr="task32">
 		<cdate>1580978482482</cdate>
-		<edate>1580979064526</edate>
+		<edate>1581346688883</edate>
 		<id>32</id>
 		<nme>WIFI.waitForConnection</nme>
 		<pri>100</pri>
+		<rty>2</rty>
 		<Action sr="act0" ve="7">
 			<code>425</code>
 			<Int sr="arg0" val="1"/>
@@ -580,9 +635,54 @@ or media stream is used already</label>
 			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>
+	<Task sr="task33">
+		<cdate>1581350647404</cdate>
+		<edate>1581350665839</edate>
+		<id>33</id>
+		<nme>IR TEST</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">command %command</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task6">
+		<cdate>1581340989338</cdate>
+		<edate>1581350424893</edate>
+		<id>6</id>
+		<nme>IR.dialog.selected</nme>
+		<pri>6</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%RADIO_CURRENT</Str>
+			<Str sr="arg1" ve="3">%radio_selected</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">IR.playback.start</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">radio_selected: %radio_selected</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
 	<Task sr="task99">
 		<cdate>1580928809289</cdate>
-		<edate>1581285795823</edate>
+		<edate>1581345160161</edate>
 		<id>99</id>
 		<nme>IR.~get.RADIO_LIST</nme>
 		<pri>100</pri>
@@ -681,12 +781,6 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg0" ve="3">%URLS</Str>
 			<Str sr="arg1" ve="3">%url()</Str>
 			<Str sr="arg2" ve="3">,</Str>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">%NAMES
-%URLS()</Str>
-			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>
 </TaskerData>

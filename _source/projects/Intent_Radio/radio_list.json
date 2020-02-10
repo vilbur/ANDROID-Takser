@@ -1,10 +1,1 @@
-[
-	{
-		"name": "Color",
-		"url": "http://167.114.244.122/;"
-	}
-	,		{
-		"name": "Swiss Groove",
-		"url": "http://167.114.244.122/;"
-	}
-]
+[{"name":"Color","url":"http://167.114.244.122/;"},{"name":"Swiss Groove","url":"http://167.114.244.122/;"},{"name":"Beat","url":"http://icecast2.play.cz/radiobeat128.mp3"}]

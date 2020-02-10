@@ -1,0 +1,584 @@
+<style>
+
+body {
+	background-color: transparent;
+	margin:0;
+	outline:none;
+	user-select: none;
+}
+	
+/*
+	These three psudo classes are at the top because accessing them with js is hard so I was doing it by index. I know, I know probally a poor plan...
+*/
+.md-radio label:checked:after{
+	background-color:#337AB7;
+	color:#337AB7;
+	border:10px;
+}
+/*radio	outline*/
+.md-radio input[type="radio"]:checked + label:before {
+/*	border-color: #337AB7;*/
+	animation: ripple 0.2s linear forwards;
+}
+/*radio center*/
+.md-radio label:after {
+	outline:none;
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	transform: scale(0);
+	/*  replace color with js */
+/*	  background: #337ab7;*/
+}
+
+/*
+The attributes below style the css
+property transitions.
+*/
+
+div {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+}
+
+	
+	/*
+The two classes below work together
+to center the content vertically and
+horizontally on the screen.
+*/
+.wrapperOutside {  
+/*	margin-top:20px;*/
+/*   display: table;*/
+/*   width: 100vw;*/
+/*   height: 100vh;*/
+}
+
+.wrapperInside {
+	text-align: center;
+	vertical-align: middle;
+	overflow: visible;
+}
+
+/*
+The attributes below style the css
+dialog window, and content.
+*/
+
+.dialogContainer {
+  position:relative;
+  /* Form */
+  width: 280px;
+  height: auto;
+
+  /* Internal padding */
+  padding:0;
+  /* External padding */
+  margin: 0 auto 0 auto;
+}
+
+.dialogContent { 
+  /* Form */   
+  width: auto;
+  height: auto;
+/*  background-color: #FFFFFF;*/
+  /* Corner radius */
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;    
+  /* Internal padding */
+	padding:24px 24px 0 24px;
+
+  /* External padding */
+  margin:0;     
+}
+
+.dialogContentTitle {
+  /* Form */  
+/*  background-color: #FFFFFF; */
+  /* Typography */  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+/*  color: #333333;*/
+  line-height: 24px;  
+  text-align: left;
+  letter-spacing: 0.03px;
+  /* Internal padding */
+  padding:0 24px 20px 24px;
+  /* External padding */
+  margin:0 -24px;  
+	
+}
+
+.dialogContentBody {
+  /* Typography */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+/*  color: #7F7F7F;*/
+  line-height: 24px;    
+  text-align: left;
+  letter-spacing: 0.03px;
+ /* Internal padding */
+  padding: 0 26px 0 16px ;
+	margin:0;	
+	margin-left:-16px;
+
+  /* External padding */
+        
+	position: relative;
+	
+	word-wrap: break-word;
+/*	padding-right: 17px;*/
+}
+	.dialogContentBody::-webkit-scrollbar { 
+    display: none; 
+}
+
+.dialogActionBar {
+	position:relative;
+  /* Form */
+	bottom:0;
+  width: inherit;
+  height: 52px;
+  background-color: #FFFFFF;
+  text-align: right;
+  /* Corner radius */
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+  border-bottom-right-radius:2px;
+  border-bottom-left-radius:2px;  
+  /* Internal padding */
+/*  padding: 10px 15px 10px 16px;*/
+
+  /* External padding */
+  margin:0;
+	align-items: center;
+/*	float:right;*/
+}
+
+/*
+The attributes below style the
+hit target.
+*/
+
+.buttonTouchTarget {
+  display: inline-block;
+  background-color: transparent;
+  /* Remove grey background on link clicked in ios safari */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*
+The attributes below style the
+flat button based on the Google
+material design language.
+*/
+
+.buttonFlat {
+	position:relative;
+  display: inline-block;
+  height: 36px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+/*  replace color with js  */
+  color: #337AB7;
+  line-height: 36px;    
+  text-align: center;
+  letter-spacing: 0.4px;     
+
+	padding: 0 4px 0 4px;
+
+  /* External padding – Touch target size */
+  margin:8px 24px 8px 0;
+
+}
+	.buttonFlat:active{
+/*		animation: ripple 0.2s linear forwards;*/
+		background-color: rgba(99,99,99,0.2);
+	}
+
+/* Below here is for Radio Buttons */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 1px transparent;
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 15px transparent;
+  }
+}
+.md-radio {
+	outline:none;
+  margin: 8px 0 16px 0;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.md-radio.md-radio-inline {
+  display: inline-block;
+}
+.md-radio input[type="radio"] {
+  display: none;
+}
+
+.md-radio input[type="radio"]:checked + label:after {
+  transform: scale(1);
+}
+.md-radio label {
+	outline:none;
+/*  display:inherit;*/
+  height: 20px;
+  position: relative;
+  padding: 0 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+  vertical-align: top;
+	
+}
+	.md-radio:focus{
+		outline: none;
+	}
+	label{
+		outline: none;
+	}
+	
+	label:focus{
+		outline: none !important;
+	}
+.md-radio label:before, .md-radio label:after {
+	outline:none;
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  transition: all .3s ease;
+  transition-property: transform, border-color;
+}
+.md-radio label:before {
+/*	border: 2px solid #757575;*/
+	outline:none;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px; 
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+	input[type="radio"]:focus {
+    outline: none;
+}
+
+</style>
+
+<html>
+	<head>
+  	<title>Material Design Radio List</title>
+	<meta name="viewport" content="initial-scale = 1, width = device-width" />
+	<script src="autotoolsfunctions.js"></script>
+	<script src="autotools.js"></script>
+  
+		<!--		buttons   -->
+	<meta name="autotoolswebscreen" type="variablejs" group="Buttons" id="buttononecommandprefix" label="Button One Command Prefix" description="The prefix of the AutoApps command that is sent when button 1 is clicked." defaultValue="dismiss"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Buttons" id="buttononecommand" label="Button One Command" description="The AutoApps command that is sent when button 1 is clicked." defaultValue="cancel"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Buttons" id="commandprefix" label="Button Two Command Prefix" description="The prefix of the AutoApps command that is sent when button 2 is clicked." defaultValue="sleep"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Buttons" id="buttonOneLabel" label="Button One Label" description="The label for the first button." defaultValue="CANCEL"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Buttons" id="buttonTwoLabel" label="Button Two Label" description="The label for the second button" defaultValue="OK"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Buttons" subtype="boolean" id="returnindex" label="Return Index" description="If true the AutoApps command will pass the index of the selected radio button instead of the title of the item."/>
+		
+	<!--		colors      -->
+	<meta name="autotoolswebscreen" type="variablejs" group="Colors" id="accentcolor" isColor="true" label="Accent Color" description="Accent color for the list items" />
+	<meta name="autotoolswebscreen" type="variablejs" group="Colors" id="bodyColor" isColor="true" label="Body Color" description="Color for the dialog Body" defaultValue="#FFFFFF"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Colors" id="actionBarColor" isColor="true" label="Action Bar Color" description="Color for the dialog Body" defaultValue="#FFFFFF"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Colors" id="titleColor" isColor="true" label="Title Font Color" description="Color for the title font" defaultValue="#333333"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Colors" id="itemColor" isColor="true" label="Item Label Font Color" description="Color for the item label font" defaultValue="#7F7F7F"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Colors" id="radioColor" isColor="true" label="Unselected Radio Color" description="Color for the unselected radio buttons" defaultValue="#7F7F7F"/>
+	<meta name="autotoolswebscreen" type="variablejs" group="Colors" id="dividercolor" isColor="true" label="Divider Color" description="Color for the list divider line" defaultValue="#D2D2D2"/>
+		
+  <meta name="autotoolswebscreen" type="variablejs" id="title" label="Dialog Title" description="Title of the Dialog" defaultValue="Sample Title"/>
+<!--		list items-->
+	<meta name="autotoolswebscreen" group="List Items"  type="variablejs" id="items" label="List Items" description="Items in the list" defaultValue="one,two,three,this is an example of a long label that contains many words of various length and complexity"/>
+	<meta name="autotoolswebscreen" group="List Items"  type="variablejs" subtype="boolean" id="touchcommand" label="Touch Commands" description="Send an AutoApps command when an item in the list is selected" />
+	<meta name="autotoolswebscreen" group="List Items" type="variablejs" id="listitemcommandprefix" label="List Item Touch Command Prefix" description="The prefix of the AutoApps command that is sent when an item in the list is clicked" defaultValue="list item"/>
+		
+<!--		other  -->
+	<meta name="autotoolswebscreen" group="Other" type="variablejs" subtype="boolean" id="dropshadow" label="Overlay Drop Shadow" description="If displayed as an overlay this adds a drop shadow to the dialog window."/>
+	<meta name="autotoolswebscreen" group="Other" type="variablejs" subtype="boolean" id="scrollable" label="Scrollable List" description="This allows the list to be scrollable to allow extremely long lists. Make sure to set the default height if using this" defaultValue="true"/>
+	<meta name="autotoolswebscreen" group="Other" type="variablejs" id="scrollableheight" label="Scrollable Height" description="Only used when the scrollable is on. This sets the height of the dialog where list items will be visible" defaultValue="200"/>	
+	<meta name="autotoolswebscreen" group="List Items" type="variablejs" group="Other" id="itemSeparator" label="Item Separator" description="Set which characters separates each item in the various lists" hint="," defaultValue=","/>
+
+</head>
+	<body>	
+		<!-- Content wrapper -->
+		<div class="wrapperOutside">
+			<div class="wrapperInside">
+				<!-- Dialog -->
+				<div id="dialogContainer" class="dialogContainer">
+					<!-- Dialog title and body -->
+					<div id="dialogContent" class="dialogContent">
+
+					</div>
+							<!-- Dialog action bar -->
+						<div class="dialogActionBar">
+							<!-- Buttons -->
+							<a class="buttonTouchTarget" id="buttonOneTouchTarget" href="#" onclick="cancel();">
+	<!--						<div class="buttonFlat" id="buttonOne" ></div>-->
+							</a><!-- This comment removes 4px gap between buttons for some reason???
+							--><a class="buttonTouchTarget" id="buttonTwoTouchTarget" href="#" onclick="submit();">
+	<!--						<div class="buttonFlat" id="buttonTwo"></div>-->
+							</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+
+		/*
+	The code below will manage
+	the mouseover, onclick, and
+	mouseout events.
+	*/
+
+	// Capture touch capability
+	var touchEnabled = true;
+
+	//
+	// DIV BUTTON ONE
+	//
+
+	// First add the button id found in the html
+	var buttonOneTouchTarget = "buttonOneTouchTarget";
+	var buttonOne = "buttonOne";
+
+	// Declare function to manage mouse up event.
+	var buttonOneOnMouseUp = document.getElementById(buttonOneTouchTarget);
+	buttonOneOnMouseUp.onmouseup = function(){
+		if(touchEnabled === false){
+//			alert("Div button " + buttonOne + " on mouse up" + " A");
+			document.getElementById(buttonOne).style.backgroundColor = "rgba(99,99,99,0.2)";
+		}else{
+//			alert("Div button " + buttonOne + " on mouse up" + " B");
+			document.getElementById(buttonOne).style.backgroundColor = "rgba(99,99,99,0)";
+		}
+	};
+
+
+	//
+	// DIV BUTTON TWO
+	//
+
+	// First add the button id found in the html
+	var buttonTwoTouchTarget = "buttonTwoTouchTarget";
+	var buttonTwo = "buttonTwo";
+
+
+	// Declare function to manage mouse up event.
+	var buttonTwoOnMouseUp = document.getElementById(buttonTwoTouchTarget);
+	buttonTwoOnMouseUp.onmouseup = function(){
+		if(touchEnabled === false){
+			document.getElementById(buttonTwo).style.backgroundColor = "rgba(99,99,99,0.2)";
+		}else{
+			document.getElementById(buttonTwo).style.backgroundColor = "rgba(99,99,99,0)";
+		}
+	};
+
+		
+		AutoTools.setDefaultValues({
+			"title":"Sample Title",
+			"items":"one,two,three,this is an example of a long label that contains many words of various length and complexity",
+			"accentcolor":"#337AB7",//#337AB7
+			"radioColor":"#757575",
+//			"dropshadow":"true",
+//			"commandprefix":"sleep",
+			"buttononecommandprefix":"dismiss",
+			"buttononecommand":"cancel",
+			"buttonOneLabel":"CANCEL",
+			"buttonTwoLabel":"OK",
+			"scrollableheight":"200",
+//			"returnindex":"true",
+//			"scrollable":"true",
+//			"touchcommand":"true",
+		});
+		//set window height based on number of items
+
+//		var title = "test";
+		var dialogContent = document.getElementById("dialogContent");
+		var inputFromTasker = AutoTools.fieldsToObject("items");
+		
+
+		
+		var dialogTitle = document.createElement("div");
+		dialogTitle.className = "dialogContentTitle";
+		dialogTitle.innerHTML = title;
+		dialogContent.appendChild(dialogTitle);
+		
+		//set button labels
+		var button1 = document.getElementById("buttonOneTouchTarget");
+		var button2 = document.getElementById("buttonTwoTouchTarget");
+		
+		var b1 = document.createElement("div");
+		b1.setAttribute("class","buttonFlat");
+		b1.setAttribute("id","buttonOne");
+		b1.innerHTML=buttonOneLabel;
+		button1.appendChild(b1);
+		
+		var b2 = document.createElement("div");
+		b2.setAttribute("class","buttonFlat");
+		b2.setAttribute("id","buttonTwo");
+		b2.innerHTML=buttonTwoLabel;
+		button2.appendChild(b2);
+		
+		
+		function createRadio(label, index){
+
+			var radio = document.createElement("div");
+			radio.className = "md-radio";
+			
+			var input = document.createElement("input");
+			input.id = index;
+			input.type = "radio";
+			input.name="g";
+			if(index==0){
+				input.setAttribute("checked","checked");
+			}
+			
+			radio.appendChild(input);
+			
+			var labelElem = document.createElement("label");
+			labelElem.htmlFor = index;
+			labelElem.innerHTML = label;
+			
+			//send command on label click
+			if(AutoTools.isSet("touchcommand") && touchcommand){
+				labelElem.onclick = function(){
+					if(AutoTools.isSet("returnindex") && returnindex){
+						var selectedindex = index+1;
+						AutoTools.sendCommand(selectedindex,listitemcommandprefix);
+					}else{
+						AutoTools.sendCommand(label,listitemcommandprefix);
+					}
+					
+				};
+			}
+			
+			
+			radio.appendChild(labelElem);
+			
+			
+			
+			var dialogBody = document.getElementById("dialogContentBody");
+			dialogBody.appendChild(radio);
+			
+		}
+		
+		var body = document.createElement("form");
+		body.className = "dialogContentBody";
+		body.id = "dialogContentBody";
+		dialogContent.appendChild(body);
+		
+		
+		for (i = 0; i < inputFromTasker.length; i++) { 
+			createRadio(inputFromTasker[i].items,i);
+		}
+
+		//if scrollable list then change some stuff
+		var scrollHeight = Number(scrollableheight);
+		if(AutoTools.isSet("scrollable") && scrollable){
+			var sheetScrollable = document.createElement('style');
+			sheetScrollable.innerHTML += `
+			.dialogContentBody{
+				overflow-y:scroll;
+				height: ${scrollHeight+'px'}
+			}
+
+			`;
+			document.head.appendChild(sheetScrollable);
+
+		}
+		//if using overlay mode show a shadow
+		if(AutoTools.isSet("dropshadow") && dropshadow){
+			var sheetShadow = document.createElement('style');
+			sheetShadow.innerHTML += `
+			.dialogContainer{
+				box-shadow: 0 -2px 25px 0 rgba(0, 0, 0, 0.15), 0 13px 25px 0 rgba(0, 0, 0, 0.3);
+			}
+			.wrapperOutside {  
+				margin-top:20px;
+			}
+			`;
+			document.head.appendChild(sheetShadow);
+
+		}
+		
+		//change the accent colors
+		var sheetRadio = document.createElement('style');
+		sheetRadio.innerHTML += `
+			.md-radio input[type="radio"]:checked + label:before {
+				border-color: ${accentcolor};
+			}
+			.md-radio label:after {
+				background: ${accentcolor};
+			}
+			.md-radio label:before {
+				border: 2px solid ${radioColor};
+			}
+			.dialogContent {
+				background-color: ${bodyColor};
+				border-bottom:1px solid ${dividercolor};
+			}
+			.dialogActionBar {
+				background-color: ${actionBarColor};
+			}
+			.dialogContentTitle{
+				color: ${titleColor};
+				border-bottom:1px solid ${dividercolor};
+			}
+			.dialogContentBody{
+				color: ${itemColor};
+			}
+			`;
+			document.head.appendChild(sheetRadio);
+//		document.styleSheets[0].cssRules[1].style.background = accentcolor;
+//		document.styleSheets[0].cssRules[2].style["border-color"] = accentcolor;
+//		document.styleSheets[0].cssRules[3].style["background"] = accentcolor;
+		var btn = document.getElementsByClassName("buttonFlat");
+		btn[0].style.color = accentcolor;
+		btn[1].style.color = accentcolor;
+		
+		var formElem = document.forms[0]
+		var dialog = document.getElementById("dialogContainer");
+		
+		function submit(){
+			for (i = 0; i < inputFromTasker.length; i++) { 
+				if(document.getElementById(i).checked){
+					var selected = inputFromTasker[i].items;
+					if(AutoTools.isSet("returnindex") && returnindex){
+						var selectedindex = i+1;
+						AutoTools.sendCommand(selectedindex,commandprefix);
+					}else{
+						AutoTools.sendCommand(selected,commandprefix);
+					}
+					break;
+				}
+			}
+		}
+
+		function cancel(){
+			AutoTools.sendCommand(buttononecommand,buttononecommandprefix);
+		}
+//		var dialogHeight = 280;
+//		AutoTools.setSize(dialog.clientWidth,dialog.clientHeight);
+
+		
+	</script>
+</html>

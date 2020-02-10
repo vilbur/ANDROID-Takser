@@ -29,7 +29,7 @@
 		<cdate>1579793421146</cdate>
 		<name>Volume</name>
 		<pids>190</pids>
-		<tids>187,18,8,4,191,65</tids>
+		<tids>8,187,65,18,4,191</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<nme>mw_av_volume_up</nme>
@@ -169,10 +169,10 @@
 	</Task>
 	<Task sr="task187">
 		<cdate>1581121669747</cdate>
-		<edate>1581122300907</edate>
+		<edate>1581345952447</edate>
 		<id>187</id>
 		<nme>VOL.IS_MUSIC_PLAYING</nme>
-		<pri>1006</pri>
+		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
@@ -215,10 +215,11 @@
 	</Task>
 	<Task sr="task191">
 		<cdate>1581121669747</cdate>
-		<edate>1581202991162</edate>
+		<edate>1581345949253</edate>
 		<id>191</id>
 		<nme>VOL.isMusicPlaying</nme>
 		<pri>100</pri>
+		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>1961654256</code>
 			<Bundle sr="arg0">

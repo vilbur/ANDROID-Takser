@@ -122,8 +122,8 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1579098176446</cdate>
 		<name>Sleep as android</name>
-		<pids>121,177,170,227,166</pids>
-		<tids>65,212,18,8,7,165,114,4,228,2,152,116,171,224,32,79,99,118,178,191,86</tids>
+		<pids>227,170,177,166,121</pids>
+		<tids>65,212,118,2,8,234,191,228,79,4,99,178,224,32,171,152,86,18,7,165,235,114,116</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>com.urbandroid.sleep.alarmclock.AlarmClock</cls>
@@ -319,14 +319,14 @@ If "Setting States" project is installed.</label>
 	</Task>
 	<Task sr="task165">
 		<cdate>1580331848901</cdate>
-		<edate>1581313810621</edate>
+		<edate>1581330138698</edate>
 		<id>165</id>
 		<nme>SAA.on.tracking-start</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%SAA_IS_TRACKING_RUNNING</Str>
-			<Str sr="arg1" ve="3">1</Str>
+			<Str sr="arg1" ve="3">%TIMES</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -364,22 +364,13 @@ If "Setting States" project is installed.</label>
 	</Task>
 	<Task sr="task178">
 		<cdate>1580340892524</cdate>
-		<edate>1581314515535</edate>
+		<edate>1581330421776</edate>
 		<id>178</id>
 		<nme>SAA.on.tracking-stop</nme>
-		<pri>6</pri>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%SAA_IS_TRACKING_RUNNING</Str>
-			<Str sr="arg1" ve="3">0</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-		</Action>
-		<Action sr="act1" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">IR.playback.start</Str>
+			<Str sr="arg0" ve="3">SAA.~set.SLEEP_LENGHT</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -388,20 +379,23 @@ If "Setting States" project is installed.</label>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
-		<Action sr="act2" ve="7">
-			<code>307</code>
-			<Int sr="arg0" val="1"/>
-			<Int sr="arg1" val="0"/>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SAA_IS_TRACKING_RUNNING</Str>
+			<Str sr="arg1" ve="3">0</Str>
 			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
 		</Action>
-		<Action sr="act3" ve="7">
+		<Action sr="act2" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">VOL.increase</Str>
+			<Str sr="arg0" ve="3">SAA.~play-radio-and-increase-volume</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3">6</Str>
-			<Str sr="arg3" ve="3">60</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
@@ -724,12 +718,74 @@ or media stream is used already</label>
 	</Task>
 	<Task sr="task228">
 		<cdate>1581312369189</cdate>
-		<edate>1581312396994</edate>
+		<edate>1581333673255</edate>
 		<id>228</id>
-		<nme>SAA.wifi-on</nme>
+		<nme>SAA.~wifi-turn-on</nme>
 		<Action sr="act0" ve="7">
 			<code>425</code>
 			<Int sr="arg0" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task234">
+		<cdate>1581312369189</cdate>
+		<edate>1581330164644</edate>
+		<id>234</id>
+		<nme>SAA.~set.SLEEP_LENGHT</nme>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SLEEP_LENGHT</Str>
+			<Str sr="arg1" ve="3">%TIMES -%SAA_IS_TRACKING_RUNNING </Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+	</Task>
+	<Task sr="task235">
+		<cdate>1581312369189</cdate>
+		<edate>1581330724817</edate>
+		<id>235</id>
+		<nme>SAA.~play-radio-and-increase-volume</nme>
+		<Action sr="act0" ve="7">
+			<code>137</code>
+			<label>Don't play radio if length of sleep is less then given amount of time in seconds</label>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SLEEP_LENGHTv</lhs>
+					<op>6</op>
+					<rhs>1800</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">IR.playback.start</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>307</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">VOL.increase</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">6</Str>
+			<Str sr="arg3" ve="3">60</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task32">
@@ -910,7 +966,7 @@ Current level: %VOLM</Str>
 	</Task>
 	<Task sr="task79">
 		<cdate>1580927240137</cdate>
-		<edate>1581314217994</edate>
+		<edate>1581330113715</edate>
 		<id>79</id>
 		<nme>SAA.tracking-start</nme>
 		<pri>100</pri>
@@ -996,7 +1052,7 @@ Current level: %VOLM</Str>
 	</Task>
 	<Task sr="task86">
 		<cdate>1580927240137</cdate>
-		<edate>1581312187362</edate>
+		<edate>1581330294743</edate>
 		<id>86</id>
 		<nme>SAA.tracking-stop</nme>
 		<Action sr="act0" ve="7">
