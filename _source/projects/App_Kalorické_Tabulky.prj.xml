@@ -1,17 +1,18 @@
 <TaskerData sr="" dvi="1" tv="5.9.2">
 	<Profile sr="prof231" ve="2">
 		<cdate>1581605234221</cdate>
-		<edate>1582002426989</edate>
+		<clp>true</clp>
+		<edate>1582004222649</edate>
 		<flags>8</flags>
 		<id>231</id>
-		<mid0>232</mid0>
-		<nme>KT~dialog command reciver</nme>
+		<mid0>237</mid0>
+		<nme>KT~dialog lunch</nme>
 		<Event sr="con0" ve="2">
 			<code>18927444</code>
 			<pri>0</pri>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<Command>kt-dialog</Command>
+					<Command>kt-types</Command>
 					<Command-type>java.lang.String</Command-type>
 					<CommandCaseInsensitive>false</CommandCaseInsensitive>
 					<CommandCaseInsensitive-type>java.lang.Boolean</CommandCaseInsensitive-type>
@@ -23,7 +24,58 @@
 					<VariableArray-type>java.lang.Boolean</VariableArray-type>
 					<VariableNames>command</VariableNames>
 					<VariableNames-type>java.lang.String</VariableNames-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Command Filter: kt-dialog
+					<com.twofortyfouram.locale.intent.extra.BLURB>Command Filter: kt-types
+Regex: true
+Variable Names: command</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<config_CustomCommandsApp>&lt;null&gt;</config_CustomCommandsApp>
+					<config_CustomCommandsApp-type>java.lang.String</config_CustomCommandsApp-type>
+					<config_CustomCommandsCommand>&lt;null&gt;</config_CustomCommandsCommand>
+					<config_CustomCommandsCommand-type>java.lang.String</config_CustomCommandsCommand-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Command VariableNames plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>bb085dd9-baa7-49f1-884d-b32f19485545</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoappshub.intent.IntentCommand</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoappshub</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoappshub.activity.ActivityConfigCommand</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof236" ve="2">
+		<cdate>1581605234221</cdate>
+		<clp>true</clp>
+		<edate>1582003354281</edate>
+		<flags>8</flags>
+		<id>236</id>
+		<mid0>232</mid0>
+		<nme>KT~dialog types</nme>
+		<Event sr="con0" ve="2">
+			<code>18927444</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<Command>kt-types</Command>
+					<Command-type>java.lang.String</Command-type>
+					<CommandCaseInsensitive>false</CommandCaseInsensitive>
+					<CommandCaseInsensitive-type>java.lang.Boolean</CommandCaseInsensitive-type>
+					<CommandExact>false</CommandExact>
+					<CommandExact-type>java.lang.Boolean</CommandExact-type>
+					<CommandRegex>true</CommandRegex>
+					<CommandRegex-type>java.lang.Boolean</CommandRegex-type>
+					<VariableArray>false</VariableArray>
+					<VariableArray-type>java.lang.Boolean</VariableArray-type>
+					<VariableNames>command</VariableNames>
+					<VariableNames-type>java.lang.String</VariableNames-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Command Filter: kt-types
 Regex: true
 Variable Names: command</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
@@ -52,8 +104,8 @@ Variable Names: command</com.twofortyfouram.locale.intent.extra.BLURB>
 	<Project sr="proj0" ve="2">
 		<cdate>1581371263874</cdate>
 		<name>App Kalorické Tabulky</name>
-		<pids>231</pids>
-		<tids>184,183,205,203,204,230,176,33,232,194</tids>
+		<pids>231,236</pids>
+		<tids>194,205,33,204,230,183,203,237,184,232,176</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>cz.psc.android.kaloricketabulky.activity.HomeActivity</cls>
@@ -92,23 +144,33 @@ Variable Names: command</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Task>
 	<Task sr="task183">
 		<cdate>1581371334764</cdate>
-		<edate>1582001360418</edate>
+		<edate>1582005276550</edate>
 		<id>183</id>
-		<nme>KT.~set.KT_SHEET_DATA</nme>
+		<nme>KT.~set.KT_DIALOG_ITEMS</nme>
 		<pri>100</pri>
 		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>547</code>
+			<label>debug</label>
 			<Str sr="arg0" ve="3">%par1</Str>
 			<Str sr="arg1" ve="3">lunch</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>945317509</code>
-			<label>Get data from spreadsheet to %jsonrows</label>
+			<label>Get data from spreadsheet to %jsonrows
+
+%par1 string name of sheet for query</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
 					<AccountName>cerny.vil@gmail.com</AccountName>
@@ -153,17 +215,99 @@ Resulting query data in JSON format.
 			</ConditionList>
 		</Action>
 		<Action sr="act2" ve="7">
+			<code>1446874931</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<Average>&lt;null&gt;</Average>
+					<Average-type>java.lang.String</Average-type>
+					<Field>name()</Field>
+					<Field-type>java.lang.String</Field-type>
+					<FilterInvert>false</FilterInvert>
+					<FilterInvert-type>java.lang.Boolean</FilterInvert-type>
+					<GetParentValues>false</GetParentValues>
+					<GetParentValues-type>java.lang.Boolean</GetParentValues-type>
+					<InputFormat>0</InputFormat>
+					<InputFormat-type>java.lang.String</InputFormat-type>
+					<JoinOutputArray>&lt;null&gt;</JoinOutputArray>
+					<JoinOutputArray-type>java.lang.String</JoinOutputArray-type>
+					<Json>%jsonrows</Json>
+					<Json-type>java.lang.String</Json-type>
+					<JsonRootVariable>&lt;null&gt;</JsonRootVariable>
+					<JsonRootVariable-type>java.lang.String</JsonRootVariable-type>
+					<MatchField>&lt;null&gt;</MatchField>
+					<MatchField-type>java.lang.String</MatchField-type>
+					<MatchValue>&lt;null&gt;</MatchValue>
+					<MatchValue-type>java.lang.String</MatchValue-type>
+					<MatchesCaseInsensitive>false</MatchesCaseInsensitive>
+					<MatchesCaseInsensitive-type>java.lang.Boolean</MatchesCaseInsensitive-type>
+					<MatchesContainsAll>false</MatchesContainsAll>
+					<MatchesContainsAll-type>java.lang.Boolean</MatchesContainsAll-type>
+					<MatchesExact>false</MatchesExact>
+					<MatchesExact-type>java.lang.Boolean</MatchesExact-type>
+					<MatchesRegex>false</MatchesRegex>
+					<MatchesRegex-type>java.lang.Boolean</MatchesRegex-type>
+					<Max>&lt;null&gt;</Max>
+					<Max-type>java.lang.String</Max-type>
+					<MaxResults>&lt;null&gt;</MaxResults>
+					<MaxResults-type>java.lang.String</MaxResults-type>
+					<Min>&lt;null&gt;</Min>
+					<Min-type>java.lang.String</Min-type>
+					<Query>&lt;null&gt;</Query>
+					<Query-type>java.lang.String</Query-type>
+					<Separator>,</Separator>
+					<Separator-type>java.lang.String</Separator-type>
+					<SimpleMode>true</SimpleMode>
+					<SimpleMode-type>java.lang.Boolean</SimpleMode-type>
+					<SortArrayInvert>false</SortArrayInvert>
+					<SortArrayInvert-type>java.lang.Boolean</SortArrayInvert-type>
+					<SortArrayKey>&lt;null&gt;</SortArrayKey>
+					<SortArrayKey-type>java.lang.String</SortArrayKey-type>
+					<SortArrayObjectKey>&lt;null&gt;</SortArrayObjectKey>
+					<SortArrayObjectKey-type>java.lang.String</SortArrayObjectKey-type>
+					<Sum>&lt;null&gt;</Sum>
+					<Sum-type>java.lang.String</Sum-type>
+					<VariableName>&lt;null&gt;</VariableName>
+					<VariableName-type>java.lang.String</VariableName-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Input Format: Json
+Simple Mode: true
+Json: %jsonrows
+Fields: name()
+Separator: ,</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%name()
+Json Values
+Values of the fields you got from the json text&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Json Field Separator InputFormat plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>b49a0623-c95d-44b8-b847-4ae9e3c7f040</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentJson</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigJson</Str>
+			<Int sr="arg3" val="60"/>
+		</Action>
+		<Action sr="act3" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%KT_SHEET_DATA</Str>
-			<Str sr="arg1" ve="3">%jsonrows</Str>
+			<Str sr="arg0" ve="3">%KT_DIALOG_ITEMS</Str>
+			<Str sr="arg1" ve="3">%name()</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
 		</Action>
-		<Action sr="act3" ve="7">
+		<Action sr="act4" ve="7">
 			<code>548</code>
-			<Str sr="arg0" ve="3">%KT_SHEET_DATA</Str>
+			<Str sr="arg0" ve="3">%KT_DIALOG_ITEMS</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>
@@ -176,7 +320,7 @@ Resulting query data in JSON format.
 		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">KT.~set.KT_SHEET_DATA</Str>
+			<Str sr="arg0" ve="3">KT.~set.KT_DIALOG_ITEMS</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -279,7 +423,7 @@ Resulting query data in JSON format.
 	</Task>
 	<Task sr="task203">
 		<cdate>1581551436682</cdate>
-		<edate>1582002607677</edate>
+		<edate>1582003328325</edate>
 		<id>203</id>
 		<nme>KT.dialog</nme>
 		<pri>100</pri>
@@ -312,7 +456,7 @@ Whole Words: true
 Drawer Width: 80%
 Card Titles: %KT_DIALOG_ITEMS
 Card Commands: %KT_DIALOG_ITEMS
-Commands Prefix: kt-dialog
+Commands Prefix: %par1
 Round Card Icons: true
 Accent Color: #AB47BC
 Max Card Widths: 100%
@@ -335,7 +479,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
 					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<parameters>{"inputJavascriptInject":{},"loadAllLinksInternally":false,"overlayToastDuration":"5000","webScreenOverlay":{"overlayHidDuration":"250","overlayReturnToOriginalPosition":false,"overlayShowDuration":"500"},"webscreebKeepScreenOn":false,"webscreenColors":{"webscreenNavigationBarColor":"","webscreenStatusBarColor":""},"webscreenCommands":{"continueOnError":false,"onlyLocalCommands":false,"waitForCommand":false,"webscreenCloseOnAutoAppsCommand":false},"webscreenDialog":{"dimBackground":false,"hideDialogShadow":false},"webscreenDialogMode":"0","webscreenHtmlInject":{"webscreenReturnHtmlInjection":false},"webscreenSource":"/storage/emulated/0/AutoTools/cardlist/page.html","webscreenWindow":{"dialogAnimation":"0","dialogGravity":"17","dialogHeight":"400","dialogUseFullHeight":false},"generatedValues":{"inputwebscreengeneratedcardAlign":"Center","inputwebscreengeneratedcardCommandPrefix":"kt-dialog","inputwebscreengeneratedtitleTextSize":"22","inputwebscreengeneratedsearchShouldFilter":true,"inputwebscreengeneratedcardCommand":"%KT_DIALOG_ITEMS","inputwebscreengeneratedcardPadding":"24","inputwebscreengeneratedshouldSearchSubtextRight":true,"inputwebscreengenerateddrawerEnable":false,"inputwebscreengeneratedmaxWidth":"100%","inputwebscreengeneratedtitleFromTasker":"Example","inputwebscreengeneratedmaxHeight":"350","inputwebscreengeneratedtitleSearch":false,"inputwebscreengeneratedtitleSearchCommandPrefix":"search","inputwebscreengenerateddrawerWidth":"80%","inputwebscreengenerateditemSeparator":",","inputwebscreengeneratedshouldSearchTitle":true,"inputwebscreengeneratedcardTitle":"%KT_DIALOG_ITEMS","inputwebscreengeneratedshouldSearchWholeWords":true,"inputwebscreengeneratedcardIconRound":true,"inputwebscreengeneratedcardButtonsStandalone":false,"inputwebscreengeneratedshouldSearchSubtextLeft":true,"inputwebscreengeneratedsubtitleTextSize":"22","inputwebscreengeneratedtitleSearchColor":"#ffffff","inputwebscreengenerateddrawerShowUser":false,"inputwebscreengeneratedrepeatLast":false,"inputwebscreengeneratedshouldSearchSubtitle":true,"inputwebscreengeneratedaccentColor":"#AB47BC"}}</parameters>
+					<parameters>{"inputJavascriptInject":{},"loadAllLinksInternally":false,"overlayToastDuration":"5000","webScreenOverlay":{"overlayHidDuration":"250","overlayReturnToOriginalPosition":false,"overlayShowDuration":"500"},"webscreebKeepScreenOn":false,"webscreenColors":{"webscreenNavigationBarColor":"","webscreenStatusBarColor":""},"webscreenCommands":{"continueOnError":false,"onlyLocalCommands":false,"waitForCommand":false,"webscreenCloseOnAutoAppsCommand":false},"webscreenDialog":{"dimBackground":false,"hideDialogShadow":false},"webscreenDialogMode":"0","webscreenHtmlInject":{"webscreenReturnHtmlInjection":false},"webscreenSource":"/storage/emulated/0/AutoTools/cardlist/page.html","webscreenWindow":{"dialogAnimation":"0","dialogGravity":"17","dialogHeight":"400","dialogUseFullHeight":false},"generatedValues":{"inputwebscreengeneratedcardAlign":"Center","inputwebscreengeneratedcardCommandPrefix":"%par1","inputwebscreengeneratedtitleTextSize":"22","inputwebscreengeneratedsearchShouldFilter":true,"inputwebscreengeneratedcardCommand":"%KT_DIALOG_ITEMS","inputwebscreengeneratedcardPadding":"24","inputwebscreengeneratedshouldSearchSubtextRight":true,"inputwebscreengenerateddrawerEnable":false,"inputwebscreengeneratedmaxWidth":"100%","inputwebscreengeneratedtitleFromTasker":"Example","inputwebscreengeneratedmaxHeight":"350","inputwebscreengeneratedtitleSearch":false,"inputwebscreengeneratedtitleSearchCommandPrefix":"search","inputwebscreengenerateddrawerWidth":"80%","inputwebscreengenerateditemSeparator":",","inputwebscreengeneratedshouldSearchTitle":true,"inputwebscreengeneratedcardTitle":"%KT_DIALOG_ITEMS","inputwebscreengeneratedshouldSearchWholeWords":true,"inputwebscreengeneratedcardIconRound":true,"inputwebscreengeneratedcardButtonsStandalone":false,"inputwebscreengeneratedshouldSearchSubtextLeft":true,"inputwebscreengeneratedsubtitleTextSize":"22","inputwebscreengeneratedtitleSearchColor":"#ffffff","inputwebscreengenerateddrawerShowUser":false,"inputwebscreengeneratedrepeatLast":false,"inputwebscreengeneratedshouldSearchSubtitle":true,"inputwebscreengeneratedaccentColor":"#AB47BC"}}</parameters>
 					<parameters-type>java.lang.String</parameters-type>
 					<plugininstanceid>90098cef-9bab-412e-91df-7563a8012caa</plugininstanceid>
 					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
@@ -350,11 +494,27 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task204">
 		<cdate>1581553933744</cdate>
-		<edate>1582001474540</edate>
+		<edate>1582005390851</edate>
 		<id>204</id>
 		<nme>KT UI</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">kt-types</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">KT.~set.KT_SHEET_NAMES</Str>
 			<Int sr="arg1">
@@ -365,13 +525,13 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
-		<Action sr="act1" ve="7">
+		<Action sr="act2" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">KT.dialog</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3">%KT_SHEET_NAMES</Str>
+			<Str sr="arg2" ve="3">%par1</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -393,7 +553,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task230">
 		<cdate>1581371334764</cdate>
-		<edate>1582001885577</edate>
+		<edate>1582005282124</edate>
 		<id>230</id>
 		<nme>KT.~set.KT_SHEET_NAMES</nme>
 		<pri>100</pri>
@@ -460,13 +620,47 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task232">
 		<cdate>1581605265810</cdate>
-		<edate>1582002404851</edate>
+		<edate>1582005312679</edate>
 		<id>232</id>
-		<nme>KT.dialog.command.reciver</nme>
+		<nme>KT.dialog.command.types</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>548</code>
-			<Str sr="arg0" ve="3">Reciver %command</Str>
+			<Str sr="arg0" ve="3">Type %command</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">KT.~set.KT_DIALOG_ITEMS</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%command</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">KT.dialog</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%command</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task237">
+		<cdate>1581605265810</cdate>
+		<edate>1582004541680</edate>
+		<id>237</id>
+		<nme>KT.dialog.command.lunch</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Lunch %command</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>
