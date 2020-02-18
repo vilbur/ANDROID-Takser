@@ -1,7 +1,23 @@
 <TaskerData sr="" dvi="1" tv="5.9.1">
+	<Profile sr="prof174" ve="2">
+		<cdate>1581425123991</cdate>
+		<edate>1581703534888</edate>
+		<flags>8</flags>
+		<id>174</id>
+		<mid0>215</mid0>
+		<mid1>175</mid1>
+		<nme>TC Enter/Exit</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.ghisler.android.TotalCommander.TotalCommander</cls0>
+			<flags>2</flags>
+			<label0>Total Commander</label0>
+			<pkg0>com.ghisler.android.TotalCommander</pkg0>
+		</App>
+	</Profile>
 	<Profile sr="prof38" ve="2">
 		<cdate>1580131932329</cdate>
-		<edate>1580930430800</edate>
+		<clp>true</clp>
+		<edate>1581425096826</edate>
 		<flags>8</flags>
 		<id>38</id>
 		<limit>true</limit>
@@ -51,8 +67,8 @@ Variable Names: fn,tc_path</com.twofortyfouram.locale.intent.extra.BLURB>
 	<Project sr="proj0" ve="2">
 		<cdate>1580124295294</cdate>
 		<name>App Total Commander</name>
-		<pids>38</pids>
-		<tids>71,17,67,78,73,70</tids>
+		<pids>38,174</pids>
+		<tids>175,71,17,78,67,215,73,70</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>com.ghisler.android.TotalCommander.TotalCommander</cls>
@@ -82,6 +98,57 @@ Variable Names: fn,tc_path</com.twofortyfouram.locale.intent.extra.BLURB>
 			<cls>com.ghisler.android.TotalCommander.TotalCommander</cls>
 			<pkg>com.ghisler.android.TotalCommander</pkg>
 		</Img>
+	</Task>
+	<Task sr="task175">
+		<cdate>1581425203724</cdate>
+		<edate>1581702957162</edate>
+		<id>175</id>
+		<nme>TC.autosync-run</nme>
+		<pri>1006</pri>
+		<Action sr="act0" ve="7">
+			<code>1874460827</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>0</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>java.lang.Integer</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Sync Now</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.ttxapps.drivesync</Str>
+			<Str sr="arg2" ve="3">com.ttxapps.syncapp.locale.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task215">
+		<cdate>1581703363431</cdate>
+		<edate>1581703561937</edate>
+		<id>215</id>
+		<nme>TC.profile.enter-app</nme>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TC.autosync-run</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TC.swipePanelLeftToRight</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
 	</Task>
 	<Task sr="task67">
 		<cdate>1580648578887</cdate>
@@ -372,7 +439,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task78">
 		<cdate>1580659481636</cdate>
-		<edate>1580930535433</edate>
+		<edate>1581702998217</edate>
 		<id>78</id>
 		<nme>TC.bookmarks.open</nme>
 		<pri>100</pri>

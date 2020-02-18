@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Tasker._temp",
+        "test-actions": [
+            "TASKER.test.action-1",
+            "TASKER.test.action-2",
+            "TASKER.test.action-3",
+            "TASKER.test.action-4",
+            "TASKER.test.action-5",
+            "TASKER.test.action-6"
+        ]
+    }
+]

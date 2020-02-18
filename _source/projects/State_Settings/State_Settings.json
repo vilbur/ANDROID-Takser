@@ -1,0 +1,32 @@
+[
+    {
+        "name": "HOME",
+        "auto-brightness": false,
+        "display-brightness": 5,
+        "display-timeout": 60,
+        "wifi": true,
+        "mobile-data": false,
+        "bluetooth": true,
+        "icon": "android.resource://net.dinglisch.android.ipack.bluewhitepearlhd/drawable/home6"
+    },
+    {
+        "name": "OUTSIDE",
+        "auto-brightness": true,
+        "display-brightness": false,
+        "display-timeout": 30,
+        "wifi": true,
+        "mobile-data": false,
+        "bluetooth": false,
+        "icon": "android.resource://net.dinglisch.android.ipack.orangewhitepearlhd/drawable/animal_butterfly5_sc48"
+    },
+    {
+        "name": "IKEA",
+        "auto-brightness": false,
+        "display-brightness": 5,
+        "display-timeout": 30,
+        "wifi": true,
+        "mobile-data": false,
+        "bluetooth": false,
+        "icon": "android.resource://net.dinglisch.android.ipack.bluewhitepearlhd/drawable/dollar"
+    }
+]
