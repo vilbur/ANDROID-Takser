@@ -104,7 +104,7 @@ Variable Names: command</com.twofortyfouram.locale.intent.extra.BLURB>
 		<cdate>1581371263874</cdate>
 		<name>App Kalorické Tabulky</name>
 		<pids>264,263</pids>
-		<tids>255,254,266,258,253,262,256,257,265,261,259,260</tids>
+		<tids>255,262,258,266,257,253,265,254,256,260,33,259,261</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>cz.psc.android.kaloricketabulky.activity.HomeActivity</cls>
@@ -862,14 +862,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task262">
 		<cdate>1582009799476</cdate>
-		<edate>1582017381482</edate>
+		<edate>1582022504861</edate>
 		<id>262</id>
 		<nme>KT.calendar</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%par1</Str>
-			<Str sr="arg1" ve="3">Recepie blank</Str>
+			<Str sr="arg1" ve="3">Recepie test 2</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -925,36 +925,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg5" val="3"/>
 		</Action>
 		<Action sr="act5" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">%par1 added to calendar
-
-start: %event_start
-end:  %event_end</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>523</code>
-			<Str sr="arg0" ve="3">Event data</Str>
-			<Str sr="arg1" ve="3">event_date: %event_date
-event_time: %event_time
-event_start: %event_start
-event_end: %event_end</Str>
-			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3"/>
-			<Img sr="arg2" ve="2"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-			<Int sr="arg8" val="0"/>
-			<Str sr="arg9" ve="3"/>
-		</Action>
-		<Action sr="act7" ve="7">
 			<code>764435524</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<com.balda.calendartask.extra.CALENDAR>3</com.balda.calendartask.extra.CALENDAR>
+					<com.balda.calendartask.extra.CALENDAR>11</com.balda.calendartask.extra.CALENDAR>
 					<com.balda.calendartask.extra.CALENDAR-type>java.lang.String</com.balda.calendartask.extra.CALENDAR-type>
 					<com.balda.calendartask.extra.END>%event_end</com.balda.calendartask.extra.END>
 					<com.balda.calendartask.extra.END-type>java.lang.String</com.balda.calendartask.extra.END-type>
@@ -970,7 +944,7 @@ event_end: %event_end</Str>
 					<com.balda.calendartask.extra.TIMEZONE-type>java.lang.String</com.balda.calendartask.extra.TIMEZONE-type>
 					<com.balda.calendartask.extra.TITLE>%par1</com.balda.calendartask.extra.TITLE>
 					<com.balda.calendartask.extra.TITLE-type>java.lang.String</com.balda.calendartask.extra.TITLE-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Add %par1 to Events</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Add %par1 to TaskerTest</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ctevid
 Event id
@@ -986,10 +960,38 @@ Event id
 			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireAddEvent</Str>
 			<Int sr="arg3" val="30"/>
 		</Action>
+		<Action sr="act6" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%par1 added to calendar
+
+start: %event_start
+end:  %event_end</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Event data</Str>
+			<Str sr="arg1" ve="3">now:            %TIMES
+event_time: %event_time
+event_date: %event_date
+event_start:%event_start
+event_end:  %event_end
+event id: %ctevid</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
 	</Task>
 	<Task sr="task265">
 		<cdate>1582009799476</cdate>
-		<edate>1582017298423</edate>
+		<edate>1582022419937</edate>
 		<id>265</id>
 		<nme>KT.calendar.~get.event-time</nme>
 		<pri>100</pri>
@@ -1038,12 +1040,46 @@ Selected minutes
 	</Task>
 	<Task sr="task266">
 		<cdate>1582009799476</cdate>
-		<edate>1582016756824</edate>
+		<edate>1582022429157</edate>
 		<id>266</id>
 		<nme>KT.calendar.~get.event-date</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>1384093265</code>
+			<label>DEBUG today to seconds</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.balda.calendartask.extra.DATE>%DATE</com.balda.calendartask.extra.DATE>
+					<com.balda.calendartask.extra.DATE-type>java.lang.String</com.balda.calendartask.extra.DATE-type>
+					<com.balda.calendartask.extra.DATE_FORMAT>dd-MM-yyyy</com.balda.calendartask.extra.DATE_FORMAT>
+					<com.balda.calendartask.extra.DATE_FORMAT-type>java.lang.String</com.balda.calendartask.extra.DATE_FORMAT-type>
+					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
+					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
+					<com.balda.calendartask.extra.OPERATION>6</com.balda.calendartask.extra.OPERATION>
+					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
+					<com.balda.calendartask.extra.TYPE>0</com.balda.calendartask.extra.TYPE>
+					<com.balda.calendartask.extra.TYPE-type>java.lang.Integer</com.balda.calendartask.extra.TYPE-type>
+					<com.balda.calendartask.extra.VARIABLE>today_in_seconds</com.balda.calendartask.extra.VARIABLE>
+					<com.balda.calendartask.extra.VARIABLE-type>java.lang.String</com.balda.calendartask.extra.VARIABLE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>%DATE into seconds with format dd-MM-yyyy</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%today_in_seconds
+The converted value
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.DATE com.balda.calendartask.extra.DATE_FORMAT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.balda.calendartask</Str>
+			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireDateFormatActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>1720289647</code>
+			<label>get time DIALOG</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
 					<com.balda.uitask.extra.INT_VERSION_CODE>29</com.balda.uitask.extra.INT_VERSION_CODE>
@@ -1072,38 +1108,201 @@ Year selected
 			<Str sr="arg2" ve="3">com.balda.uitask.ui.FireDateDialog</Str>
 			<Int sr="arg3" val="30"/>
 		</Action>
-		<Action sr="act1" ve="7">
-			<code>1533846248</code>
+		<Action sr="act2" ve="7">
+			<code>1384093265</code>
+			<label>Format date to seconds</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
+					<com.balda.calendartask.extra.DATE>%uiday-%uimonth-%uiyear</com.balda.calendartask.extra.DATE>
+					<com.balda.calendartask.extra.DATE-type>java.lang.String</com.balda.calendartask.extra.DATE-type>
+					<com.balda.calendartask.extra.DATE_FORMAT>dd-MM-yyyy</com.balda.calendartask.extra.DATE_FORMAT>
+					<com.balda.calendartask.extra.DATE_FORMAT-type>java.lang.String</com.balda.calendartask.extra.DATE_FORMAT-type>
 					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
 					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
-					<com.balda.calendartask.extra.OPERATION>4</com.balda.calendartask.extra.OPERATION>
+					<com.balda.calendartask.extra.OPERATION>6</com.balda.calendartask.extra.OPERATION>
 					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
-					<com.balda.calendartask.extra.TIME>0</com.balda.calendartask.extra.TIME>
-					<com.balda.calendartask.extra.TIME-type>java.lang.String</com.balda.calendartask.extra.TIME-type>
-					<com.balda.calendartask.extra.VAR>event_day</com.balda.calendartask.extra.VAR>
-					<com.balda.calendartask.extra.VAR-type>java.lang.String</com.balda.calendartask.extra.VAR-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Today</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.balda.calendartask.extra.TYPE>0</com.balda.calendartask.extra.TYPE>
+					<com.balda.calendartask.extra.TYPE-type>java.lang.Integer</com.balda.calendartask.extra.TYPE-type>
+					<com.balda.calendartask.extra.VARIABLE>date_in_seconds</com.balda.calendartask.extra.VARIABLE>
+					<com.balda.calendartask.extra.VARIABLE-type>java.lang.String</com.balda.calendartask.extra.VARIABLE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>%uiday-%uimonth-%uiyear into seconds with format dd-MM-yyyy</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%event_day
-Time
-Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%date_in_seconds
+The converted value
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.TIME</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.DATE com.balda.calendartask.extra.DATE_FORMAT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
 					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
 				</Vals>
 			</Bundle>
 			<Str sr="arg1" ve="3">com.balda.calendartask</Str>
-			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireGetTime</Str>
+			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireDateFormatActivity</Str>
 			<Int sr="arg3" val="10"/>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act3" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Picked date</Str>
+			<Str sr="arg1" ve="3">Date:              %DATE
+Date picked: %uiday-%uimonth-%uiyear
+
+
+today_in_seconds: %today_in_seconds
+date_in_seconds:   %date_in_seconds</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>126</code>
-			<Str sr="arg0" ve="3">%event_day</Str>
+			<Str sr="arg0" ve="3">%date_in_seconds</Str>
 			<Int sr="arg1" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task33">
+		<cdate>1582009799476</cdate>
+		<edate>1582022415048</edate>
+		<id>33</id>
+		<nme>KT.calendar-TEST</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>1384093265</code>
+			<label>Format date to seconds</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.balda.calendartask.extra.DATE>%DATE</com.balda.calendartask.extra.DATE>
+					<com.balda.calendartask.extra.DATE-type>java.lang.String</com.balda.calendartask.extra.DATE-type>
+					<com.balda.calendartask.extra.DATE_FORMAT>dd-MM-yyyy</com.balda.calendartask.extra.DATE_FORMAT>
+					<com.balda.calendartask.extra.DATE_FORMAT-type>java.lang.String</com.balda.calendartask.extra.DATE_FORMAT-type>
+					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
+					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
+					<com.balda.calendartask.extra.OPERATION>6</com.balda.calendartask.extra.OPERATION>
+					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
+					<com.balda.calendartask.extra.TYPE>0</com.balda.calendartask.extra.TYPE>
+					<com.balda.calendartask.extra.TYPE-type>java.lang.Integer</com.balda.calendartask.extra.TYPE-type>
+					<com.balda.calendartask.extra.VARIABLE>event_start</com.balda.calendartask.extra.VARIABLE>
+					<com.balda.calendartask.extra.VARIABLE-type>java.lang.String</com.balda.calendartask.extra.VARIABLE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>%DATE into seconds with format dd-MM-yyyy</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%event_start
+The converted value
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.DATE com.balda.calendartask.extra.DATE_FORMAT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.balda.calendartask</Str>
+			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireDateFormatActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%event_start</Str>
+			<Str sr="arg1" ve="3">%TIMES</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">Recepie blank</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>%event_end</label>
+			<Str sr="arg0" ve="3">%event_end</Str>
+			<Str sr="arg1" ve="3">%event_start + 3600</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>764435524</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.balda.calendartask.extra.CALENDAR>11</com.balda.calendartask.extra.CALENDAR>
+					<com.balda.calendartask.extra.CALENDAR-type>java.lang.String</com.balda.calendartask.extra.CALENDAR-type>
+					<com.balda.calendartask.extra.END>%event_end</com.balda.calendartask.extra.END>
+					<com.balda.calendartask.extra.END-type>java.lang.String</com.balda.calendartask.extra.END-type>
+					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
+					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
+					<com.balda.calendartask.extra.OPERATION>1</com.balda.calendartask.extra.OPERATION>
+					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
+					<com.balda.calendartask.extra.REM_METHOD>-1</com.balda.calendartask.extra.REM_METHOD>
+					<com.balda.calendartask.extra.REM_METHOD-type>java.lang.Integer</com.balda.calendartask.extra.REM_METHOD-type>
+					<com.balda.calendartask.extra.START>%event_start</com.balda.calendartask.extra.START>
+					<com.balda.calendartask.extra.START-type>java.lang.String</com.balda.calendartask.extra.START-type>
+					<com.balda.calendartask.extra.TIMEZONE>Europe/Prague</com.balda.calendartask.extra.TIMEZONE>
+					<com.balda.calendartask.extra.TIMEZONE-type>java.lang.String</com.balda.calendartask.extra.TIMEZONE-type>
+					<com.balda.calendartask.extra.TITLE>%par1</com.balda.calendartask.extra.TITLE>
+					<com.balda.calendartask.extra.TITLE-type>java.lang.String</com.balda.calendartask.extra.TITLE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Add %par1 to TaskerTest</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ctevid
+Event id
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.TITLE com.balda.calendartask.extra.TIMEZONE com.balda.calendartask.extra.END com.balda.calendartask.extra.START</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.balda.calendartask</Str>
+			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireAddEvent</Str>
+			<Int sr="arg3" val="30"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%par1 added to calendar
+
+start: %event_start
+end:  %event_end</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Event data</Str>
+			<Str sr="arg1" ve="3">event_time: %event_time
+event_date: %event_date
+event_start:%event_start
+event_end:  %event_end
+event id: %ctevid</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
 		</Action>
 	</Task>
 </TaskerData>
