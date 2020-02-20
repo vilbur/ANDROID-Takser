@@ -1,6 +1,7 @@
 <TaskerData sr="" dvi="1" tv="5.9.2">
 	<Profile sr="prof252" ve="2">
 		<cdate>1582013626924</cdate>
+		<clp>true</clp>
 		<edate>1582013790946</edate>
 		<flags>8</flags>
 		<id>252</id>
@@ -23,9 +24,10 @@
 	</Project>
 	<Task sr="task251">
 		<cdate>1582013575755</cdate>
-		<edate>1582013778664</edate>
+		<edate>1582027902900</edate>
 		<id>251</id>
 		<nme>DS.run-sync-now</nme>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>1874460827</code>
 			<Bundle sr="arg0">
@@ -45,7 +47,7 @@
 		<Action sr="act1" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="3"/>
+			<Int sr="arg1" val="1"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
