@@ -1,124 +1,76 @@
-<TaskerData sr="" dvi="1" tv="5.9.1">
+<TaskerData sr="" dvi="1" tv="5.9.2">
+	<Profile sr="prof237" ve="2">
+		<cdate>1582526045580</cdate>
+		<edate>1582527118518</edate>
+		<flags>8</flags>
+		<id>237</id>
+		<mid0>239</mid0>
+		<mid1>251</mid1>
+		<Event sr="con0" ve="2">
+			<code>222</code>
+			<pri>0</pri>
+			<Str sr="arg0" ve="3">Tasker/projects/</Str>
+		</Event>
+	</Profile>
 	<Project sr="proj0" ve="2">
 		<cdate>1580654493400</cdate>
 		<name>App Tasker</name>
-		<tids>236,85,72,237,233,238,239,240</tids>
+		<pids>237</pids>
+		<tids>242,243,251,248,247,246,241,239,244,245</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>net.dinglisch.android.taskerm.Tasker</cls>
 			<pkg>net.dinglisch.android.taskerm</pkg>
 		</Img>
 	</Project>
-	<Task sr="task233">
-		<cdate>1581606838069</cdate>
-		<edate>1581607345442</edate>
-		<id>233</id>
-		<nme>TASKER.perform-task-1</nme>
-		<pri>100</pri>
-		<Action sr="act0" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Img sr="icn" ve="2">
-			<nme>mw_image_looks_one</nme>
-		</Img>
-	</Task>
-	<Task sr="task236">
-		<cdate>1581606838069</cdate>
-		<edate>1581607406448</edate>
-		<id>236</id>
-		<nme>TASKER.perform-task-2</nme>
-		<pri>100</pri>
-		<Action sr="act0" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Img sr="icn" ve="2">
-			<nme>mw_image_looks_two</nme>
-		</Img>
-	</Task>
-	<Task sr="task237">
-		<cdate>1581606838069</cdate>
-		<edate>1581607434881</edate>
-		<id>237</id>
-		<nme>TASKER.perform-task-3</nme>
-		<pri>100</pri>
-		<Action sr="act0" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Img sr="icn" ve="2">
-			<nme>mw_image_looks_3</nme>
-		</Img>
-	</Task>
-	<Task sr="task238">
-		<cdate>1581606838069</cdate>
-		<edate>1581607496619</edate>
-		<id>238</id>
-		<nme>TASKER.perform-task-5</nme>
-		<pri>100</pri>
-		<Action sr="act0" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Img sr="icn" ve="2">
-			<nme>mw_image_looks_5</nme>
-		</Img>
-	</Task>
 	<Task sr="task239">
-		<cdate>1581606838069</cdate>
-		<edate>1581607556660</edate>
+		<cdate>1582526170588</cdate>
+		<edate>1582526700753</edate>
 		<id>239</id>
-		<nme>TASKER.perform-task-4</nme>
-		<pri>100</pri>
+		<nme>TASKER.on.export.move-file-to-library</nme>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
+			<code>412</code>
+			<label>Get  *lib_* files</label>
+			<Str sr="arg0" ve="3">Tasker/projects/</Str>
+			<Str sr="arg1" ve="3">*Lib_*</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%match_files</Str>
 		</Action>
-		<Img sr="icn" ve="2">
-			<nme>mw_image_looks_4</nme>
-		</Img>
+		<Action sr="act1" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">match_files</Str>
+			<Str sr="arg1" ve="3">match_files: %match_files()</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%file</Str>
+			<Str sr="arg1" ve="3">%match_files()</Str>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>400</code>
+			<Str sr="arg0" ve="3">%file</Str>
+			<Str sr="arg1" ve="3">Tasker/projects/_library</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
 	</Task>
-	<Task sr="task240">
+	<Task sr="task241">
 		<cdate>1581606838069</cdate>
-		<edate>1581619349500</edate>
-		<id>240</id>
-		<nme>TASKER.~test.action.launch</nme>
+		<edate>1581668874075</edate>
+		<id>241</id>
+		<nme>TASKER.~perform.task</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>1446874931</code>
@@ -211,10 +163,35 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task72">
+	<Task sr="task242">
+		<cdate>1580707400759</cdate>
+		<edate>1580712563696</edate>
+		<id>242</id>
+		<nme>TASKER.taskExists</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>347</code>
+			<Int sr="arg0" val="7"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">%all_tasks</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>126</code>
+			<Str sr="arg0" ve="3">1</Str>
+			<Int sr="arg1" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%all_tasks(#?%par1)</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task243">
 		<cdate>1580654640171</cdate>
 		<edate>1581606604012</edate>
-		<id>72</id>
+		<id>243</id>
 		<nme>TASKER.exit</nme>
 		<pri>7</pri>
 		<Action sr="act0" ve="7">
@@ -251,29 +228,144 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<pkg>net.dinglisch.android.taskerm</pkg>
 		</Img>
 	</Task>
-	<Task sr="task85">
-		<cdate>1580707400759</cdate>
-		<edate>1580712563696</edate>
-		<id>85</id>
-		<nme>TASKER.taskExists</nme>
+	<Task sr="task244">
+		<cdate>1581606838069</cdate>
+		<edate>1581607345442</edate>
+		<id>244</id>
+		<nme>TASKER.perform-task-1</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>347</code>
-			<Int sr="arg0" val="7"/>
-			<Str sr="arg1" ve="3"/>
-			<Str sr="arg2" ve="3">%all_tasks</Str>
+			<code>130</code>
+			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_image_looks_one</nme>
+		</Img>
+	</Task>
+	<Task sr="task245">
+		<cdate>1581606838069</cdate>
+		<edate>1581607406448</edate>
+		<id>245</id>
+		<nme>TASKER.perform-task-2</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_image_looks_two</nme>
+		</Img>
+	</Task>
+	<Task sr="task246">
+		<cdate>1581606838069</cdate>
+		<edate>1581607434881</edate>
+		<id>246</id>
+		<nme>TASKER.perform-task-3</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_image_looks_3</nme>
+		</Img>
+	</Task>
+	<Task sr="task247">
+		<cdate>1581606838069</cdate>
+		<edate>1581607496619</edate>
+		<id>247</id>
+		<nme>TASKER.perform-task-5</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_image_looks_5</nme>
+		</Img>
+	</Task>
+	<Task sr="task248">
+		<cdate>1581606838069</cdate>
+		<edate>1581607556660</edate>
+		<id>248</id>
+		<nme>TASKER.perform-task-4</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TASKER.taskExists</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_image_looks_4</nme>
+		</Img>
+	</Task>
+	<Task sr="task251">
+		<cdate>1582013575755</cdate>
+		<edate>1582527118518</edate>
+		<id>251</id>
+		<nme>DS.run-sync-now</nme>
+		<Action sr="act0" ve="7">
+			<code>1874460827</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>0</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>java.lang.Integer</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Sync Now</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.ttxapps.drivesync</Str>
+			<Str sr="arg2" ve="3">com.ttxapps.syncapp.locale.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>126</code>
-			<Str sr="arg0" ve="3">1</Str>
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%all_tasks(#?%par1)</lhs>
-					<op>7</op>
-					<rhs>0</rhs>
-				</Condition>
-			</ConditionList>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">DriveSync sync now</Str>
+			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>
 </TaskerData>
