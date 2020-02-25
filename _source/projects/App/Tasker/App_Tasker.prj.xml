@@ -1,11 +1,12 @@
 <TaskerData sr="" dvi="1" tv="5.9.2">
 	<Profile sr="prof237" ve="2">
 		<cdate>1582526045580</cdate>
-		<edate>1582634136947</edate>
+		<edate>1582635886584</edate>
 		<flags>8</flags>
 		<id>237</id>
-		<mid0>239</mid0>
-		<mid1>251</mid1>
+		<limit>true</limit>
+		<mid0>271</mid0>
+		<nme>TASKER File modified Tasker/projects</nme>
 		<Event sr="con0" ve="2">
 			<code>222</code>
 			<pri>0</pri>
@@ -16,7 +17,7 @@
 		<cdate>1580654493400</cdate>
 		<name>App/Tasker</name>
 		<pids>237</pids>
-		<tids>239,266,247,242,254,245,267,248,251,241,243,246,244</tids>
+		<tids>267,239,254,242,271,243,245,266,248,241,251,247,244,246</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>net.dinglisch.android.taskerm.Tasker</cls>
@@ -25,10 +26,10 @@
 	</Project>
 	<Task sr="task239">
 		<cdate>1582526170588</cdate>
-		<edate>1582634116602</edate>
+		<edate>1582635302944</edate>
 		<id>239</id>
-		<nme>TASKER.on.export.move-files</nme>
-		<pri>100</pri>
+		<nme>TASKER.on~export.move-files</nme>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>412</code>
 			<label>get .xml files in dir</label>
@@ -207,7 +208,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>130</code>
 			<label>Get directory name
 return %subdir_name</label>
-			<Str sr="arg0" ve="3">TASKER.on.export.get.dirname</Str>
+			<Str sr="arg0" ve="3">TASKER.on~export.get.dirname</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -220,7 +221,7 @@ return %subdir_name</label>
 			<code>130</code>
 			<label>Get project name
 return %project_name</label>
-			<Str sr="arg0" ve="3">TASKER.on.export.get.projectname</Str>
+			<Str sr="arg0" ve="3">TASKER.on~export.get.projectname</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -240,7 +241,7 @@ return %project_name</label>
 		</Action>
 		<Action sr="act7" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.on.export.cteate-dir</Str>
+			<Str sr="arg0" ve="3">TASKER.on~export.cteate-dir</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -260,7 +261,7 @@ return %project_name</label>
 		</Action>
 		<Action sr="act9" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.on.export.cteate-dir</Str>
+			<Str sr="arg0" ve="3">TASKER.on~export.cteate-dir</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -574,9 +575,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task254">
 		<cdate>1582526170588</cdate>
-		<edate>1582630420233</edate>
+		<edate>1582635348153</edate>
 		<id>254</id>
-		<nme>TASKER.on.export.get.dirname</nme>
+		<nme>TASKER.on~export.get.dirname</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
@@ -613,9 +614,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task266">
 		<cdate>1582526170588</cdate>
-		<edate>1582621416412</edate>
+		<edate>1582635338816</edate>
 		<id>266</id>
-		<nme>TASKER.on.export.get.projectname</nme>
+		<nme>TASKER.on~export.get.projectname</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
@@ -652,9 +653,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task267">
 		<cdate>1582526170588</cdate>
-		<edate>1582631216207</edate>
+		<edate>1582635292631</edate>
 		<id>267</id>
-		<nme>TASKER.on.export.cteate-dir</nme>
+		<nme>TASKER.on~export.cteate-dir</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>342</code>
@@ -675,6 +676,45 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 					<rhs>false</rhs>
 				</Condition>
 			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task271">
+		<cdate>1582526170588</cdate>
+		<edate>1582636027615</edate>
+		<id>271</id>
+		<nme>TASKER.on.export</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">TASKER File modified Tasker/projects</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TASKER.on~export.move-files</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">DS.run-sync-now</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">TASKER File modified Tasker/projects</Str>
+			<Int sr="arg1" val="1"/>
 		</Action>
 	</Task>
 </TaskerData>
