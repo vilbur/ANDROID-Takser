@@ -1,10 +1,11 @@
 <TaskerData sr="" dvi="1" tv="5.9.2">
 	<Profile sr="prof277" ve="2">
 		<cdate>1582636807456</cdate>
-		<edate>1582636921044</edate>
+		<edate>1582645247340</edate>
 		<flags>8</flags>
 		<id>277</id>
-		<mid0>274</mid0>
+		<mid0>276</mid0>
+		<mid1>279</mid1>
 		<nme>TASKER File modified Tasker/projects</nme>
 		<Event sr="con0" ve="2">
 			<code>222</code>
@@ -16,23 +17,15 @@
 		<cdate>1582636775011</cdate>
 		<name>App/Tasker on export</name>
 		<pids>277</pids>
-		<tids>276,272,273,274,275,251</tids>
+		<tids>251,272,278,275,273,276,279</tids>
 		<tsort>Alpha</tsort>
 	</Project>
 	<Task sr="task251">
 		<cdate>1582013575755</cdate>
-		<edate>1582575126793</edate>
+		<edate>1582645059434</edate>
 		<id>251</id>
 		<nme>DS.run-sync-now</nme>
 		<Action sr="act0" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="3"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act1" ve="7">
 			<code>1874460827</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -48,7 +41,7 @@
 			<Str sr="arg2" ve="3">com.ttxapps.syncapp.locale.EditActivity</Str>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act1" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">DriveSync sync now</Str>
 			<Int sr="arg1" val="0"/>
@@ -56,7 +49,7 @@
 	</Task>
 	<Task sr="task272">
 		<cdate>1582526170588</cdate>
-		<edate>1582635292631</edate>
+		<edate>1582644983728</edate>
 		<id>272</id>
 		<nme>TASKER.on~export.cteate-dir</nme>
 		<pri>100</pri>
@@ -120,35 +113,6 @@
 			<Int sr="arg1" val="1"/>
 		</Action>
 	</Task>
-	<Task sr="task274">
-		<cdate>1582526170588</cdate>
-		<edate>1582636961183</edate>
-		<id>274</id>
-		<nme>TASKER.on.export</nme>
-		<pri>6</pri>
-		<Action sr="act0" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.on~export.move-files</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">DS.run-sync-now</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-	</Task>
 	<Task sr="task275">
 		<cdate>1582526170588</cdate>
 		<edate>1582635348153</edate>
@@ -190,10 +154,11 @@
 	</Task>
 	<Task sr="task276">
 		<cdate>1582526170588</cdate>
-		<edate>1582637099926</edate>
+		<edate>1582645161997</edate>
 		<id>276</id>
-		<nme>TASKER.on~export.move-files</nme>
+		<nme>TASKER.on.export.move-files</nme>
 		<pri>6</pri>
+		<rty>2</rty>
 		<Action sr="act0" ve="7">
 			<code>412</code>
 			<label>get .xml files in dir</label>
@@ -205,107 +170,6 @@
 			<Str sr="arg5" ve="3">%match_files</Str>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%result</Str>
-			<Str sr="arg1" ve="3"> </Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-		</Action>
-		<Action sr="act10" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%dir_path</Str>
-			<Str sr="arg1" ve="3">%subdir_path/%project_name</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-		</Action>
-		<Action sr="act11" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">TASKER.on~export.cteate-dir</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3">%dir_path</Str>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act12" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%result</Str>
-			<Str sr="arg1" ve="3">%result
-%project_name </Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-		</Action>
-		<Action sr="act13" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">name: %name
-dir_name: %dir_name
-project_name: %project_name
-dir_path: %dir_path</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act14" ve="7">
-			<code>400</code>
-			<Str sr="arg0" ve="3">%file</Str>
-			<Str sr="arg1" ve="3">%dir_path</Str>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act15" ve="7">
-			<code>523</code>
-			<Str sr="arg0" ve="3">Loop</Str>
-			<Str sr="arg1" ve="3">name: %name
-dir_name: %dir_name
-project_name: %project_name
-dir_path: %dir_path</Str>
-			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3"/>
-			<Img sr="arg2" ve="2"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-			<Int sr="arg8" val="0"/>
-			<Str sr="arg9" ve="3"/>
-		</Action>
-		<Action sr="act16" ve="7">
-			<code>40</code>
-		</Action>
-		<Action sr="act17" ve="7">
-			<code>523</code>
-			<Str sr="arg0" ve="3">Tasker exported project</Str>
-			<Str sr="arg1" ve="3">%result</Str>
-			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3"/>
-			<Img sr="arg2" ve="2"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-			<Int sr="arg8" val="0"/>
-			<Str sr="arg9" ve="3"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%match_files(#)</lhs>
-					<op>7</op>
-					<rhs>0</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act18" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">TASKER File modified Tasker/projects</Str>
-			<Int sr="arg1" val="1"/>
-		</Action>
-		<Action sr="act2" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
 			<Str sr="arg1" ve="3"/>
@@ -317,17 +181,62 @@ dir_path: %dir_path</Str>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act3" ve="7">
+		<Action sr="act2" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">TASKER File modified Tasker/projects</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act3" ve="7">
 			<code>39</code>
+			<label>Move files</label>
 			<Str sr="arg0" ve="3">%file</Str>
 			<Str sr="arg1" ve="3">%match_files()</Str>
 		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<label>Move file</label>
+			<Str sr="arg0" ve="3">TASKER.export.move-file</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%file</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
 		<Action sr="act5" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">TASKER File modified Tasker/projects</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task278">
+		<cdate>1582644306781</cdate>
+		<edate>1582644890368</edate>
+		<id>278</id>
+		<nme>TASKER.export.move-file</nme>
+		<rty>2</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%file</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>1446874931</code>
 			<label>Get project name from xml</label>
 			<Bundle sr="arg0">
@@ -410,7 +319,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigJson</Str>
 			<Int sr="arg3" val="60"/>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act2" ve="7">
 			<code>130</code>
 			<label>Get directory name
 return %subdir_name</label>
@@ -423,7 +332,7 @@ return %subdir_name</label>
 			<Str sr="arg4" ve="3">%subdir_name</Str>
 			<Int sr="arg5" val="0"/>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act3" ve="7">
 			<code>130</code>
 			<label>Get project name
 return %project_name</label>
@@ -436,7 +345,7 @@ return %project_name</label>
 			<Str sr="arg4" ve="3">%project_name</Str>
 			<Int sr="arg5" val="0"/>
 		</Action>
-		<Action sr="act8" ve="7">
+		<Action sr="act4" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%subdir_path</Str>
 			<Str sr="arg1" ve="3">Tasker/projects/%subdir_name</Str>
@@ -445,13 +354,82 @@ return %project_name</label>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
 		</Action>
-		<Action sr="act9" ve="7">
+		<Action sr="act5" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">TASKER.on~export.cteate-dir</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Str sr="arg2" ve="3">%subdir_path</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%dir_path</Str>
+			<Str sr="arg1" ve="3">%subdir_path/%project_name</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TASKER.on~export.cteate-dir</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%dir_path</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>400</code>
+			<Str sr="arg0" ve="3">%file</Str>
+			<Str sr="arg1" ve="3">%dir_path</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Loop</Str>
+			<Str sr="arg1" ve="3">name: %name
+dir_name: %dir_name
+project_name: %project_name
+dir_path: %dir_path</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task279">
+		<cdate>1582645121401</cdate>
+		<edate>1582645247340</edate>
+		<id>279</id>
+		<nme>TASKER.export.drive-synch-now</nme>
+		<Action sr="act0" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">DS.run-sync-now</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
