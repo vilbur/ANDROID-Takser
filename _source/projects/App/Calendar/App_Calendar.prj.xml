@@ -1,0 +1,217 @@
+<TaskerData sr="" dvi="1" tv="5.9.2">
+	<dmetric>720.0,1502.0</dmetric>
+	<Profile sr="prof226" ve="2">
+		<cdate>1580906544663</cdate>
+		<clp>true</clp>
+		<edate>1581927297880</edate>
+		<flags>8</flags>
+		<id>226</id>
+		<mid0>37</mid0>
+		<mid1>40</mid1>
+		<nme>CAL on Calendar app</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.android.calendar.AllInOneActivity</cls0>
+			<flags>2</flags>
+			<label0>Calendar</label0>
+			<pkg0>com.google.android.calendar</pkg0>
+		</App>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1580905692082</cdate>
+		<name>App/Calendar</name>
+		<pids>226</pids>
+		<scenes>CAL.dialog</scenes>
+		<tids>41,37,222,40</tids>
+		<Img sr="icon" ve="2">
+			<cls>com.android.calendar.AllInOneActivity</cls>
+			<pkg>com.google.android.calendar</pkg>
+		</Img>
+	</Project>
+	<Scene sr="sceneCAL.dialog">
+		<cdate>1580919088028</cdate>
+		<edate>1581928026268</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>128</heightPort>
+		<nme>CAL.dialog</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>256</widthPort>
+		<ButtonElement sr="elements0" ve="3">
+			<clickTask>41</clickTask>
+			<flags>4</flags>
+			<geom>0,0,103,60,0,0,60,60</geom>
+			<Str sr="arg0" ve="3">Button1</Str>
+			<Str sr="arg1" ve="3">Web</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFEFE9E9</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00FFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">CAL.dialog</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task222">
+		<cdate>1580905719829</cdate>
+		<edate>1581928104815</edate>
+		<id>222</id>
+		<nme>CAL.webViewToggle</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>335</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%app_icon
+Icon
+Icon for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%app_name
+Name
+Name of the App&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%app_package
+Package
+Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1849520476</code>
+			<label>Open Calendar in Chrome</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ActionButtonCommand>&lt;null&gt;</ActionButtonCommand>
+					<ActionButtonCommand-type>java.lang.String</ActionButtonCommand-type>
+					<ActionButtonImage>&lt;null&gt;</ActionButtonImage>
+					<ActionButtonImage-type>java.lang.String</ActionButtonImage-type>
+					<ContinueTask>false</ContinueTask>
+					<ContinueTask-type>java.lang.Boolean</ContinueTask-type>
+					<CustomTabUrl>https://calendar.google.com/calendar/r/day/2020/2/10?hl=en-GB</CustomTabUrl>
+					<CustomTabUrl-type>java.lang.String</CustomTabUrl-type>
+					<EnableUrlBarHiding>false</EnableUrlBarHiding>
+					<EnableUrlBarHiding-type>java.lang.Boolean</EnableUrlBarHiding-type>
+					<MenuCommandPrefix>&lt;null&gt;</MenuCommandPrefix>
+					<MenuCommandPrefix-type>java.lang.String</MenuCommandPrefix-type>
+					<MenuItemCommands>&lt;null&gt;</MenuItemCommands>
+					<MenuItemCommands-type>java.lang.String</MenuItemCommands-type>
+					<MenuItemLabels>Test Label</MenuItemLabels>
+					<MenuItemLabels-type>java.lang.String</MenuItemLabels-type>
+					<ToolbarColor>&lt;null&gt;</ToolbarColor>
+					<ToolbarColor-type>java.lang.String</ToolbarColor-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Url: https://calendar.google.com/calendar/r/day/2020/2/10?hl=en-GB
+Menu Item Labels: Test Label</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>CustomTabUrl MenuItemLabels plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>c7e5c2bd-cc90-4147-a9e3-e2d51e76b20e</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentChromeCustomTabs</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigChromeCustomTabs</Str>
+			<Int sr="arg3" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%app_name</lhs>
+					<op>2</op>
+					<rhs>Calendar</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>20</code>
+			<label>Open Calendar App</label>
+			<App sr="arg0">
+				<appClass>com.android.calendar.AllInOneActivity</appClass>
+				<appPkg>com.google.android.calendar</appPkg>
+				<label>Calendar</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%app_name</lhs>
+					<op>3</op>
+					<rhs>Calendar</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>61</code>
+			<Int sr="arg0" val="200"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Calendar web view</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task37">
+		<cdate>1580918549587</cdate>
+		<edate>1581928048071</edate>
+		<id>37</id>
+		<nme>CAL.dialog.show</nme>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">CAL.dialog</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="133"/>
+			<Int sr="arg3">
+				<var>10</var>
+			</Int>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task40">
+		<cdate>1580918549587</cdate>
+		<edate>1580920728891</edate>
+		<id>40</id>
+		<nme>CAL.dialog.hide</nme>
+		<pri>1006</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">CAL.dialog</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task41">
+		<cdate>1580919839293</cdate>
+		<edate>1580919839293</edate>
+		<id>41</id>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">CAL.webViewToggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
