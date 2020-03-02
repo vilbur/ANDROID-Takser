@@ -2,7 +2,7 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1581371263874</cdate>
 		<name>App/Kalorické_Tabulky</name>
-		<tids>265,252,264,261,262,270,256,263,239,237,183,230,253,269</tids>
+		<tids>265,264,256,272,269,253,270,237,263,252,239,262,183,230,261</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>cz.psc.android.kaloricketabulky.activity.HomeActivity</cls>
@@ -11,7 +11,7 @@
 	</Project>
 	<Task sr="task183">
 		<cdate>1581371334764</cdate>
-		<edate>1582039870846</edate>
+		<edate>1583131734755</edate>
 		<id>183</id>
 		<nme>KT.ui.lunch.list.select</nme>
 		<pri>100</pri>
@@ -171,7 +171,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task230">
 		<cdate>1582035505269</cdate>
-		<edate>1582038066579</edate>
+		<edate>1583131446592</edate>
 		<id>230</id>
 		<nme>KT.ui.lunch-detail</nme>
 		<pri>100</pri>
@@ -357,7 +357,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task237">
 		<cdate>1582029121570</cdate>
-		<edate>1582043672769</edate>
+		<edate>1583131721509</edate>
 		<id>237</id>
 		<nme>KT.ui.menu.select</nme>
 		<pri>100</pri>
@@ -436,7 +436,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task239">
 		<cdate>1582029121570</cdate>
-		<edate>1582039598054</edate>
+		<edate>1583131728811</edate>
 		<id>239</id>
 		<nme>KT.ui.menu.open</nme>
 		<pri>100</pri>
@@ -771,7 +771,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task262">
 		<cdate>1582035505269</cdate>
-		<edate>1582314199752</edate>
+		<edate>1583131421616</edate>
 		<id>262</id>
 		<nme>KT.jídelníčekd~date.goto</nme>
 		<pri>100</pri>
@@ -866,9 +866,9 @@ date_difference: %date_difference</Str>
 	</Task>
 	<Task sr="task263">
 		<cdate>1581371334764</cdate>
-		<edate>1583077039908</edate>
+		<edate>1583137616498</edate>
 		<id>263</id>
-		<nme>KT jidelnicek</nme>
+		<nme>KT jidelnicek - open on date</nme>
 		<pri>100</pri>
 		<rty>1</rty>
 		<stayawake>true</stayawake>
@@ -876,7 +876,7 @@ date_difference: %date_difference</Str>
 			<code>547</code>
 			<label>DEBUG - set date</label>
 			<Str sr="arg0" ve="3">%par1</Str>
-			<Str sr="arg1" ve="3">01-03-2020</Str>
+			<Str sr="arg1" ve="3">02-03-2020</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -1286,10 +1286,10 @@ date_current22:  %date_current22</Str>
 	</Task>
 	<Task sr="task269">
 		<cdate>1581371334764</cdate>
-		<edate>1583077459935</edate>
+		<edate>1583138272033</edate>
 		<id>269</id>
 		<nme>KT jídelníček open lunch type</nme>
-		<pri>100</pri>
+		<pri>7</pri>
 		<rty>1</rty>
 		<stayawake>true</stayawake>
 		<Action sr="act0" ve="7">
@@ -1313,7 +1313,7 @@ date_current22:  %date_current22</Str>
 			<code>547</code>
 			<label>%par1 SNÍDANĚ|DOPOLEDNÍ SVAČINA|OBĚD|ODPOLEDNÍ SVAČINA|VEČEŘE|DRUHÁ VEČEŘE</label>
 			<Str sr="arg0" ve="3">%lunch_type</Str>
-			<Str sr="arg1" ve="3">%par1 </Str>
+			<Str sr="arg1" ve="3">%par1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -1327,35 +1327,56 @@ date_current22:  %date_current22</Str>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%lunch_types_index</Str>
-			<Str sr="arg1" ve="3">%lunch_types(#?%par1)</Str>
+			<Str sr="arg0" ve="3">%lunch_type_index</Str>
+			<Str sr="arg1" ve="3">%lunch_types(#?%lunch_type)</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
 		</Action>
 		<Action sr="act4" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%lunch_type_name</Str>
-			<Str sr="arg1" ve="3">%lunch_types(%lunch_types_index)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-		</Action>
-		<Action sr="act5" ve="7">
 			<code>130</code>
-			<label>return %type_coordinates</label>
-			<Str sr="arg0" ve="3">KT.jidelnicek~lunch.type.find</Str>
+			<label>set %element_coordinates</label>
+			<Str sr="arg0" ve="3">AI get element coordinates by text</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3">%lunch_type_name</Str>
+			<Str sr="arg2" ve="3">zapsat potravinu</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%element_coordinates</Str>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<label>set %type_coordinates</label>
+			<Str sr="arg0" ve="3">KT.jidelnicek~lunch.type.find-in-list</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%lunch_type</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3">%type_coordinates</Str>
 			<Int sr="arg5" val="0"/>
 		</Action>
 		<Action sr="act6" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">KT jídelníček open lunch type</Str>
+			<Str sr="arg1" ve="3">lunch_type: %lunch_type
+lunch_type_index: %lunch_type_index
+
+element_coordinates: %element_coordinates</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
 			<code>1732635924</code>
 			<se>false</se>
 			<Bundle sr="arg0">
@@ -1422,16 +1443,16 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task270">
 		<cdate>1581371334764</cdate>
-		<edate>1582314148185</edate>
+		<edate>1583138299692</edate>
 		<id>270</id>
-		<nme>KT.jidelnicek~lunch.type.find</nme>
+		<nme>KT.jidelnicek~lunch.type.find-in-list</nme>
 		<pri>100</pri>
 		<rty>1</rty>
 		<stayawake>true</stayawake>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<label>%par1 SNÍDANĚ|DOPOLEDNÍ SVAČINA|OBĚD|ODPOLEDNÍ SVAČINA|VEČEŘE|DRUHÁ VEČEŘE</label>
-			<Str sr="arg0" ve="3">%lunch_type_name</Str>
+			<Str sr="arg0" ve="3">%lunch_type</Str>
 			<Str sr="arg1" ve="3">%par1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -1503,7 +1524,7 @@ Is Tasker Action: true</com.twofortyfouram.locale.intent.extra.BLURB>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>1040876951</code>
-			<label>get ui elements</label>
+			<label>get texts of all ui elements</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
 					<AppPackage>cz.psc.android.kaloricketabulky</AppPackage>
@@ -1562,7 +1583,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>547</code>
 			<label>search for item in list</label>
 			<Str sr="arg0" ve="3">%type_index</Str>
-			<Str sr="arg1" ve="3">%aitext(#?%lunch_type_name)</Str>
+			<Str sr="arg1" ve="3">%aitext(#?%lunch_type)</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -1590,15 +1611,32 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg5" val="3"/>
 		</Action>
 		<Action sr="act6" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">KT.jidelnicek.lunch.type %par1</Str>
+			<Str sr="arg1" ve="3">lunch_type: %lunch_type
+type_index: %type_index
+type_coordinates: %type_coordinates</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
 			<code>126</code>
 			<label>RETURN coordinates</label>
 			<Str sr="arg0" ve="3">%type_coordinates</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act8" ve="7">
 			<code>38</code>
 		</Action>
-		<Action sr="act8" ve="7">
+		<Action sr="act9" ve="7">
 			<code>1732635924</code>
 			<label>scroll down if item is not found</label>
 			<se>false</se>
@@ -1653,11 +1691,106 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
 		</Action>
-		<Action sr="act9" ve="7">
+	</Task>
+	<Task sr="task272">
+		<cdate>1583134063576</cdate>
+		<edate>1583136117247</edate>
+		<id>272</id>
+		<nme>AI get element coordinates by text</nme>
+		<Action sr="act0" ve="7">
+			<code>1040876951</code>
+			<label>get ui elements</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AppPackage>cz.psc.android.kaloricketabulky</AppPackage>
+					<AppPackage-type>java.lang.String</AppPackage-type>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<IsFirstAction>false</IsFirstAction>
+					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
+					<OnlyClickable>true</OnlyClickable>
+					<OnlyClickable-type>java.lang.Boolean</OnlyClickable-type>
+					<OnlyVisible>true</OnlyVisible>
+					<OnlyVisible-type>java.lang.Boolean</OnlyVisible-type>
+					<Password>&lt;null&gt;</Password>
+					<Password-type>java.lang.String</Password-type>
+					<Regex>false</Regex>
+					<Regex-type>java.lang.Boolean</Regex-type>
+					<UIUpdateFields></UIUpdateFields>
+					<UIUpdateFields-type>java.lang.String</UIUpdateFields-type>
+					<UIUpdateText>&lt;null&gt;</UIUpdateText>
+					<UIUpdateText-type>java.lang.String</UIUpdateText-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>App Package: cz.psc.android.kaloricketabulky
+Only Visible: true
+Only Clickable: true</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%aiapp
+App Name
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%aicoordinates()
+Element Coordinates
+List of coordinates in the x,y format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%aiid()
+Element Ids
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%aipackage
+App Package Name
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%aitext()
+Element Texts
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>AppPackage plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>d847a75f-85bc-414c-af86-1af846400c5e</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentUIQuery</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigUIQuery</Str>
+			<Int sr="arg3" val="20"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>search for item in array</label>
+			<Str sr="arg0" ve="3">%index_of_element</Str>
+			<Str sr="arg1" ve="3">%aitext(#?%par1)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%index_of_element</Str>
+			<Str sr="arg1" ve="3">,</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>get coordinates of list item</label>
+			<Str sr="arg0" ve="3">%element_coordinates</Str>
+			<Str sr="arg1" ve="3">%aicoordinates(%index_of_element1)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>523</code>
-			<Str sr="arg0" ve="3">KT.jidelnicek.lunch.type %par1</Str>
-			<Str sr="arg1" ve="3">type_index: %type_index
-type_coordinates: %type_coordinates</Str>
+			<Str sr="arg0" ve="3">AI UI elements</Str>
+			<Str sr="arg1" ve="3">index_of_element: %index_of_element
+index_of_element(1): %index_of_element(1) 
+index_of_element1: %index_of_element1
+
+searched item : %aitext(%index_of_element1)
+searched coords:%aicoordinates(%index_of_element1)
+
+element_coordinates: %element_coordinates</Str>
 			<Str sr="arg10" ve="3"/>
 			<Str sr="arg11" ve="3"/>
 			<Img sr="arg2" ve="2"/>
@@ -1668,6 +1801,19 @@ type_coordinates: %type_coordinates</Str>
 			<Int sr="arg7" val="0"/>
 			<Int sr="arg8" val="0"/>
 			<Str sr="arg9" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DEBUG_TEST_MODE</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>126</code>
+			<label>RETURN coordinates</label>
+			<Str sr="arg0" ve="3">%element_coordinates</Str>
+			<Int sr="arg1" val="1"/>
 		</Action>
 	</Task>
 </TaskerData>
