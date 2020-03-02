@@ -2,177 +2,18 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1583076332850</cdate>
 		<name>App/Kalorické_Tabulky_UI</name>
-		<tids>239,252,264,237,262,183,230,265</tids>
+		<tids>252,237,239,230</tids>
 		<tsort>Alpha</tsort>
 	</Project>
-	<Task sr="task183">
-		<cdate>1581371334764</cdate>
-		<edate>1582039870846</edate>
-		<id>183</id>
-		<nme>KT.ui.lunch.list.select</nme>
-		<pri>100</pri>
-		<rty>1</rty>
-		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%par1</Str>
-			<Str sr="arg1" ve="3">Utopenci</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>13</op>
-					<rhs></rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">KT.ui.menu.select</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>1732635924</code>
-			<se>false</se>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<ActionId>cz.psc.android.kaloricketabulky:id/action_search</ActionId>
-					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>16</ActionType>
-					<ActionType-type>java.lang.String</ActionType-type>
-					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
-					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
-					<FieldSelectionType>1</FieldSelectionType>
-					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
-					<IsFirstAction>false</IsFirstAction>
-					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<IsTaskerAction>true</IsTaskerAction>
-					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText>&lt;null&gt;</NearbyText>
-					<NearbyText-type>java.lang.String</NearbyText-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<RepeatInterval>&lt;null&gt;</RepeatInterval>
-					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
-					<RepeatTimes>&lt;null&gt;</RepeatTimes>
-					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
-					<StoredAction>&lt;null&gt;</StoredAction>
-					<StoredAction-type>java.lang.String</StoredAction-type>
-					<TextToWrite>&lt;null&gt;</TextToWrite>
-					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
-Value: cz.psc.android.kaloricketabulky:id/action_search
-Action : Click
-Is Tasker Action: true</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>28bb4f27-05f9-4ea1-b1d0-ba39e5db3247</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">KT.ui.scroll-to-item</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3">%par1</Str>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>1732635924</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<ActionId>%par1</ActionId>
-					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>16</ActionType>
-					<ActionType-type>java.lang.String</ActionType-type>
-					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
-					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
-					<FieldSelectionType>0</FieldSelectionType>
-					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
-					<IsFirstAction>false</IsFirstAction>
-					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<IsTaskerAction>false</IsTaskerAction>
-					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText>&lt;null&gt;</NearbyText>
-					<NearbyText-type>java.lang.String</NearbyText-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<RepeatInterval>&lt;null&gt;</RepeatInterval>
-					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
-					<RepeatTimes>&lt;null&gt;</RepeatTimes>
-					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
-					<StoredAction>&lt;null&gt;</StoredAction>
-					<StoredAction-type>java.lang.String</StoredAction-type>
-					<TextToWrite>&lt;null&gt;</TextToWrite>
-					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Text
-Value: %par1
-Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>851b40a1-a061-4475-ab81-6a6fa1f09363</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
-			<Int sr="arg3" val="23"/>
-		</Action>
-	</Task>
 	<Task sr="task230">
 		<cdate>1582035505269</cdate>
-		<edate>1582038066579</edate>
+		<edate>1583144052954</edate>
 		<id>230</id>
 		<nme>KT.ui.lunch-detail</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>1732635924</code>
+			<label>Množství - open list</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
 					<ActionId>cz.psc.android.kaloricketabulky:id/spCount</ActionId>
@@ -225,8 +66,16 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>1732635924</code>
-			<label>Množství</label>
+			<label>Množství - select "%"</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
 					<ActionId>%</ActionId>
@@ -278,29 +127,26 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
 		</Action>
-		<Action sr="act2" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">KT.jídelníčekd~date.goto</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
 		<Action sr="act3" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>1732635924</code>
-			<label>Zapsat do jidelnicku</label>
+			<label>Množství - select "%"</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<ActionId>ZAPSAT</ActionId>
+					<ActionId>cz.psc.android.kaloricketabulky:id/etCount</ActionId>
 					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>16</ActionType>
+					<ActionType>1</ActionType>
 					<ActionType-type>java.lang.String</ActionType-type>
 					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
 					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
-					<FieldSelectionType>0</FieldSelectionType>
+					<FieldSelectionType>1</FieldSelectionType>
 					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
 					<IsFirstAction>false</IsFirstAction>
 					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
@@ -318,9 +164,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 					<StoredAction-type>java.lang.String</StoredAction-type>
 					<TextToWrite>&lt;null&gt;</TextToWrite>
 					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Text
-Value: ZAPSAT
-Action : Click
+					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
+Value: cz.psc.android.kaloricketabulky:id/etCount
+Action : Focus
 Is Tasker Action: true</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
@@ -342,18 +188,73 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%xxx</lhs>
-					<op>2</op>
-					<rhs>xx</rhs>
-				</Condition>
-			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>1732635924</code>
+			<label>Množství - select "%"</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ActionId>&lt;null&gt;</ActionId>
+					<ActionId-type>java.lang.String</ActionId-type>
+					<ActionType>-1</ActionType>
+					<ActionType-type>java.lang.String</ActionType-type>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<FieldSelectionType>2</FieldSelectionType>
+					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
+					<IsFirstAction>false</IsFirstAction>
+					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
+					<IsTaskerAction>true</IsTaskerAction>
+					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
+					<NearbyText>&lt;null&gt;</NearbyText>
+					<NearbyText-type>java.lang.String</NearbyText-type>
+					<Password>&lt;null&gt;</Password>
+					<Password-type>java.lang.String</Password-type>
+					<RepeatInterval>&lt;null&gt;</RepeatInterval>
+					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
+					<RepeatTimes>&lt;null&gt;</RepeatTimes>
+					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
+					<StoredAction>&lt;null&gt;</StoredAction>
+					<StoredAction-type>java.lang.String</StoredAction-type>
+					<TextToWrite>50</TextToWrite>
+					<TextToWrite-type>java.lang.String</TextToWrite-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Focus
+Text to Write : 50
+Action : Write
+Is Tasker Action: true</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>TextToWrite FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>cf7c7ddc-25b3-4656-ae9d-987d8afecf2d</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
+			<Int sr="arg3" val="23"/>
 		</Action>
 	</Task>
 	<Task sr="task237">
 		<cdate>1582029121570</cdate>
-		<edate>1582043672769</edate>
+		<edate>1583143237537</edate>
 		<id>237</id>
 		<nme>KT.ui.menu.select</nme>
 		<pri>100</pri>
@@ -432,7 +333,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task239">
 		<cdate>1582029121570</cdate>
-		<edate>1582039598054</edate>
+		<edate>1583143243079</edate>
 		<id>239</id>
 		<nme>KT.ui.menu.open</nme>
 		<pri>100</pri>
@@ -492,26 +393,19 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task252">
 		<cdate>1581371334764</cdate>
-		<edate>1582066209379</edate>
+		<edate>1583143124054</edate>
 		<id>252</id>
-		<nme>KT.ui.scroll-to-item</nme>
+		<nme>KT.ui.scroll-to-item-in-list</nme>
 		<pri>100</pri>
 		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%par1</Str>
-			<Str sr="arg1" ve="3">Utopenci</Str>
+			<Str sr="arg0" ve="3">%scroll_counter</Str>
+			<Str sr="arg1" ve="3">0</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>13</op>
-					<rhs></rhs>
-				</Condition>
-			</ConditionList>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>1040876951</code>
@@ -572,7 +466,8 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>548</code>
-			<Str sr="arg0" ve="3">Search item: %list_item(#?%par1)</Str>
+			<Str sr="arg0" ve="3">List length: %list_item(#) 
+Search item: %list_item(#?%par1)</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
 		<Action sr="act3" ve="7">
@@ -641,420 +536,23 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 		</Action>
 		<Action sr="act5" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%scroll_counter</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
 			<code>135</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="2"/>
 			<Str sr="arg2" ve="3"/>
-		</Action>
-	</Task>
-	<Task sr="task262">
-		<cdate>1582035505269</cdate>
-		<edate>1582314199752</edate>
-		<id>262</id>
-		<nme>KT.jídelníčekd~date.goto</nme>
-		<pri>100</pri>
-		<rty>1</rty>
-		<Action sr="act0" ve="7">
-			<code>1384093265</code>
-			<label>Go to given date in Jídelníček
-
-%par1 string date of lunch E.G.: "18-02-2020"
-
-return %date_lunch</label>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<com.balda.calendartask.extra.DATE>%par1</com.balda.calendartask.extra.DATE>
-					<com.balda.calendartask.extra.DATE-type>java.lang.String</com.balda.calendartask.extra.DATE-type>
-					<com.balda.calendartask.extra.DATE_FORMAT>dd-MM-yyyy</com.balda.calendartask.extra.DATE_FORMAT>
-					<com.balda.calendartask.extra.DATE_FORMAT-type>java.lang.String</com.balda.calendartask.extra.DATE_FORMAT-type>
-					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
-					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
-					<com.balda.calendartask.extra.OPERATION>6</com.balda.calendartask.extra.OPERATION>
-					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
-					<com.balda.calendartask.extra.TYPE>0</com.balda.calendartask.extra.TYPE>
-					<com.balda.calendartask.extra.TYPE-type>java.lang.Integer</com.balda.calendartask.extra.TYPE-type>
-					<com.balda.calendartask.extra.VARIABLE>date_lunch</com.balda.calendartask.extra.VARIABLE>
-					<com.balda.calendartask.extra.VARIABLE-type>java.lang.String</com.balda.calendartask.extra.VARIABLE-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>%par1 into seconds with format dd-MM-yyyy</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%date_lunch
-The converted value
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.DATE com.balda.calendartask.extra.DATE_FORMAT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.balda.calendartask</Str>
-			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireDateFormatActivity</Str>
-			<Int sr="arg3" val="10"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>130</code>
-			<label>return %date_current</label>
-			<Str sr="arg0" ve="3">KT.jídelníček~date.get.current-from-ui</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%date_current</Str>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>Number of days between current day and day to write</label>
-			<Str sr="arg0" ve="3">%date_difference</Str>
-			<Str sr="arg1" ve="3"> (%date_lunch - %date_current)/3600/24</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">KT.jídelníček~date.presss-arrow</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3">%date_difference</Str>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>523</code>
-			<Str sr="arg0" ve="3">KT.jídelníček.date</Str>
-			<Str sr="arg1" ve="3">date_current:      %date_current
-date_lunch:         %date_lunch
-date_difference: %date_difference</Str>
-			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3"/>
-			<Img sr="arg2" ve="2"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-			<Int sr="arg8" val="0"/>
-			<Str sr="arg9" ve="3"/>
-		</Action>
-	</Task>
-	<Task sr="task264">
-		<cdate>1582035505269</cdate>
-		<edate>1582314183539</edate>
-		<id>264</id>
-		<nme>KT.jídelníček~date.presss-arrow</nme>
-		<pri>100</pri>
-		<Action sr="act0" ve="7">
-			<code>137</code>
-			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>8</op>
-					<rhs>0</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>7</op>
-					<rhs>0</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act10" ve="7">
-			<code>1732635924</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<ActionId>%select_direction týden</ActionId>
-					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>16</ActionType>
-					<ActionType-type>java.lang.String</ActionType-type>
-					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
-					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
-					<FieldSelectionType>0</FieldSelectionType>
-					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
-					<IsFirstAction>false</IsFirstAction>
-					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<IsTaskerAction>false</IsTaskerAction>
-					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText>&lt;null&gt;</NearbyText>
-					<NearbyText-type>java.lang.String</NearbyText-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<RepeatInterval>&lt;null&gt;</RepeatInterval>
-					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
-					<RepeatTimes>&lt;null&gt;</RepeatTimes>
-					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
-					<StoredAction>&lt;null&gt;</StoredAction>
-					<StoredAction-type>java.lang.String</StoredAction-type>
-					<TextToWrite>&lt;null&gt;</TextToWrite>
-					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Text
-Value: %select_direction týden
-Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>642c8340-e8d1-4266-9795-805812282383</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
-			<Int sr="arg3" val="23"/>
-		</Action>
-		<Action sr="act11" ve="7">
-			<code>135</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="1"/>
-			<Str sr="arg2" ve="3"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>Arrow label for NEXT day</label>
-			<Str sr="arg0" ve="3">%select_direction</Str>
-			<Str sr="arg1" ve="3">následující</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
-					<op>7</op>
-					<rhs>0</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>890</code>
-			<Str sr="arg0" ve="3">%par1</Str>
-			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>43</code>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>547</code>
-			<label>Arrow label for PREVIOUS day</label>
-			<Str sr="arg0" ve="3">%select_direction</Str>
-			<Str sr="arg1" ve="3">předchozí</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%par1</lhs>
+					<lhs>%scroll_counter</lhs>
 					<op>6</op>
-					<rhs>0</rhs>
+					<rhs>5</rhs>
 				</Condition>
 			</ConditionList>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>888</code>
-			<Str sr="arg0" ve="3">%par1</Str>
-			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>523</code>
-			<Str sr="arg0" ve="3">select day</Str>
-			<Str sr="arg1" ve="3">date: %DATE
-select_direction: %select_direction</Str>
-			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3"/>
-			<Img sr="arg2" ve="2"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-			<Int sr="arg8" val="0"/>
-			<Str sr="arg9" ve="3"/>
-		</Action>
-		<Action sr="act9" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">date: %DATE
-select_direction: %select_direction</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task265">
-		<cdate>1582035505269</cdate>
-		<edate>1582314168874</edate>
-		<id>265</id>
-		<nme>KT.jídelníček~date.get.current-from-ui</nme>
-		<pri>100</pri>
-		<Action sr="act0" ve="7">
-			<code>1040876951</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<AppPackage>cz.psc.android.kaloricketabulky</AppPackage>
-					<AppPackage-type>java.lang.String</AppPackage-type>
-					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
-					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
-					<IsFirstAction>false</IsFirstAction>
-					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<OnlyClickable>false</OnlyClickable>
-					<OnlyClickable-type>java.lang.Boolean</OnlyClickable-type>
-					<OnlyVisible>false</OnlyVisible>
-					<OnlyVisible-type>java.lang.Boolean</OnlyVisible-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<Regex>false</Regex>
-					<Regex-type>java.lang.Boolean</Regex-type>
-					<UIUpdateFields>cz.psc.android.kaloricketabulky:id/tvDate=:=date_current</UIUpdateFields>
-					<UIUpdateFields-type>java.lang.String</UIUpdateFields-type>
-					<UIUpdateText>&lt;null&gt;</UIUpdateText>
-					<UIUpdateText-type>java.lang.String</UIUpdateText-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>App Package: cz.psc.android.kaloricketabulky
-Variables: date_current</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%aiapp
-App Name
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%aicoordinates()
-Element Coordinates
-List of coordinates in the x,y format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%aiid()
-Element Ids
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%aipackage
-App Package Name
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%aitext()
-Element Texts
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%date_current
-date_current
-date_current&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>AppPackage UIUpdateFields plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>9bc3d196-9ad5-4e9a-b238-237d294d6905</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentUIQuery</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigUIQuery</Str>
-			<Int sr="arg3" val="20"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>590</code>
-			<label>Split date to array E.G.: [ "Tuesday", "18.02." ]</label>
-			<Str sr="arg0" ve="3">%date_current</Str>
-			<Str sr="arg1" ve="3"/>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>590</code>
-			<label>Split day to [ 18, 02 ]</label>
-			<Str sr="arg0" ve="3">%date_current2</Str>
-			<Str sr="arg1" ve="3">.</Str>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>354</code>
-			<label>Add year [ 18, 02, 2020 ]</label>
-			<Str sr="arg0" ve="3">%date_array</Str>
-			<Str sr="arg1" ve="3">%date_current21
-%date_current22
-2020</Str>
-			<Str sr="arg2" ve="3"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>592</code>
-			<label>Join to format 18-02-2020</label>
-			<Str sr="arg0" ve="3">%date_array</Str>
-			<Str sr="arg1" ve="3">-</Str>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>1384093265</code>
-			<label>Get date in seconds</label>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<com.balda.calendartask.extra.DATE>%date_array</com.balda.calendartask.extra.DATE>
-					<com.balda.calendartask.extra.DATE-type>java.lang.String</com.balda.calendartask.extra.DATE-type>
-					<com.balda.calendartask.extra.DATE_FORMAT>dd-MM-yyyy</com.balda.calendartask.extra.DATE_FORMAT>
-					<com.balda.calendartask.extra.DATE_FORMAT-type>java.lang.String</com.balda.calendartask.extra.DATE_FORMAT-type>
-					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
-					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
-					<com.balda.calendartask.extra.OPERATION>6</com.balda.calendartask.extra.OPERATION>
-					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
-					<com.balda.calendartask.extra.TYPE>0</com.balda.calendartask.extra.TYPE>
-					<com.balda.calendartask.extra.TYPE-type>java.lang.Integer</com.balda.calendartask.extra.TYPE-type>
-					<com.balda.calendartask.extra.VARIABLE>date_formatted</com.balda.calendartask.extra.VARIABLE>
-					<com.balda.calendartask.extra.VARIABLE-type>java.lang.String</com.balda.calendartask.extra.VARIABLE-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>%date_array into seconds with format dd-MM-yyyy</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%date_formatted
-The converted value
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.DATE com.balda.calendartask.extra.DATE_FORMAT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.balda.calendartask</Str>
-			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireDateFormatActivity</Str>
-			<Int sr="arg3" val="10"/>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>523</code>
-			<Str sr="arg0" ve="3">KT.jídelníček.date.get.current</Str>
-			<Str sr="arg1" ve="3">DATE: %DATE
-ctconverted:   %ctconverted
-date_current:   %date_current
-date_formatted: %date_formatted
-date_array:          %date_array
-date_current2:    %date_current2
-date_current21:  %date_current21
-date_current22:  %date_current22</Str>
-			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3"/>
-			<Img sr="arg2" ve="2"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-			<Int sr="arg8" val="0"/>
-			<Str sr="arg9" ve="3"/>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>126</code>
-			<Str sr="arg0" ve="3">%date_formatted</Str>
-			<Int sr="arg1" val="1"/>
 		</Action>
 	</Task>
 </TaskerData>
