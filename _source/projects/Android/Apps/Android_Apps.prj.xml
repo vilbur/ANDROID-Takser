@@ -1,37 +1,12 @@
 <TaskerData sr="" dvi="1" tv="5.9.2">
-	<Profile sr="prof12" ve="2">
+	<Profile sr="prof284" ve="2">
 		<cdate>1579965973923</cdate>
 		<clp>true</clp>
-		<edate>1580666015599</edate>
+		<edate>1584255819506</edate>
 		<flags>8</flags>
-		<id>12</id>
+		<id>284</id>
 		<mid0>11</mid0>
-		<Event sr="con0" ve="2">
-			<code>2078</code>
-			<pri>0</pri>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%app_icon
-Icon
-Icon for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%app_name
-Name
-Name of the App&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%app_package
-Package
-Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3"/>
-		</Event>
-	</Profile>
-	<Profile sr="prof35" ve="2">
-		<cdate>1580701712792</cdate>
-		<clp>true</clp>
-		<edate>1580702873563</edate>
-		<flags>8</flags>
-		<id>35</id>
-		<limit>true</limit>
-		<mid0>39</mid0>
+		<nme>App Changed - set LAST_APP</nme>
 		<Event sr="con0" ve="2">
 			<code>2078</code>
 			<pri>0</pri>
@@ -52,8 +27,7 @@ Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT
 	</Profile>
 	<Profile sr="prof51" ve="2">
 		<cdate>1580549999330</cdate>
-		<clp>true</clp>
-		<edate>1580904623465</edate>
+		<edate>1584258215447</edate>
 		<flags>8</flags>
 		<id>51</id>
 		<mid0>53</mid0>
@@ -68,8 +42,8 @@ Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT
 	<Project sr="proj0" ve="2">
 		<cdate>1579965656119</cdate>
 		<name>Android/Apps</name>
-		<pids>35,51,12</pids>
-		<tids>72,39,302,303,11,100,304,5,53</tids>
+		<pids>51,284</pids>
+		<tids>302,303,290,11,53,72,304,100,39,5</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>com.android.vending.AssetBrowserActivity</cls>
@@ -295,7 +269,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task11">
 		<cdate>1579965688664</cdate>
-		<edate>1582792699085</edate>
+		<edate>1584208119089</edate>
 		<id>11</id>
 		<nme>APPS.set.LAST_APP</nme>
 		<pri>6</pri>
@@ -380,9 +354,53 @@ Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT
 			</ConditionList>
 		</Action>
 	</Task>
+	<Task sr="task290">
+		<cdate>1584255654872</cdate>
+		<edate>1584258367757</edate>
+		<id>290</id>
+		<nme>D.is-keyboard-visible</nme>
+		<Action sr="act0" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">imm</Str>
+			<Str sr="arg1" ve="3">InputMethodManager</Str>
+			<Str sr="arg2" ve="3">getInstance
+{InputMethodManager}()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">%is_keyboard_visible</Str>
+			<Str sr="arg1" ve="3">imm</Str>
+			<Str sr="arg2" ve="3">isInputMethodShown
+{boolean}()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">is_keyboard_visible = %is_keyboard_visible</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>126</code>
+			<Str sr="arg0" ve="3">%is_keyboard_visible</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+	</Task>
 	<Task sr="task302">
 		<cdate>1582791966505</cdate>
-		<edate>1582793309417</edate>
+		<edate>1582878431225</edate>
 		<id>302</id>
 		<nme>APPS.close-all</nme>
 		<pri>7</pri>
@@ -532,7 +550,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task303">
 		<cdate>1582791966505</cdate>
-		<edate>1582827577892</edate>
+		<edate>1582878444977</edate>
 		<id>303</id>
 		<nme>APPS.notify.clear</nme>
 		<pri>100</pri>
@@ -598,7 +616,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task304">
 		<cdate>1582791966505</cdate>
-		<edate>1582827651312</edate>
+		<edate>1582878425321</edate>
 		<id>304</id>
 		<nme>APPS.close-all-and-clear-notify</nme>
 		<pri>7</pri>
@@ -719,13 +737,44 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task53">
 		<cdate>1580550062628</cdate>
-		<edate>1582792586457</edate>
+		<edate>1584258718261</edate>
 		<id>53</id>
-		<nme>APPS.goHome</nme>
+		<nme>APPS.escape</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
+			<code>130</code>
+			<label>return boolean %is_keyboard_visible</label>
+			<Str sr="arg0" ve="3">D.is-keyboard-visible</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%is_keyboard_visible</Str>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>245</code>
+			<label>Hide keyboard if visible</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_keyboard_visible</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>25</code>
+			<label>Go home if keyboard is hidden</label>
 			<Int sr="arg0" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_keyboard_visible</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 	</Task>
 	<Task sr="task72">

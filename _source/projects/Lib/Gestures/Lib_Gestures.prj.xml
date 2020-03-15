@@ -355,13 +355,13 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1580684457553</cdate>
 		<name>Lib/Gestures</name>
-		<pids>142,164,139,181,143,200,202,141,140,173,201</pids>
+		<pids>202,141,140,173,164,200,181,201,139,142,143</pids>
 		<psort>Alpha</psort>
 		<scenes>GEST.debug.dialog</scenes>
-		<tids>169,138,134,135,131,120,103,146,102,136,179,117,168,182,192,119,145,189,144</tids>
+		<tids>131,135,144,119,102,138,120,179,134,182,145,168,192,103,117,169,136,146,189</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
-			<nme>mw_device_screen_rotation</nme>
+			<nme>mw_action_touch_app</nme>
 		</Img>
 	</Project>
 	<Scene sr="sceneGEST.debug.dialog">
