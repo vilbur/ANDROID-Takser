@@ -5,7 +5,6 @@
 		<edate>1581605465218</edate>
 		<flags>8</flags>
 		<id>101</id>
-		<limit>true</limit>
 		<mid0>137</mid0>
 		<mid1>30</mid1>
 		<nme>IR~show UI on unlock screen</nme>
@@ -39,9 +38,10 @@
 	<Profile sr="prof121" ve="2">
 		<cdate>1580245921451</cdate>
 		<clp>true</clp>
-		<edate>1581511219509</edate>
+		<edate>1583508254104</edate>
 		<flags>8</flags>
 		<id>121</id>
+		<limit>true</limit>
 		<mid0>114</mid0>
 		<nme>On Charging Start</nme>
 		<State sr="con0" ve="2">
@@ -52,7 +52,7 @@
 	<Profile sr="prof166" ve="2">
 		<cdate>1580332117399</cdate>
 		<clp>true</clp>
-		<edate>1580416218061</edate>
+		<edate>1584854058093</edate>
 		<flags>8</flags>
 		<id>166</id>
 		<mid0>165</mid0>
@@ -79,7 +79,7 @@
 	<Profile sr="prof170" ve="2">
 		<cdate>1580337576564</cdate>
 		<clp>true</clp>
-		<edate>1580416324639</edate>
+		<edate>1584766588562</edate>
 		<flags>8</flags>
 		<id>170</id>
 		<mid0>171</mid0>
@@ -106,7 +106,7 @@
 	<Profile sr="prof177" ve="2">
 		<cdate>1580340842225</cdate>
 		<clp>true</clp>
-		<edate>1581927241749</edate>
+		<edate>1584853878411</edate>
 		<flags>8</flags>
 		<id>177</id>
 		<mid0>178</mid0>
@@ -132,10 +132,10 @@
 	</Profile>
 	<Profile sr="prof227" ve="2">
 		<cdate>1581312145254</cdate>
-		<clp>true</clp>
-		<edate>1581312145254</edate>
+		<edate>1583508256132</edate>
 		<flags>8</flags>
 		<id>227</id>
+		<limit>true</limit>
 		<mid0>228</mid0>
 		<Event sr="con0" ve="2">
 			<code>801067335</code>
@@ -258,8 +258,8 @@ Variable Names: command</com.twofortyfouram.locale.intent.extra.BLURB>
 	<Project sr="proj0" ve="2">
 		<cdate>1579098176446</cdate>
 		<name>App/Sleep as android</name>
-		<pids>166,101,31,121,227,170,177,3</pids>
-		<tids>36,152,165,176,153,30,79,178,18,235,191,8,302,114,234,2,7,4,115,137,10,224,132,32,99,171,65,118,212,6,228,116,86</tids>
+		<pids>101,3,31,121,166,227,177,170</pids>
+		<tids>212,228,8,137,10,132,114,79,65,234,7,224,18,6,165,2,152,171,176,235,86,99,32,36,30,4,178,191,115,302,116,118,153</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<cls>com.urbandroid.sleep.alarmclock.AlarmClock</cls>
@@ -286,13 +286,46 @@ Variable Names: command</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Task>
 	<Task sr="task114">
 		<cdate>1580233218434</cdate>
-		<edate>1582402386867</edate>
+		<edate>1584854246265</edate>
 		<id>114</id>
 		<nme>SAA.~on.charging-start</nme>
 		<Action sr="act0" ve="7">
+			<code>137</code>
+			<label>Stop if tracking is running already</label>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SAA_IS_TRACKING_RUNNING</lhs>
+					<op>0</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>137</code>
+			<label>Stop if "HOME" is not current profile,
+If "Setting States" project is installed.</label>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%STATE_PROFILE</lhs>
+					<op>12</op>
+					<rhs>HOME</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%STATE_PROFILE</lhs>
+					<op>2</op>
+					<rhs>HOME</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>130</code>
 			<label>Start tracking if current time is in range</label>
-			<Str sr="arg0" ve="3">SAA.tracking-start</Str>
+			<Str sr="arg0" ve="3">SAA Tracking Start</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -476,7 +509,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task116">
 		<cdate>1580236746965</cdate>
-		<edate>1582524773390</edate>
+		<edate>1584855283881</edate>
 		<id>116</id>
 		<nme>SAA.lullabies-play</nme>
 		<pri>100</pri>
@@ -520,7 +553,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task118">
 		<cdate>1580236818606</cdate>
-		<edate>1582402377135</edate>
+		<edate>1584855276256</edate>
 		<id>118</id>
 		<nme>SAA.lullabies-stop</nme>
 		<pri>100</pri>
@@ -746,7 +779,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task165">
 		<cdate>1580331848901</cdate>
-		<edate>1582402394787</edate>
+		<edate>1584855519140</edate>
 		<id>165</id>
 		<nme>SAA.~on.tracking-start</nme>
 		<pri>6</pri>
@@ -760,6 +793,17 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg5" val="3"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APPS.close-all</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>1815819210</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -777,7 +821,82 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.twofortyfouram.locale.example.setting.toast.ui.activity.PluginActivity</Str>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act3" ve="7">
+			<code>30</code>
+			<Int sr="arg0">
+				<var>500</var>
+			</Int>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>20</code>
+			<label>Launch Sleep as Android App</label>
+			<App sr="arg0">
+				<appClass>com.urbandroid.sleep.alarmclock.AlarmClock</appClass>
+				<appPkg>com.urbandroid.sleep</appPkg>
+				<label>Sleep</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>1732635924</code>
+			<label>Go to sleep tracking screen</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ActionId>SLEEP TRACKING IN PROGRESS</ActionId>
+					<ActionId-type>java.lang.String</ActionId-type>
+					<ActionType>16</ActionType>
+					<ActionType-type>java.lang.String</ActionType-type>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<FieldSelectionType>0</FieldSelectionType>
+					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
+					<IsFirstAction>false</IsFirstAction>
+					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
+					<IsTaskerAction>false</IsTaskerAction>
+					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
+					<NearbyText>&lt;null&gt;</NearbyText>
+					<NearbyText-type>java.lang.String</NearbyText-type>
+					<Password>&lt;null&gt;</Password>
+					<Password-type>java.lang.String</Password-type>
+					<RepeatInterval>&lt;null&gt;</RepeatInterval>
+					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
+					<RepeatTimes>&lt;null&gt;</RepeatTimes>
+					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
+					<StoredAction>&lt;null&gt;</StoredAction>
+					<StoredAction-type>java.lang.String</StoredAction-type>
+					<TextToWrite>&lt;null&gt;</TextToWrite>
+					<TextToWrite-type>java.lang.String</TextToWrite-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Text
+Value: SLEEP TRACKING IN PROGRESS
+Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>81d4d411-c4e4-4b6a-8df0-8c3b0a00c4ad</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
+			<Int sr="arg3" val="23"/>
+		</Action>
+		<Action sr="act6" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">SAY</Str>
 			<Int sr="arg1">
@@ -791,7 +910,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task171">
 		<cdate>1580337606441</cdate>
-		<edate>1582373566806</edate>
+		<edate>1584766588562</edate>
 		<id>171</id>
 		<nme>SAA.~on.bedtime</nme>
 		<pri>6</pri>
@@ -808,7 +927,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">SAA.tracking-start</Str>
+			<Str sr="arg0" ve="3">SAA Tracking Start</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -816,6 +935,13 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>DISABLED</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 	</Task>
 	<Task sr="task176">
@@ -870,7 +996,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task178">
 		<cdate>1580340892524</cdate>
-		<edate>1582524849130</edate>
+		<edate>1584855649718</edate>
 		<id>178</id>
 		<nme>SAA.~on.tracking-stop</nme>
 		<pri>6</pri>
@@ -895,6 +1021,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg5" val="3"/>
 		</Action>
 		<Action sr="act2" ve="7">
+			<code>425</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
 			<code>1815819210</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -912,18 +1042,18 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.twofortyfouram.locale.example.setting.toast.ui.activity.PluginActivity</Str>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act3" ve="7">
+		<Action sr="act4" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">SAY</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Str sr="arg2" ve="3">Sleep tracking stops</Str>
-			<Str sr="arg3" ve="3">7</Str>
+			<Str sr="arg3" ve="3">3</Str>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act5" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
 			<Str sr="arg1" ve="3"/>
@@ -935,7 +1065,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act6" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">SAA.~play-radio-and-increase-volume</Str>
 			<Int sr="arg1">
@@ -1358,9 +1488,9 @@ or media stream is used already</label>
 	</Task>
 	<Task sr="task228">
 		<cdate>1581312369189</cdate>
-		<edate>1582402495441</edate>
+		<edate>1584855353548</edate>
 		<id>228</id>
-		<nme>SAA.~wifi-turn-on</nme>
+		<nme>SAA.~on.snooze-alarm</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>425</code>
@@ -1384,7 +1514,7 @@ or media stream is used already</label>
 	</Task>
 	<Task sr="task235">
 		<cdate>1581312369189</cdate>
-		<edate>1582402506346</edate>
+		<edate>1584855263759</edate>
 		<id>235</id>
 		<nme>SAA.~play-radio-and-increase-volume</nme>
 		<Action sr="act0" ve="7">
@@ -1825,55 +1955,11 @@ Current level: %VOLM</Str>
 	</Task>
 	<Task sr="task79">
 		<cdate>1580927240137</cdate>
-		<edate>1582793437288</edate>
+		<edate>1584854944530</edate>
 		<id>79</id>
-		<nme>SAA.tracking-start</nme>
+		<nme>SAA Tracking Start</nme>
 		<pri>7</pri>
 		<Action sr="act0" ve="7">
-			<code>137</code>
-			<label>Stop if tracking is running already</label>
-			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%SAA_IS_TRACKING_RUNNING</lhs>
-					<op>0</op>
-					<rhs>1</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>137</code>
-			<label>Stop if "HOME" is not current profile,
-If "Setting States" project is installed.</label>
-			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3"/>
-			<ConditionList sr="if">
-				<bool0>And</bool0>
-				<Condition sr="c0" ve="3">
-					<lhs>%STATE_PROFILE</lhs>
-					<op>12</op>
-					<rhs>HOME</rhs>
-				</Condition>
-				<Condition sr="c1" ve="3">
-					<lhs>%STATE_PROFILE</lhs>
-					<op>2</op>
-					<rhs>HOME</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">APPS.close-all</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
 			<code>90406179</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -1959,9 +2045,9 @@ If "Setting States" project is installed.</label>
 	</Task>
 	<Task sr="task86">
 		<cdate>1580927240137</cdate>
-		<edate>1581330294743</edate>
+		<edate>1584855033935</edate>
 		<id>86</id>
-		<nme>SAA.tracking-stop</nme>
+		<nme>SAA Tracking Stop</nme>
 		<Action sr="act0" ve="7">
 			<code>90406179</code>
 			<Bundle sr="arg0">

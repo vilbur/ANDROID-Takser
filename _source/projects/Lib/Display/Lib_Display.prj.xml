@@ -2,7 +2,7 @@
 	<Profile sr="prof14" ve="2">
 		<cdate>1580934809459</cdate>
 		<clp>true</clp>
-		<edate>1581419442777</edate>
+		<edate>1584558216520</edate>
 		<flags>8</flags>
 		<id>14</id>
 		<mid0>25</mid0>
@@ -63,19 +63,22 @@ Unique package name for the app&lt;/_array_net.dinglisch.android.tasker.RELEVANT
 		<cdate>1580934777203</cdate>
 		<name>Lib/Display</name>
 		<pids>14,286</pids>
-		<tids>289,25,290,29</tids>
+		<tids>25,290,289,29</tids>
 		<Img sr="icon" ve="2">
 			<nme>mw_communication_stay_current_portrait</nme>
 		</Img>
 	</Project>
 	<Task sr="task25">
 		<cdate>1580934844547</cdate>
-		<edate>1582634971085</edate>
+		<edate>1584558439380</edate>
 		<id>25</id>
-		<nme>D.lockScreenUnlock</nme>
+		<nme>D.unlockLockScreen</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>778682267</code>
+			<label>Auto unswipe lock screen if bluetooth device is connected
+
+Smart lock must be deactivated in settings</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
 					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
@@ -114,9 +117,9 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="60"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%STATES_DATA(1)</lhs>
+					<lhs>%BT_CONNECTED</lhs>
 					<op>0</op>
-					<rhs>HOME</rhs>
+					<rhs>1</rhs>
 				</Condition>
 			</ConditionList>
 		</Action>

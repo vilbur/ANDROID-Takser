@@ -2,7 +2,7 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1580563236879</cdate>
 		<name>Lib/Say</name>
-		<tids>65,18,15,33,176,8,2,7</tids>
+		<tids>65,18,176,33,8,2,7,15</tids>
 		<tsort>Alpha</tsort>
 		<Img sr="icon" ve="2">
 			<nme>mw_action_record_voice_over</nme>
@@ -50,7 +50,7 @@
 	</Task>
 	<Task sr="task176">
 		<cdate>1582317008899</cdate>
-		<edate>1582322771982</edate>
+		<edate>1584855878339</edate>
 		<id>176</id>
 		<nme>SAY~get parameter.lang</nme>
 		<Action sr="act0" ve="7">
@@ -64,9 +64,16 @@
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
+			<Int sr="arg7" val="1"/>
 			<Int sr="arg8" val="0"/>
 			<Str sr="arg9" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>DISABLED</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>126</code>
@@ -232,7 +239,7 @@
 	</Task>
 	<Task sr="task2">
 		<cdate>1580563340428</cdate>
-		<edate>1582322811762</edate>
+		<edate>1584855780032</edate>
 		<id>2</id>
 		<nme>SAY</nme>
 		<pri>100</pri>
@@ -344,21 +351,6 @@ Separator: ,</com.twofortyfouram.locale.intent.extra.BLURB>
 			</ConditionList>
 		</Action>
 		<Action sr="act3" ve="7">
-			<code>523</code>
-			<Str sr="arg0" ve="3">SAY</Str>
-			<Str sr="arg1" ve="3">%lang</Str>
-			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3"/>
-			<Img sr="arg2" ve="2"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-			<Int sr="arg8" val="0"/>
-			<Str sr="arg9" ve="3"/>
-		</Action>
-		<Action sr="act4" ve="7">
 			<code>559</code>
 			<Str sr="arg0" ve="3">%par1</Str>
 			<Str sr="arg1" ve="3">%lang</Str>
@@ -369,7 +361,7 @@ Separator: ,</com.twofortyfouram.locale.intent.extra.BLURB>
 			<Int sr="arg6" val="0"/>
 			<Int sr="arg7" val="0"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act4" ve="7">
 			<code>130</code>
 			<label>Load volume</label>
 			<Str sr="arg0" ve="3">VOL.load</Str>
