@@ -1,0 +1,253 @@
+<TaskerData sr="" dvi="1" tv="5.11.14">
+	<Profile sr="prof19" ve="2">
+		<cdate>1612124294750</cdate>
+		<clp>true</clp>
+		<edate>1612719733039</edate>
+		<flags>8</flags>
+		<id>19</id>
+		<mid0>34</mid0>
+		<nme>Lights  - Wakeup</nme>
+		<Time sr="con0">
+			<fromvar>%SMART_TIME_WAKEUP</fromvar>
+			<th>-1</th>
+			<tm>-1</tm>
+		</Time>
+	</Profile>
+	<Task sr="task34">
+		<cdate>1612115380029</cdate>
+		<edate>1612721441942</edate>
+		<id>34</id>
+		<nme>SMART.routine.wakeup</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%SMART_TIME_WAKEUP</Str>
+			<Str sr="arg1" ve="3">:</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1446679033</code>
+			<label>Remove 10 mins from alarm time</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AddUnit>1</AddUnit>
+					<AddUnit-type>java.lang.String</AddUnit-type>
+					<AddValue>-10</AddValue>
+					<AddValue-type>java.lang.String</AddValue-type>
+					<ConvertTimeSpan>&lt;null&gt;</ConvertTimeSpan>
+					<ConvertTimeSpan-type>java.lang.String</ConvertTimeSpan-type>
+					<DateDayCalculations>&lt;null&gt;</DateDayCalculations>
+					<DateDayCalculations-type>java.lang.String</DateDayCalculations-type>
+					<DateDayEnd>&lt;null&gt;</DateDayEnd>
+					<DateDayEnd-type>java.lang.String</DateDayEnd-type>
+					<DateDayStart>&lt;null&gt;</DateDayStart>
+					<DateDayStart-type>java.lang.String</DateDayStart-type>
+					<DateFormatCalculations>HH:mm</DateFormatCalculations>
+					<DateFormatCalculations-type>java.lang.String</DateFormatCalculations-type>
+					<DateFormatEnd>&lt;null&gt;</DateFormatEnd>
+					<DateFormatEnd-type>java.lang.String</DateFormatEnd-type>
+					<DateFormatStart>&lt;null&gt;</DateFormatStart>
+					<DateFormatStart-type>java.lang.String</DateFormatStart-type>
+					<DateHourCalculations>%SMART_TIME_WAKEUP1</DateHourCalculations>
+					<DateHourCalculations-type>java.lang.String</DateHourCalculations-type>
+					<DateHourEnd>&lt;null&gt;</DateHourEnd>
+					<DateHourEnd-type>java.lang.String</DateHourEnd-type>
+					<DateHourStart>&lt;null&gt;</DateHourStart>
+					<DateHourStart-type>java.lang.String</DateHourStart-type>
+					<DateMillisCalculations>&lt;null&gt;</DateMillisCalculations>
+					<DateMillisCalculations-type>java.lang.String</DateMillisCalculations-type>
+					<DateMillisEnd>&lt;null&gt;</DateMillisEnd>
+					<DateMillisEnd-type>java.lang.String</DateMillisEnd-type>
+					<DateMillisStart>&lt;null&gt;</DateMillisStart>
+					<DateMillisStart-type>java.lang.String</DateMillisStart-type>
+					<DateMinuteCalculations>%SMART_TIME_WAKEUP2</DateMinuteCalculations>
+					<DateMinuteCalculations-type>java.lang.String</DateMinuteCalculations-type>
+					<DateMinuteEnd>&lt;null&gt;</DateMinuteEnd>
+					<DateMinuteEnd-type>java.lang.String</DateMinuteEnd-type>
+					<DateMinuteStart>&lt;null&gt;</DateMinuteStart>
+					<DateMinuteStart-type>java.lang.String</DateMinuteStart-type>
+					<DateMonthCalculations>&lt;null&gt;</DateMonthCalculations>
+					<DateMonthCalculations-type>java.lang.String</DateMonthCalculations-type>
+					<DateMonthEnd>&lt;null&gt;</DateMonthEnd>
+					<DateMonthEnd-type>java.lang.String</DateMonthEnd-type>
+					<DateMonthStart>&lt;null&gt;</DateMonthStart>
+					<DateMonthStart-type>java.lang.String</DateMonthStart-type>
+					<DateSecondCalculations>&lt;null&gt;</DateSecondCalculations>
+					<DateSecondCalculations-type>java.lang.String</DateSecondCalculations-type>
+					<DateSecondEnd>&lt;null&gt;</DateSecondEnd>
+					<DateSecondEnd-type>java.lang.String</DateSecondEnd-type>
+					<DateSecondStart>&lt;null&gt;</DateSecondStart>
+					<DateSecondStart-type>java.lang.String</DateSecondStart-type>
+					<DateYearCalculations>&lt;null&gt;</DateYearCalculations>
+					<DateYearCalculations-type>java.lang.String</DateYearCalculations-type>
+					<DateYearEnd>&lt;null&gt;</DateYearEnd>
+					<DateYearEnd-type>java.lang.String</DateYearEnd-type>
+					<DateYearStart>&lt;null&gt;</DateYearStart>
+					<DateYearStart-type>java.lang.String</DateYearStart-type>
+					<DatesToFormat>&lt;null&gt;</DatesToFormat>
+					<DatesToFormat-type>java.lang.String</DatesToFormat-type>
+					<DatesToFormatFormat>yyyy-MM-dd HH:mm:ss</DatesToFormatFormat>
+					<DatesToFormatFormat-type>java.lang.String</DatesToFormatFormat-type>
+					<FieldsToGetTimeSpan>&lt;StringArray sr=""/&gt;</FieldsToGetTimeSpan>
+					<FieldsToGetTimeSpan-type>[Ljava.lang.String;</FieldsToGetTimeSpan-type>
+					<FieldsToGetTimespanDates>&lt;StringArray sr=""/&gt;</FieldsToGetTimespanDates>
+					<FieldsToGetTimespanDates-type>[Ljava.lang.String;</FieldsToGetTimespanDates-type>
+					<InputAsSeconds>false</InputAsSeconds>
+					<InputAsSeconds-type>java.lang.Boolean</InputAsSeconds-type>
+					<InputAsSeconds_time_span>false</InputAsSeconds_time_span>
+					<InputAsSeconds_time_span-type>java.lang.Boolean</InputAsSeconds_time_span-type>
+					<OutputCalculatedDateFormat>HH:mm</OutputCalculatedDateFormat>
+					<OutputCalculatedDateFormat-type>java.lang.String</OutputCalculatedDateFormat-type>
+					<TimeOutputVariableCalculation>postpone_time</TimeOutputVariableCalculation>
+					<TimeOutputVariableCalculation-type>java.lang.String</TimeOutputVariableCalculation-type>
+					<TimeOutputVariableDates>&lt;null&gt;</TimeOutputVariableDates>
+					<TimeOutputVariableDates-type>java.lang.String</TimeOutputVariableDates-type>
+					<TimeOutputVariableFormat>&lt;null&gt;</TimeOutputVariableFormat>
+					<TimeOutputVariableFormat-type>java.lang.String</TimeOutputVariableFormat-type>
+					<TimeOutputVariableTimespan>&lt;null&gt;</TimeOutputVariableTimespan>
+					<TimeOutputVariableTimespan-type>java.lang.String</TimeOutputVariableTimespan-type>
+					<UseNowCalculations>false</UseNowCalculations>
+					<UseNowCalculations-type>java.lang.Boolean</UseNowCalculations-type>
+					<UseNowEnd>false</UseNowEnd>
+					<UseNowEnd-type>java.lang.Boolean</UseNowEnd-type>
+					<UseNowStart>false</UseNowStart>
+					<UseNowStart-type>java.lang.Boolean</UseNowStart-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>
+---------Add Time---------
+Hour: %SMART_TIME_WAKEUP1
+Minute: %SMART_TIME_WAKEUP2
+Add Unit: Minutes
+Add Value: -10
+Output Format: HH:mm
+Output Variable: postpone_time</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%postpone_timedate
+Calculated Date
+Date resulting from the adding of units (hours, days, etc) properly formatted&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%postpone_timedateisweekday
+Calculated Date Is Week Day
+'true' if the calculated date is on a weekday, 'false' if it's on a weekend.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%postpone_timedatemillis
+Milliseconds
+The number of milliseconds that have elapsed since January 1, 1970 for the calculated date&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%postpone_timedateseconds
+Seconds
+The number of seconds that have elapsed since January 1, 1970 for the calculated date&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>TimeOutputVariableCalculation DatesToFormatFormat DateHourCalculations DateMinuteCalculations DateFormatCalculations AddUnit AddValue OutputCalculatedDateFormat plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>59468b46-1557-4c28-9f54-ed3d4a3bbc04</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentDate</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigDate</Str>
+			<Int sr="arg3" val="30"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%postpone_timedate</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>984394624</code>
+			<label>Get state of the light</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"lightPosition":"6","lightUniqueId":"bc:33:ac:ff:fe:a0:f7:39-01"}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_STATE_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Bridge: 10.0.0.12
+Light: Livingroom Lamp</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_type
+Type
+A fixed name describing the type of light e.g. “Extended color light”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_name
+Name
+A unique, editable name given to the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_modelid
+Model Id
+The hardware model of the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_manufacturername
+Manufacturer Name
+The manufacturer name. (as of bridge version 1.7)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_uniqueid
+Unique Id
+The MAC address of the device with a unique endpoint id in the form: AA:BB:CC:DD:EE:FF:00:11-XX (as of bridge version 1.4)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_swversion
+Software version
+An identifier for the software version running on the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_position
+Position
+The position (or id) of the light&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_on
+On
+On/Off state of the light. On=true, Off=false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_on_inverted
+On inverted
+Inverted On/Off state of the light. On=false, Off=true&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%hue_bri
+Brightness
+Brightness of the light. This is a scale from the minimum brightness the light is capable of, 1, to the maximum capable brightness, 254&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%hue_hue
+Hue
+Hue of the light. This is a wrapping value between 0 and 65535&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%hue_sat
+Saturation
+Saturation of the light. 254 is the most saturated (colored) and 0 is the least saturated (white).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%hue_effect
+Effect
+The dynamic effect of the light, can either be “none” or “colorloop”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%hue_xy
+XY
+The x and y coordinates of a color in CIE color space.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%hue_ct
+CT
+The Mired Color temperature of the light. 2012 connected lights are capable of 153 (6500K) to 500 (2000K).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%hue_alert
+Alert
+The current alert mode of the light (none|select|lselect)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%hue_colormode
+Colormode
+Indicates the color mode in which the light is working, this is the last command type it received.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%hue_reachable
+Reachable
+Indicates if a light can be reached by the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;%hue_light_id
+Light bulb Id
+The unique id of the light bulb.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.EditVariablesActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%hue_on</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.lights.wakeup</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>0</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+</TaskerData>

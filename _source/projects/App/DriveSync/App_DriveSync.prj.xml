@@ -1,0 +1,38 @@
+<TaskerData sr="" dvi="1" tv="5.11.14">
+	<Project sr="proj0" ve="2">
+		<cdate>1582013165330</cdate>
+		<name>App/DriveSync</name>
+		<tids>251</tids>
+		<Img sr="icon" ve="2">
+			<cls>com.ttxapps.sync.app.MainActivity</cls>
+			<pkg>com.ttxapps.drivesync</pkg>
+		</Img>
+	</Project>
+	<Task sr="task251">
+		<cdate>1582013575755</cdate>
+		<edate>1611761280817</edate>
+		<id>251</id>
+		<nme>DS.run-sync-now</nme>
+		<Action sr="act0" ve="7">
+			<code>1874460827</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>0</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION>
+					<com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>java.lang.Integer</com.ttxapps.dropsync.locale.INTENT_EXTRA_DROPSYNC_ACTION-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Sync Now</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.ttxapps.drivesync</Str>
+			<Str sr="arg2" ve="3">com.ttxapps.syncapp.locale.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">DriveSync sync now</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>

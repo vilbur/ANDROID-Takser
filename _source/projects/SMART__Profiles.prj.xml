@@ -1,0 +1,1053 @@
+<TaskerData sr="" dvi="1" tv="5.11.14">
+	<Profile sr="prof43" ve="2">
+		<cdate>1612721655905</cdate>
+		<clp>true</clp>
+		<edate>1612724656932</edate>
+		<flags>8</flags>
+		<id>43</id>
+		<mid0>48</mid0>
+		<nme>Lights  - Wakeup</nme>
+		<Time sr="con0">
+			<fromvar>%SMART_PROFILE_WAKEUP</fromvar>
+			<th>-1</th>
+			<tm>-1</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof44" ve="2">
+		<cdate>1612721665962</cdate>
+		<edate>1612165441468</edate>
+		<flags>8</flags>
+		<id>44</id>
+		<mid0>2</mid0>
+		<nme>Lights - Sleep</nme>
+		<Time sr="con0">
+			<fromvar>%SMART_TIME_SLEEP</fromvar>
+			<th>-1</th>
+			<tm>-1</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof46" ve="2">
+		<cdate>1612721677303</cdate>
+		<clp>true</clp>
+		<edate>1612551240460</edate>
+		<flags>8</flags>
+		<id>46</id>
+		<mid0>2</mid0>
+		<nme>Lights  - Sunset</nme>
+		<Time sr="con0">
+			<fromvar>%SMART_TIME_SUNSET</fromvar>
+			<th>-1</th>
+			<tm>-1</tm>
+		</Time>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1612721519392</cdate>
+		<name>SMART/ Profiles</name>
+		<pids>46,43,44</pids>
+		<tids>2,19,48,29,27,50,28,49,47</tids>
+	</Project>
+	<Task sr="task19">
+		<cdate>1612115380029</cdate>
+		<edate>1612163483053</edate>
+		<id>19</id>
+		<nme>SMART.lights.template</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000007372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870000000003273720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 0%
+for 'Lamp Color'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"dPucFgLEZqSqOYO","click_action_scene_name":"Scene Red","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Red)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000327372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000000A73720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 50%
+1 second fade
+for 'Lamp Color'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"0jJ8PmvUWH4EVV8","click_action_scene_name":"Scene Yellow","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Yellow)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000647372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000000A73720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 100%
+1 second fade
+for 'Lamp Color'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task2">
+		<cdate>1612718354076</cdate>
+		<edate>1612801863069</edate>
+		<id>2</id>
+		<nme>temp</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>984394624</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"lightPosition":"6","lightUniqueId":"bc:33:ac:ff:fe:a0:f7:39-01"}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_STATE_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Bridge: 10.0.0.12
+Light: Livingroom Lamp</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_type
+Type
+A fixed name describing the type of light e.g. “Extended color light”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_name
+Name
+A unique, editable name given to the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_modelid
+Model Id
+The hardware model of the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_manufacturername
+Manufacturer Name
+The manufacturer name. (as of bridge version 1.7)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_uniqueid
+Unique Id
+The MAC address of the device with a unique endpoint id in the form: AA:BB:CC:DD:EE:FF:00:11-XX (as of bridge version 1.4)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_swversion
+Software version
+An identifier for the software version running on the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_position
+Position
+The position (or id) of the light&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_on
+On
+On/Off state of the light. On=true, Off=false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_on_inverted
+On inverted
+Inverted On/Off state of the light. On=false, Off=true&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%hue_bri
+Brightness
+Brightness of the light. This is a scale from the minimum brightness the light is capable of, 1, to the maximum capable brightness, 254&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%hue_hue
+Hue
+Hue of the light. This is a wrapping value between 0 and 65535&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%hue_sat
+Saturation
+Saturation of the light. 254 is the most saturated (colored) and 0 is the least saturated (white).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%hue_effect
+Effect
+The dynamic effect of the light, can either be “none” or “colorloop”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%hue_xy
+XY
+The x and y coordinates of a color in CIE color space.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%hue_ct
+CT
+The Mired Color temperature of the light. 2012 connected lights are capable of 153 (6500K) to 500 (2000K).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%hue_alert
+Alert
+The current alert mode of the light (none|select|lselect)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%hue_colormode
+Colormode
+Indicates the color mode in which the light is working, this is the last command type it received.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%hue_reachable
+Reachable
+Indicates if a light can be reached by the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;%hue_light_id
+Light bulb Id
+The unique id of the light bulb.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.EditVariablesActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%hue_on</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>155</code>
+			<Str sr="arg0" ve="3">x</Str>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>1186637727</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Set: battery</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>org.kustom.tasker.VAR_NAME org.kustom.tasker.VAR_VALUE</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<org.kustom.tasker.VAR_NAME>battery</org.kustom.tasker.VAR_NAME>
+					<org.kustom.tasker.VAR_NAME-type>java.lang.String</org.kustom.tasker.VAR_NAME-type>
+					<org.kustom.tasker.VAR_VALUE>%BATT</org.kustom.tasker.VAR_VALUE>
+					<org.kustom.tasker.VAR_VALUE-type>java.lang.String</org.kustom.tasker.VAR_VALUE-type>
+					<org.kustom.tasker.extra.INT_VERSION_CODE>352102619</org.kustom.tasker.extra.INT_VERSION_CODE>
+					<org.kustom.tasker.extra.INT_VERSION_CODE-type>java.lang.Integer</org.kustom.tasker.extra.INT_VERSION_CODE-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">org.kustom.widget</Str>
+			<Str sr="arg2" ve="3">org.kustom.lib.editor.tasker.EditVarActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task27">
+		<cdate>1612115380029</cdate>
+		<edate>1612637654222</edate>
+		<id>27</id>
+		<nme>SMART.setAlarm</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>Set alarm time by %par1</label>
+			<Str sr="arg0" ve="3">%alarm_time</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>Set alarm Name</label>
+			<Str sr="arg0" ve="3">%wmualarmname</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>590</code>
+			<label>Split time to hours and minutes</label>
+			<Str sr="arg0" ve="3">%alarm_time</Str>
+			<Str sr="arg1" ve="3">:</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>Set alarm hours</label>
+			<Str sr="arg0" ve="3">%wmualarmhour</Str>
+			<Str sr="arg1" ve="3">%alarm_time1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>Set alarm minutes</label>
+			<Str sr="arg0" ve="3">%wmualarmminute</Str>
+			<Str sr="arg1" ve="3">%alarm_time2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>31422515</code>
+			<label>Delete OLD alarm</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>8</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100367</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL>%wmualarmname</com.chlochlo.adaptativealarm.extra.STRING_LABEL>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>java.lang.String</com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Deletes an alarm whose name is given as the variable %wmualarmname. It will delete the first alarm it finds with this name. Please, make sure the name is unique.</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.chlochlo.adaptativealarm.extra.STRING_LABEL</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpDeleteAlarmTaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>2056270274</code>
+			<label>Create NEW alarm</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>1</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM>%wmualarmampm</com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR>%wmualarmhour</com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES>%wmualarmminute</com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100367</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL>%wmualarmname</com.chlochlo.adaptativealarm.extra.STRING_LABEL>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>java.lang.String</com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Creates an alarm using the variables: %wmualarmname as the label (optionnal), %wmualarmhour as the hour, %wmualarmminute as the minutes, %wmualarmampm as am/pm (optionnal).</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.chlochlo.adaptativealarm.extra.STRING_LABEL com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpCreateAlarmTaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<label>Set alarm time global for Profiles</label>
+			<Str sr="arg0" ve="3">%SMART_TIME_WAKEUP</Str>
+			<Str sr="arg1" ve="3">%alarm_time</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+	</Task>
+	<Task sr="task28">
+		<cdate>1612115380029</cdate>
+		<edate>1612802165139</edate>
+		<id>28</id>
+		<nme>SMART.lights.sunset</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">SMART.lights.sunset</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000007372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870000000232873720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 0%
+for 'Livingroom Lamp'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"0jJ8PmvUWH4EVV8","click_action_scene_name":"Scene Yellow","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Yellow)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000647372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000232873720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 100%
+900 second fade
+for 'Livingroom Lamp'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task29">
+		<cdate>1612115380029</cdate>
+		<edate>1612165581808</edate>
+		<id>29</id>
+		<nme>SMART.lights.sleep</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">SMART.lights.sleep</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"0jJ8PmvUWH4EVV8","click_action_scene_name":"Scene Yellow","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Yellow)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000327372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000000A73720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 50%
+1 second fade
+for 'Lamp Color'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"dPucFgLEZqSqOYO","click_action_scene_name":"Scene Red","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Red)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000007372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000000A73720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 0%
+1 second fade
+for 'Lamp Color'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task47">
+		<cdate>1612115380029</cdate>
+		<edate>1612801997137</edate>
+		<id>47</id>
+		<nme>SMART.lights.wakeup</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">SMART.lights.wakeup</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000007372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870000000232873720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 0%
+for 'Livingroom Lamp'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"dPucFgLEZqSqOYO","click_action_scene_name":"Scene Red","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Red)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000647372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000232873720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 100%
+900 second fade
+for 'Livingroom Lamp'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task48">
+		<cdate>1612115380029</cdate>
+		<edate>1612801979931</edate>
+		<id>48</id>
+		<nme>SMART.routine.wakeup</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>984394624</code>
+			<label>Get state of the light</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"lightPosition":"6","lightUniqueId":"bc:33:ac:ff:fe:a0:f7:39-01"}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_STATE_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Bridge: 10.0.0.12
+Light: Livingroom Lamp</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_type
+Type
+A fixed name describing the type of light e.g. “Extended color light”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_name
+Name
+A unique, editable name given to the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_modelid
+Model Id
+The hardware model of the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_manufacturername
+Manufacturer Name
+The manufacturer name. (as of bridge version 1.7)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_uniqueid
+Unique Id
+The MAC address of the device with a unique endpoint id in the form: AA:BB:CC:DD:EE:FF:00:11-XX (as of bridge version 1.4)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_swversion
+Software version
+An identifier for the software version running on the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_position
+Position
+The position (or id) of the light&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_on
+On
+On/Off state of the light. On=true, Off=false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_on_inverted
+On inverted
+Inverted On/Off state of the light. On=false, Off=true&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%hue_bri
+Brightness
+Brightness of the light. This is a scale from the minimum brightness the light is capable of, 1, to the maximum capable brightness, 254&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%hue_hue
+Hue
+Hue of the light. This is a wrapping value between 0 and 65535&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%hue_sat
+Saturation
+Saturation of the light. 254 is the most saturated (colored) and 0 is the least saturated (white).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%hue_effect
+Effect
+The dynamic effect of the light, can either be “none” or “colorloop”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%hue_xy
+XY
+The x and y coordinates of a color in CIE color space.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%hue_ct
+CT
+The Mired Color temperature of the light. 2012 connected lights are capable of 153 (6500K) to 500 (2000K).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%hue_alert
+Alert
+The current alert mode of the light (none|select|lselect)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%hue_colormode
+Colormode
+Indicates the color mode in which the light is working, this is the last command type it received.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%hue_reachable
+Reachable
+Indicates if a light can be reached by the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;%hue_light_id
+Light bulb Id
+The unique id of the light bulb.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.EditVariablesActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.lights.wakeup</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>0</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%hue_on</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.removeAlarm</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task49">
+		<cdate>1612115380029</cdate>
+		<edate>1612724718967</edate>
+		<id>49</id>
+		<nme>SMART.routine.setWakeup</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SMART_TIME_WAKEUP</Str>
+			<Str sr="arg1" ve="3">%par1:%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1446679033</code>
+			<label>Remove 10 mins from alarm time</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AddUnit>1</AddUnit>
+					<AddUnit-type>java.lang.String</AddUnit-type>
+					<AddValue>-10</AddValue>
+					<AddValue-type>java.lang.String</AddValue-type>
+					<ConvertTimeSpan>&lt;null&gt;</ConvertTimeSpan>
+					<ConvertTimeSpan-type>java.lang.String</ConvertTimeSpan-type>
+					<DateDayCalculations>&lt;null&gt;</DateDayCalculations>
+					<DateDayCalculations-type>java.lang.String</DateDayCalculations-type>
+					<DateDayEnd>&lt;null&gt;</DateDayEnd>
+					<DateDayEnd-type>java.lang.String</DateDayEnd-type>
+					<DateDayStart>&lt;null&gt;</DateDayStart>
+					<DateDayStart-type>java.lang.String</DateDayStart-type>
+					<DateFormatCalculations>HH:mm</DateFormatCalculations>
+					<DateFormatCalculations-type>java.lang.String</DateFormatCalculations-type>
+					<DateFormatEnd>&lt;null&gt;</DateFormatEnd>
+					<DateFormatEnd-type>java.lang.String</DateFormatEnd-type>
+					<DateFormatStart>&lt;null&gt;</DateFormatStart>
+					<DateFormatStart-type>java.lang.String</DateFormatStart-type>
+					<DateHourCalculations>%par1</DateHourCalculations>
+					<DateHourCalculations-type>java.lang.String</DateHourCalculations-type>
+					<DateHourEnd>&lt;null&gt;</DateHourEnd>
+					<DateHourEnd-type>java.lang.String</DateHourEnd-type>
+					<DateHourStart>&lt;null&gt;</DateHourStart>
+					<DateHourStart-type>java.lang.String</DateHourStart-type>
+					<DateMillisCalculations>&lt;null&gt;</DateMillisCalculations>
+					<DateMillisCalculations-type>java.lang.String</DateMillisCalculations-type>
+					<DateMillisEnd>&lt;null&gt;</DateMillisEnd>
+					<DateMillisEnd-type>java.lang.String</DateMillisEnd-type>
+					<DateMillisStart>&lt;null&gt;</DateMillisStart>
+					<DateMillisStart-type>java.lang.String</DateMillisStart-type>
+					<DateMinuteCalculations>%par2</DateMinuteCalculations>
+					<DateMinuteCalculations-type>java.lang.String</DateMinuteCalculations-type>
+					<DateMinuteEnd>&lt;null&gt;</DateMinuteEnd>
+					<DateMinuteEnd-type>java.lang.String</DateMinuteEnd-type>
+					<DateMinuteStart>&lt;null&gt;</DateMinuteStart>
+					<DateMinuteStart-type>java.lang.String</DateMinuteStart-type>
+					<DateMonthCalculations>&lt;null&gt;</DateMonthCalculations>
+					<DateMonthCalculations-type>java.lang.String</DateMonthCalculations-type>
+					<DateMonthEnd>&lt;null&gt;</DateMonthEnd>
+					<DateMonthEnd-type>java.lang.String</DateMonthEnd-type>
+					<DateMonthStart>&lt;null&gt;</DateMonthStart>
+					<DateMonthStart-type>java.lang.String</DateMonthStart-type>
+					<DateSecondCalculations>&lt;null&gt;</DateSecondCalculations>
+					<DateSecondCalculations-type>java.lang.String</DateSecondCalculations-type>
+					<DateSecondEnd>&lt;null&gt;</DateSecondEnd>
+					<DateSecondEnd-type>java.lang.String</DateSecondEnd-type>
+					<DateSecondStart>&lt;null&gt;</DateSecondStart>
+					<DateSecondStart-type>java.lang.String</DateSecondStart-type>
+					<DateYearCalculations>&lt;null&gt;</DateYearCalculations>
+					<DateYearCalculations-type>java.lang.String</DateYearCalculations-type>
+					<DateYearEnd>&lt;null&gt;</DateYearEnd>
+					<DateYearEnd-type>java.lang.String</DateYearEnd-type>
+					<DateYearStart>&lt;null&gt;</DateYearStart>
+					<DateYearStart-type>java.lang.String</DateYearStart-type>
+					<DatesToFormat>&lt;null&gt;</DatesToFormat>
+					<DatesToFormat-type>java.lang.String</DatesToFormat-type>
+					<DatesToFormatFormat>yyyy-MM-dd HH:mm:ss</DatesToFormatFormat>
+					<DatesToFormatFormat-type>java.lang.String</DatesToFormatFormat-type>
+					<FieldsToGetTimeSpan>&lt;StringArray sr=""/&gt;</FieldsToGetTimeSpan>
+					<FieldsToGetTimeSpan-type>[Ljava.lang.String;</FieldsToGetTimeSpan-type>
+					<FieldsToGetTimespanDates>&lt;StringArray sr=""/&gt;</FieldsToGetTimespanDates>
+					<FieldsToGetTimespanDates-type>[Ljava.lang.String;</FieldsToGetTimespanDates-type>
+					<InputAsSeconds>false</InputAsSeconds>
+					<InputAsSeconds-type>java.lang.Boolean</InputAsSeconds-type>
+					<InputAsSeconds_time_span>false</InputAsSeconds_time_span>
+					<InputAsSeconds_time_span-type>java.lang.Boolean</InputAsSeconds_time_span-type>
+					<OutputCalculatedDateFormat>HH:mm</OutputCalculatedDateFormat>
+					<OutputCalculatedDateFormat-type>java.lang.String</OutputCalculatedDateFormat-type>
+					<TimeOutputVariableCalculation>postpone_time</TimeOutputVariableCalculation>
+					<TimeOutputVariableCalculation-type>java.lang.String</TimeOutputVariableCalculation-type>
+					<TimeOutputVariableDates>&lt;null&gt;</TimeOutputVariableDates>
+					<TimeOutputVariableDates-type>java.lang.String</TimeOutputVariableDates-type>
+					<TimeOutputVariableFormat>&lt;null&gt;</TimeOutputVariableFormat>
+					<TimeOutputVariableFormat-type>java.lang.String</TimeOutputVariableFormat-type>
+					<TimeOutputVariableTimespan>&lt;null&gt;</TimeOutputVariableTimespan>
+					<TimeOutputVariableTimespan-type>java.lang.String</TimeOutputVariableTimespan-type>
+					<UseNowCalculations>false</UseNowCalculations>
+					<UseNowCalculations-type>java.lang.Boolean</UseNowCalculations-type>
+					<UseNowEnd>false</UseNowEnd>
+					<UseNowEnd-type>java.lang.Boolean</UseNowEnd-type>
+					<UseNowStart>false</UseNowStart>
+					<UseNowStart-type>java.lang.Boolean</UseNowStart-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>
+---------Add Time---------
+Hour: %par1
+Minute: %par2
+Add Unit: Minutes
+Add Value: -10
+Output Format: HH:mm
+Output Variable: postpone_time</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%postpone_timedate
+Calculated Date
+Date resulting from the adding of units (hours, days, etc) properly formatted&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%postpone_timedateisweekday
+Calculated Date Is Week Day
+'true' if the calculated date is on a weekday, 'false' if it's on a weekend.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%postpone_timedatemillis
+Milliseconds
+The number of milliseconds that have elapsed since January 1, 1970 for the calculated date&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%postpone_timedateseconds
+Seconds
+The number of seconds that have elapsed since January 1, 1970 for the calculated date&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>TimeOutputVariableCalculation DatesToFormatFormat DateHourCalculations DateMinuteCalculations DateFormatCalculations AddUnit AddValue OutputCalculatedDateFormat plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>59468b46-1557-4c28-9f54-ed3d4a3bbc04</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentDate</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigDate</Str>
+			<Int sr="arg3" val="30"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%postpone_timedate</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SMART_PROFILE_WAKEUP</Str>
+			<Str sr="arg1" ve="3">%postpone_timedate</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setAlarm</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%SMART_TIME_WAKEUP</Str>
+			<Str sr="arg3" ve="3">IKEA wake up</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setAlarm</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">19:30</Str>
+			<Str sr="arg3" ve="3">IKEA go</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Lights  - Sunset</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Lights  - Wakeup</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Lights - Sleep</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task50">
+		<cdate>1612115380029</cdate>
+		<edate>1612724882074</edate>
+		<id>50</id>
+		<nme>SMART.removeAlarm</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>Set alarm Name</label>
+			<Str sr="arg0" ve="3">%wmualarmname</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>31422515</code>
+			<label>Delete OLD alarm</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>8</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100367</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL>%wmualarmname</com.chlochlo.adaptativealarm.extra.STRING_LABEL>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>java.lang.String</com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Deletes an alarm whose name is given as the variable %wmualarmname. It will delete the first alarm it finds with this name. Please, make sure the name is unique.</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.chlochlo.adaptativealarm.extra.STRING_LABEL</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpDeleteAlarmTaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
