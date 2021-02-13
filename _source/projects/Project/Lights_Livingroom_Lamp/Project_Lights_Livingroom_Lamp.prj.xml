@@ -17,7 +17,7 @@
 	</Profile>
 	<Project sr="proj0" ve="2">
 		<cdate>1612939771091</cdate>
-		<name>Project/Lights</name>
+		<name>Project/Lights Livingroom Lamp</name>
 		<pids>55</pids>
 		<tids>56,41,36</tids>
 	</Project>
@@ -34,9 +34,9 @@
 	</Task>
 	<Task sr="task41">
 		<cdate>1613068876609</cdate>
-		<edate>1613158100625</edate>
+		<edate>1613160396180</edate>
 		<id>41</id>
-		<nme>LIGHTS.setBrightess</nme>
+		<nme>Livingroom Lamp.setBrightess</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>984394624</code>
@@ -178,7 +178,7 @@ brightness</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.cuberob.autohue.extra.COMMAND_ID-type>java.lang.Integer</com.cuberob.autohue.extra.COMMAND_ID-type>
 					<com.cuberob.autohue.extra.IPADDRESS>10.0.0.12</com.cuberob.autohue.extra.IPADDRESS>
 					<com.cuberob.autohue.extra.IPADDRESS-type>java.lang.String</com.cuberob.autohue.extra.IPADDRESS-type>
-					<com.cuberob.autohue.extra.JSON_COMMAND>{"bri":250}</com.cuberob.autohue.extra.JSON_COMMAND>
+					<com.cuberob.autohue.extra.JSON_COMMAND>{"bri":125}</com.cuberob.autohue.extra.JSON_COMMAND>
 					<com.cuberob.autohue.extra.JSON_COMMAND-type>java.lang.String</com.cuberob.autohue.extra.JSON_COMMAND-type>
 					<com.cuberob.autohue.extra.LIGHT_NAME>Livingroom Lamp</com.cuberob.autohue.extra.LIGHT_NAME>
 					<com.cuberob.autohue.extra.LIGHT_NAME-type>java.lang.String</com.cuberob.autohue.extra.LIGHT_NAME-type>
@@ -206,6 +206,47 @@ brightness</com.twofortyfouram.locale.intent.extra.BLURB>
 			</ConditionList>
 		</Action>
 		<Action sr="act5" ve="7">
+			<code>2093383131</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_TYPE:String>HUE_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<ALL_LIGHTS_SELECTED:Boolean>false</ALL_LIGHTS_SELECTED:Boolean>
+					<ALL_LIGHTS_SELECTED:Boolean-type>java.lang.Boolean</ALL_LIGHTS_SELECTED:Boolean-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.cuberob.autohue.extra.COMMAND_ID>6</com.cuberob.autohue.extra.COMMAND_ID>
+					<com.cuberob.autohue.extra.COMMAND_ID-type>java.lang.Integer</com.cuberob.autohue.extra.COMMAND_ID-type>
+					<com.cuberob.autohue.extra.IPADDRESS>10.0.0.12</com.cuberob.autohue.extra.IPADDRESS>
+					<com.cuberob.autohue.extra.IPADDRESS-type>java.lang.String</com.cuberob.autohue.extra.IPADDRESS-type>
+					<com.cuberob.autohue.extra.JSON_COMMAND>{"bri":250}</com.cuberob.autohue.extra.JSON_COMMAND>
+					<com.cuberob.autohue.extra.JSON_COMMAND-type>java.lang.String</com.cuberob.autohue.extra.JSON_COMMAND-type>
+					<com.cuberob.autohue.extra.LIGHT_NAME>Livingroom Lamp</com.cuberob.autohue.extra.LIGHT_NAME>
+					<com.cuberob.autohue.extra.LIGHT_NAME-type>java.lang.String</com.cuberob.autohue.extra.LIGHT_NAME-type>
+					<com.cuberob.autohue.extra.LIGHT_POSITIONS_LIST>[6]</com.cuberob.autohue.extra.LIGHT_POSITIONS_LIST>
+					<com.cuberob.autohue.extra.LIGHT_POSITIONS_LIST-type>java.lang.String</com.cuberob.autohue.extra.LIGHT_POSITIONS_LIST-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>IP: 10.0.0.12
+Light: Livingroom Lamp
+brightness</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.cuberob.autohue.extra.JSON_COMMAND</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.EditActivity</Str>
+			<Int sr="arg3" val="5"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%brightness</lhs>
+					<op>7</op>
+					<rhs>10</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">LIGHTS</Str>
 			<Int sr="arg1" val="0"/>
@@ -213,9 +254,9 @@ brightness</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Task>
 	<Task sr="task56">
 		<cdate>1612939905736</cdate>
-		<edate>1613157613345</edate>
+		<edate>1613160385284</edate>
 		<id>56</id>
-		<nme>LIGHTS.checkState</nme>
+		<nme>Livingroom Lamp.checkState</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>984394624</code>
