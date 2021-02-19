@@ -1,0 +1,1492 @@
+<TaskerData sr="" dvi="1" tv="5.11.14">
+	<Project sr="proj0" ve="2">
+		<cdate>1613409369251</cdate>
+		<name>LIGHTS shortcuts</name>
+		<tids>136,142,56,140,175,169,168,62,135,132,173,172,171,54,167,166,170,148,174</tids>
+		<tsort>Alpha</tsort>
+	</Project>
+	<Task sr="task132">
+		<cdate>1613068876609</cdate>
+		<edate>1613629918206</edate>
+		<id>132</id>
+		<nme>Livingroom Light.color.set</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>X,Y %par1 color</label>
+			<Str sr="arg0" ve="3">%color</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>int %par2 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">%par2*10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>544126650</code>
+			<label>{
+  "xy": [
+    %color
+  ],
+  "transitiontime": %fade
+}</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"xy\": [\n    %color\n  ],\n  \"transitiontime\": %fade\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"xy":[0.4406,0.5196],"transitiontime":4}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Livingroom Light
+Command: 
+{
+  "xy": [
+    %color
+  ],
+  "transitiontime": %fade
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>30</code>
+			<label>Wait until fade time ends</label>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%par2</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task135">
+		<cdate>1613068876609</cdate>
+		<edate>1613391257136</edate>
+		<id>135</id>
+		<nme>Livingroom Light.color.setRed</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>int %par1 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.color.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">0.7006,0.2993</Str>
+			<Str sr="arg3" ve="3">%par1</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task136">
+		<cdate>1613068876609</cdate>
+		<edate>1613391267046</edate>
+		<id>136</id>
+		<nme>Livingroom Light.color.setWhite</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>int %par1 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.color.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">0.3,0.3</Str>
+			<Str sr="arg3" ve="3">%par1</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task140">
+		<cdate>1613068876609</cdate>
+		<edate>1613616434803</edate>
+		<id>140</id>
+		<nme>Livingroom Light.switch</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>boolean %par1 switch light on/off</label>
+			<Str sr="arg0" ve="3">%state</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>int %par1 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>set default</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.brightess.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">0</Str>
+			<Str sr="arg3" ve="3">%fade</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%fade</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>544126650</code>
+			<label>{
+  "on": %state
+}</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"on\": %state\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"on":false}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Livingroom Light
+Command: 
+{
+  "on": %state
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+	</Task>
+	<Task sr="task142">
+		<cdate>1613068876609</cdate>
+		<edate>1613616873005</edate>
+		<id>142</id>
+		<nme>Livingroom Light.brightess.set</nme>
+		<pri>7</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>int %par1 0-255 brightness</label>
+			<Str sr="arg0" ve="3">%brightness</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>int %par2 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">%par2*10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Livingroom Light
+
+Brightness: %brightness</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>544126650</code>
+			<label>{
+  "transitiontime": %fade,
+  "bri": %brightness
+}</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"transitiontime\": %fade,\n  \"bri\": %brightness\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"transitiontime":0,"bri":254}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Livingroom Light
+Command: 
+{
+  "transitiontime": %fade,
+  "bri": %brightness
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<label>Wait until fade time ends</label>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%par2</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task148">
+		<cdate>1613409498272</cdate>
+		<edate>1613582400761</edate>
+		<id>148</id>
+		<nme>LIGHTS command brightness increase</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">LIGHTS light get tye</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%light</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%light.brightess.toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task166">
+		<cdate>1613409498272</cdate>
+		<edate>1613582286856</edate>
+		<id>166</id>
+		<nme>LIGHTS command brightness toggle</nme>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">LIGHTS light get tye</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%light</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%light.brightess.toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_device_access_brightness_medium</nme>
+		</Img>
+	</Task>
+	<Task sr="task167">
+		<cdate>1613409498272</cdate>
+		<edate>1613622750750</edate>
+		<id>167</id>
+		<nme>LIGHTS command switch toggle</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">LIGHTS light get tye</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%light</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Light toggle switch
+
+wait: %LIGHTS_WAIT seconds</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%LIGHTS_WAIT</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%light.switchToogle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_ab_aaa_ext_io</nme>
+		</Img>
+	</Task>
+	<Task sr="task168">
+		<cdate>1613409498272</cdate>
+		<edate>1613622839207</edate>
+		<id>168</id>
+		<nme>LIGHTS command toggle lights</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>984394624</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"lightPosition":"6","lightUniqueId":"bc:33:ac:ff:fe:a0:f7:39-01"}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_STATE_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Bridge: 10.0.0.12
+Light: Livingroom Light</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_type
+Type
+A fixed name describing the type of light e.g. “Extended color light”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_name
+Name
+A unique, editable name given to the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_modelid
+Model Id
+The hardware model of the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_manufacturername
+Manufacturer Name
+The manufacturer name. (as of bridge version 1.7)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_uniqueid
+Unique Id
+The MAC address of the device with a unique endpoint id in the form: AA:BB:CC:DD:EE:FF:00:11-XX (as of bridge version 1.4)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_swversion
+Software version
+An identifier for the software version running on the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_position
+Position
+The position (or id) of the light&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_on
+On
+On/Off state of the light. On=true, Off=false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_on_inverted
+On inverted
+Inverted On/Off state of the light. On=false, Off=true&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%hue_bri
+Brightness
+Brightness of the light. This is a scale from the minimum brightness the light is capable of, 1, to the maximum capable brightness, 254&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%hue_hue
+Hue
+Hue of the light. This is a wrapping value between 0 and 65535&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%hue_sat
+Saturation
+Saturation of the light. 254 is the most saturated (colored) and 0 is the least saturated (white).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%hue_effect
+Effect
+The dynamic effect of the light, can either be “none” or “colorloop”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%hue_xy
+XY
+The x and y coordinates of a color in CIE color space.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%hue_ct
+CT
+The Mired Color temperature of the light. 2012 connected lights are capable of 153 (6500K) to 500 (2000K).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%hue_alert
+Alert
+The current alert mode of the light (none|select|lselect)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%hue_colormode
+Colormode
+Indicates the color mode in which the light is working, this is the last command type it received.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%hue_reachable
+Reachable
+Indicates if a light can be reached by the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;%hue_light_id
+Light bulb Id
+The unique id of the light bulb.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.EditVariablesActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Bathroom Light.switch</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">true</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.switch</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">true</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.switch</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">false</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Bathroom Light.switch</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">false</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_aaa_ext_bulb</nme>
+		</Img>
+	</Task>
+	<Task sr="task169">
+		<cdate>1613409498272</cdate>
+		<edate>1613613185925</edate>
+		<id>169</id>
+		<nme>LIGHTS light get tye</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>984394624</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"lightPosition":"5","lightUniqueId":"90:fd:9f:ff:fe:66:3d:fd-01"}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_STATE_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Bridge: 10.0.0.12
+Light: Bathroom Light</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_type
+Type
+A fixed name describing the type of light e.g. “Extended color light”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_name
+Name
+A unique, editable name given to the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_modelid
+Model Id
+The hardware model of the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_manufacturername
+Manufacturer Name
+The manufacturer name. (as of bridge version 1.7)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_uniqueid
+Unique Id
+The MAC address of the device with a unique endpoint id in the form: AA:BB:CC:DD:EE:FF:00:11-XX (as of bridge version 1.4)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_swversion
+Software version
+An identifier for the software version running on the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_position
+Position
+The position (or id) of the light&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_on
+On
+On/Off state of the light. On=true, Off=false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_on_inverted
+On inverted
+Inverted On/Off state of the light. On=false, Off=true&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%hue_bri
+Brightness
+Brightness of the light. This is a scale from the minimum brightness the light is capable of, 1, to the maximum capable brightness, 254&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%hue_hue
+Hue
+Hue of the light. This is a wrapping value between 0 and 65535&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%hue_sat
+Saturation
+Saturation of the light. 254 is the most saturated (colored) and 0 is the least saturated (white).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%hue_effect
+Effect
+The dynamic effect of the light, can either be “none” or “colorloop”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%hue_xy
+XY
+The x and y coordinates of a color in CIE color space.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%hue_ct
+CT
+The Mired Color temperature of the light. 2012 connected lights are capable of 153 (6500K) to 500 (2000K).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%hue_alert
+Alert
+The current alert mode of the light (none|select|lselect)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%hue_colormode
+Colormode
+Indicates the color mode in which the light is working, this is the last command type it received.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%hue_reachable
+Reachable
+Indicates if a light can be reached by the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;%hue_light_id
+Light bulb Id
+The unique id of the light bulb.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.EditVariablesActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%light</Str>
+			<Str sr="arg1" ve="3">Bathroom Light</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%light</Str>
+			<Str sr="arg1" ve="3">Livingroom Light</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>126</code>
+			<Str sr="arg0" ve="3">%light</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task170">
+		<cdate>1613409498272</cdate>
+		<edate>1613622884263</edate>
+		<id>170</id>
+		<nme>LIGHTS command color red</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">LIGHTS light get tye</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%light</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>984394624</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"lightPosition":"6","lightUniqueId":"bc:33:ac:ff:fe:a0:f7:39-01"}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_STATE_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Bridge: 10.0.0.12
+Light: Livingroom Light</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_type
+Type
+A fixed name describing the type of light e.g. “Extended color light”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_name
+Name
+A unique, editable name given to the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_modelid
+Model Id
+The hardware model of the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_manufacturername
+Manufacturer Name
+The manufacturer name. (as of bridge version 1.7)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_uniqueid
+Unique Id
+The MAC address of the device with a unique endpoint id in the form: AA:BB:CC:DD:EE:FF:00:11-XX (as of bridge version 1.4)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_swversion
+Software version
+An identifier for the software version running on the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_position
+Position
+The position (or id) of the light&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_on
+On
+On/Off state of the light. On=true, Off=false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_on_inverted
+On inverted
+Inverted On/Off state of the light. On=false, Off=true&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%hue_bri
+Brightness
+Brightness of the light. This is a scale from the minimum brightness the light is capable of, 1, to the maximum capable brightness, 254&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%hue_hue
+Hue
+Hue of the light. This is a wrapping value between 0 and 65535&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%hue_sat
+Saturation
+Saturation of the light. 254 is the most saturated (colored) and 0 is the least saturated (white).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%hue_effect
+Effect
+The dynamic effect of the light, can either be “none” or “colorloop”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%hue_xy
+XY
+The x and y coordinates of a color in CIE color space.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%hue_ct
+CT
+The Mired Color temperature of the light. 2012 connected lights are capable of 153 (6500K) to 500 (2000K).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%hue_alert
+Alert
+The current alert mode of the light (none|select|lselect)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%hue_colormode
+Colormode
+Indicates the color mode in which the light is working, this is the last command type it received.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%hue_reachable
+Reachable
+Indicates if a light can be reached by the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;%hue_light_id
+Light bulb Id
+The unique id of the light bulb.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.EditVariablesActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.color.setRed</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.color.setWhite</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task171">
+		<cdate>1613414711504</cdate>
+		<edate>1613579920540</edate>
+		<id>171</id>
+		<nme>LIGHTS TEMP</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%QUEE_ARRAY</Str>
+			<Str sr="arg1" ve="3">LIGHTS.TEMP1</Str>
+			<Str sr="arg2" ve="3">,</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>356</code>
+			<Str sr="arg0" ve="3">%QUEE_ARRAY</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">%launch</Str>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">%launch</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%launch</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task172">
+		<cdate>1613414711504</cdate>
+		<edate>1613415402081</edate>
+		<id>172</id>
+		<nme>LIGHTS.TEMP1</nme>
+		<Action sr="act0" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">LIGHTS.TEMP1</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task173">
+		<cdate>1613414711504</cdate>
+		<edate>1613579882148</edate>
+		<id>173</id>
+		<nme>LIGHTS TEMP Add</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%QUEE_ARRAY</Str>
+			<Str sr="arg1" ve="3">LIGHTS.TEMP1</Str>
+			<Str sr="arg2" ve="3">,</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>355</code>
+			<Str sr="arg0" ve="3">%QUEE_ARRAY</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">LIGHTS.TEMP1</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>355</code>
+			<Str sr="arg0" ve="3">%QUEE_ARRAY</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">LIGHTS.TEMP2</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task174">
+		<cdate>1613414711504</cdate>
+		<edate>1613415457030</edate>
+		<id>174</id>
+		<nme>LIGHTS.TEMP2</nme>
+		<Action sr="act0" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">LIGHTS.TEMP 2</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task175">
+		<cdate>1613582044239</cdate>
+		<edate>1613585380874</edate>
+		<id>175</id>
+		<nme>LIGHTS command wait</nme>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%LIGHTS_WAIT</Str>
+			<Str sr="arg1" ve="3">%LIGHTS_WAIT+2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%LIGHTS_WAIT</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%LIGHTS_WAIT</lhs>
+					<op>7</op>
+					<rhs>7</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%LIGHTS_WAIT</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%LIGHTS_WAIT</lhs>
+					<op>7</op>
+					<rhs>7</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Wait time
+
+%LIGHTS_WAIT s</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_ab_device_access_time</nme>
+		</Img>
+	</Task>
+	<Task sr="task54">
+		<cdate>1613068876609</cdate>
+		<edate>1613616434803</edate>
+		<id>54</id>
+		<nme>Bathroom Light.switch</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>boolean %par1 switch light on/off</label>
+			<Str sr="arg0" ve="3">%state</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>int %par1 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>set default</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Bathroom Light.brightess.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">0</Str>
+			<Str sr="arg3" ve="3">%fade</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%fade</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>544126650</code>
+			<label>{
+  "on": %state
+}</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"on\": %state\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"on":false}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Bathroom Light
+Command: 
+{
+  "on": %state
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+	</Task>
+	<Task sr="task56">
+		<cdate>1613068876609</cdate>
+		<edate>1613616873005</edate>
+		<id>56</id>
+		<nme>Bathroom Light.brightess.set</nme>
+		<pri>7</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>int %par1 0-255 brightness</label>
+			<Str sr="arg0" ve="3">%brightness</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>int %par2 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">%par2*10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Bathroom Light
+
+Brightness: %brightness</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>544126650</code>
+			<label>{
+  "transitiontime": %fade,
+  "bri": %brightness
+}</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"transitiontime\": %fade,\n  \"bri\": %brightness\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"transitiontime":0,"bri":254}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Bathroom Light
+Command: 
+{
+  "transitiontime": %fade,
+  "bri": %brightness
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<label>Wait until fade time ends</label>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%par2</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task62">
+		<cdate>1613629880990</cdate>
+		<edate>1613630756948</edate>
+		<id>62</id>
+		<nme>LIGHTS.covertRGBtoXY</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%red</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%green</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%blue</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%x_tmp</Str>
+			<Str sr="arg1" ve="3">%red * 0.649926f + %green * 0.103455f + %blue * 0.197109f</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%y_tmp</Str>
+			<Str sr="arg1" ve="3">%red * 0.234327f + %green * 0.743075f + %blue * 0.022598f</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%z_tmp</Str>
+			<Str sr="arg1" ve="3">%red * 0.0000000f + %green * 0.053077f + %blue * 1.035763f</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%X_color</Str>
+			<Str sr="arg1" ve="3">%x_tmp  / (%x_tmp + %y_tmp + %z_tmp)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Y_color</Str>
+			<Str sr="arg1" ve="3">%y_tmp  / (%x_tmp + %y_tmp + %z_tmp)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>544126650</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"xy\": [\n    %X_color,\n    %Y_color\n  ]\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"xy":[0.3576,0.3649]}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Livingroom Light
+Command: 
+{
+  "xy": [
+    %X_color,
+    %Y_color
+  ]
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%x_tmp
+%y_tmp
+%z_tmp
+
+%X_color
+%Y_color</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+	</Task>
+</TaskerData>

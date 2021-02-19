@@ -1,0 +1,12 @@
+<TaskerData sr="" dvi="1" tv="5.11.14">
+	<dmetric>720.0,1502.0</dmetric>
+	<Scene sr="sceneSet Nap">
+		<cdate>1613404503140</cdate>
+		<edate>1613404504585</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>976</heightPort>
+		<nme>Set Nap</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>467</widthPort>
+	</Scene>
+</TaskerData>

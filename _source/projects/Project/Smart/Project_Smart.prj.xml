@@ -1,11 +1,12 @@
 <TaskerData sr="" dvi="1" tv="5.11.14">
 	<Profile sr="prof19" ve="2">
 		<cdate>1612124294750</cdate>
-		<edate>1612164619533</edate>
+		<clp>true</clp>
+		<edate>1612382699983</edate>
 		<flags>8</flags>
 		<id>19</id>
 		<mid0>28</mid0>
-		<nme>Lights  - Wake up</nme>
+		<nme>Lights  - Wakeup</nme>
 		<Time sr="con0">
 			<fromvar>%SMART_TIME_WAKEUP</fromvar>
 			<th>-1</th>
@@ -14,9 +15,11 @@
 	</Profile>
 	<Profile sr="prof32" ve="2">
 		<cdate>1612124294750</cdate>
-		<edate>1612164715709</edate>
+		<clp>true</clp>
+		<edate>1612551240460</edate>
 		<flags>8</flags>
 		<id>32</id>
+		<limit>true</limit>
 		<mid0>30</mid0>
 		<nme>Lights  - Sunset</nme>
 		<Time sr="con0">
@@ -27,9 +30,11 @@
 	</Profile>
 	<Profile sr="prof33" ve="2">
 		<cdate>1612124294750</cdate>
+		<clp>true</clp>
 		<edate>1612165441468</edate>
 		<flags>8</flags>
 		<id>33</id>
+		<limit>true</limit>
 		<mid0>31</mid0>
 		<nme>Lights - Sleep</nme>
 		<Time sr="con0">
@@ -40,14 +45,14 @@
 	</Profile>
 	<Profile sr="prof38" ve="2">
 		<cdate>1612169218319</cdate>
-		<edate>1612169285518</edate>
+		<edate>1612639491940</edate>
 		<flags>8</flags>
 		<id>38</id>
 		<mid0>25</mid0>
 		<nme>SETUP EVERYDAY</nme>
 		<Time sr="con0">
-			<fh>0</fh>
-			<fm>1</fm>
+			<fh>10</fh>
+			<fm>30</fm>
 			<th>-1</th>
 			<tm>-1</tm>
 		</Time>
@@ -55,29 +60,35 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1612098206230</cdate>
 		<name>Project/Smart</name>
-		<pids>33,32,19,38</pids>
-		<tids>5,28,26,2,31,40,30,39,25,34,23,27,29,7,37</tids>
+		<pids>32,19,38,33</pids>
+		<tids>29,31,30,16,21,28,37,5,27,20,25,7,39,4,3,23,26,22,35,36,40</tids>
 		<tsort>Alpha</tsort>
 	</Project>
-	<Task sr="task2">
+	<Task sr="task16">
 		<cdate>1612115380029</cdate>
-		<edate>1612171469780</edate>
-		<id>2</id>
-		<nme>SMART.setup.freeDay</nme>
+		<edate>1612526224279</edate>
+		<id>16</id>
+		<nme>SMART.setup.eveningTodayFree</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%SMART_TIME_WAKEUP</Str>
-			<Str sr="arg1" ve="3">5:00</Str>
-			<Int sr="arg2" val="0"/>
+			<code>523</code>
+			<Str sr="arg0" ve="3">SMART.setup.eveningTodayFree</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%SMART_TIME_SLEEP</Str>
-			<Str sr="arg1" ve="3">10:00</Str>
+			<Str sr="arg1" ve="3">22:00</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -85,27 +96,53 @@
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">Lights  - Wake up</Str>
+			<Str sr="arg0" ve="3">Lights  - Sunset</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>159</code>
-			<Str sr="arg0" ve="3">Lights  - Sunset</Str>
-			<Int sr="arg1" val="1"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>159</code>
 			<Str sr="arg0" ve="3">Lights - Sleep</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act5" ve="7">
+	</Task>
+	<Task sr="task20">
+		<cdate>1612115380029</cdate>
+		<edate>1612637770682</edate>
+		<id>20</id>
+		<nme>SMART.setup.eveningTodayWork</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">SMART.setup.eveningTodayWork</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SMART_TIME_WAKEUP</Str>
+			<Str sr="arg1" ve="3">18:30</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">SMART.setAlarm</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
 			<Str sr="arg2" ve="3">%SMART_TIME_WAKEUP</Str>
-			<Str sr="arg3" ve="3"/>
+			<Str sr="arg3" ve="3">IKEA wake up</Str>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
 			<Int sr="arg6" val="0"/>
@@ -113,15 +150,78 @@
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act6" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">Free day</Str>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setAlarm</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">19:30</Str>
+			<Str sr="arg3" ve="3">IKEA go</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Lights  - Sunset</Str>
 			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Lights  - Wakeup</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Lights - Sleep</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task21">
+		<cdate>1612115380029</cdate>
+		<edate>1612603185055</edate>
+		<id>21</id>
+		<nme>SMART.setup.morningTomorrowWork</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">SMART.setup.morningTomorrowWork</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task22">
+		<cdate>1612115380029</cdate>
+		<edate>1612523347375</edate>
+		<id>22</id>
+		<nme>SMART.setInitTime</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SMART_SETUP_TIME</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
 		</Action>
 	</Task>
 	<Task sr="task23">
 		<cdate>1612100524498</cdate>
-		<edate>1612115174022</edate>
+		<edate>1612417352613</edate>
 		<id>23</id>
 		<nme>CAL.isWorkTomorow</nme>
 		<pri>100</pri>
@@ -141,6 +241,11 @@
 			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%events</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>126</code>
 			<Str sr="arg0" ve="3">true</Str>
 			<Int sr="arg1" val="1"/>
@@ -155,7 +260,7 @@
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act3" ve="7">
 			<code>126</code>
 			<Str sr="arg0" ve="3">false</Str>
 			<Int sr="arg1" val="1"/>
@@ -166,7 +271,7 @@
 	</Task>
 	<Task sr="task25">
 		<cdate>1612115281906</cdate>
-		<edate>1612169937008</edate>
+		<edate>1612639440588</edate>
 		<id>25</id>
 		<nme>SMART. init</nme>
 		<pri>100</pri>
@@ -202,16 +307,27 @@
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>548</code>
-			<Str sr="arg0" ve="3">%is_work_today
-%is_work_tomorow</Str>
+			<Str sr="arg0" ve="3">is_work_today:       %is_work_today
+is_work_tomorow: %is_work_tomorow</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
 		<Action sr="act3" ve="7">
-			<code>37</code>
-			<label>If today is FREE day</label>
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.eveningTodayFree</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%is_work_today</lhs>
+					<lhs>%is_work_tomorow</lhs>
 					<op>0</op>
 					<rhs>false</rhs>
 				</Condition>
@@ -219,7 +335,7 @@
 		</Action>
 		<Action sr="act4" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">SMART.setup.freeDay</Str>
+			<Str sr="arg0" ve="3">SMART.setup.eveningTodayWork</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -231,13 +347,39 @@
 			<Str sr="arg7" ve="3"/>
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_work_tomorow</lhs>
+					<op>0</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act5" ve="7">
-			<code>43</code>
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.morningTomorrowWork</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_work_tomorow</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act6" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">SMART.setup.workDay</Str>
+			<Str sr="arg0" ve="3">SMART.setup.morningTomorrowFree</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
@@ -249,9 +391,13 @@
 			<Str sr="arg7" ve="3"/>
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>38</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_work_tomorow</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 	</Task>
 	<Task sr="task26">
@@ -270,7 +416,7 @@
 	</Task>
 	<Task sr="task27">
 		<cdate>1612115380029</cdate>
-		<edate>1612171302424</edate>
+		<edate>1612637654222</edate>
 		<id>27</id>
 		<nme>SMART.setAlarm</nme>
 		<pri>100</pri>
@@ -285,21 +431,21 @@
 			<Int sr="arg5" val="3"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>Set alarm Name</label>
+			<Str sr="arg0" ve="3">%wmualarmname</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>590</code>
 			<label>Split time to hours and minutes</label>
 			<Str sr="arg0" ve="3">%alarm_time</Str>
 			<Str sr="arg1" ve="3">:</Str>
 			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>Set alarm Name</label>
-			<Str sr="arg0" ve="3">%wmualarmname</Str>
-			<Str sr="arg1" ve="3">Tasker alarm</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>547</code>
@@ -386,7 +532,7 @@
 	</Task>
 	<Task sr="task28">
 		<cdate>1612115380029</cdate>
-		<edate>1612165607711</edate>
+		<edate>1612605223632</edate>
 		<id>28</id>
 		<nme>SMART.lights.wakeup</nme>
 		<pri>100</pri>
@@ -425,98 +571,30 @@ for 'Lamp Color'
 			<Int sr="arg3" val="0"/>
 		</Action>
 		<Action sr="act2" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="1"/>
-			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="0"/>
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"effect","click_action_effect_id":"19593","click_action_effect_name":"Red &gt; Bright"}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Red &gt; Bright)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
 			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act3" ve="7">
-			<code>1573096206</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"dPucFgLEZqSqOYO","click_action_scene_name":"Scene Red","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
-					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Red)</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
-			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="10"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act5" ve="7">
 			<code>1137823573</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000327372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000000A73720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
-					<actionData-type>java.lang.String</actionData-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
-to 50%
-1 second fade
-for 'Lamp Color'
-</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
-			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="10"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>1573096206</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"0jJ8PmvUWH4EVV8","click_action_scene_name":"Scene Yellow","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
-					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Yellow)</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
-			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="10"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act9" ve="7">
-			<code>1137823573</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000647372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000000A73720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000647372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000232873720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
 					<actionData-type>java.lang.String</actionData-type>
 					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
 to 100%
-1 second fade
+900 second fade
 for 'Lamp Color'
 </com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
@@ -659,9 +737,23 @@ for 'Lamp Color'
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
+	<Task sr="task3">
+		<cdate>1612115380029</cdate>
+		<edate>1612605253311</edate>
+		<id>3</id>
+		<nme>SMART.temp</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="1000"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+		</Action>
+	</Task>
 	<Task sr="task30">
 		<cdate>1612115380029</cdate>
-		<edate>1612165602025</edate>
+		<edate>1612256138418</edate>
 		<id>30</id>
 		<nme>SMART.lights.sunset</nme>
 		<pri>100</pri>
@@ -870,52 +962,167 @@ for 'Lamp Color'
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task34">
-		<cdate>1612115380029</cdate>
-		<edate>1612170802645</edate>
-		<id>34</id>
-		<nme>SMART.setup.workDay</nme>
+	<Task sr="task35">
+		<cdate>1612115281906</cdate>
+		<edate>1612524623186</edate>
+		<id>35</id>
+		<nme>SMART. init bak</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">Lights  - Wake up</Str>
-			<Int sr="arg1" val="1"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%SMART_TIME_WAKEUP</Str>
-			<Str sr="arg1" ve="3">18:30</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">Lights  - Sunset</Str>
-			<Int sr="arg1" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%SMART_TIME_SUNSET</Str>
-			<Str sr="arg1" ve="3">08:35</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">Lights - Sleep</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act5" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">SMART.setAlarm</Str>
+			<Str sr="arg0" ve="3">CAL.isWorkToday</Str>
 			<Int sr="arg1">
 				<var>%priority</var>
 			</Int>
-			<Str sr="arg2" ve="3">%SMART_TIME_WAKEUP</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%is_work_today</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">CAL.isWorkTomorow</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%is_work_tomorow</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.morningTomorrowWork</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.eveningTodayWork</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>43</code>
+			<label>today is work AND tomorrow is free</label>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%is_work_today</lhs>
+					<op>0</op>
+					<rhs>true</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%is_work_tomorow</lhs>
+					<op>0</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.morningTomorrowWork</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.eveningTodayFree</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">is_work_today:       %is_work_today
+is_work_tomorow: %is_work_tomorow</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>37</code>
+			<label>today is free AND tomorrow is free</label>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%is_work_today</lhs>
+					<op>0</op>
+					<rhs>false</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%is_work_tomorow</lhs>
+					<op>0</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.eveningTodayFree</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.morningTomorrowFree</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -925,14 +1132,218 @@ for 'Lamp Color'
 			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act6" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">Free day</Str>
-			<Int sr="arg1" val="0"/>
+			<code>43</code>
+			<label>today is free AND tomorrow is work</label>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%is_work_today</lhs>
+					<op>0</op>
+					<rhs>false</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%is_work_tomorow</lhs>
+					<op>0</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.eveningTodayWork</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setup.morningTomorrowWork</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>43</code>
+			<label>today is work AND tomorrow is work</label>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%is_work_today</lhs>
+					<op>0</op>
+					<rhs>true</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%is_work_tomorow</lhs>
+					<op>0</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task36">
+		<cdate>1612115380029</cdate>
+		<edate>1612603915125</edate>
+		<id>36</id>
+		<nme>SMART.lights.wakeup bak</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">SMART.lights.wakeup</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000007372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870000000003273720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 0%
+for 'Lamp Color'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"dPucFgLEZqSqOYO","click_action_scene_name":"Scene Red","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Red)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000327372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000000A73720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 50%
+1 second fade
+for 'Lamp Color'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>1573096206</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA>{"identifier":0,"bridge_id":"ECB5FAFFFE2D45E3","name":"","group_name":"Living room","group_id":"1","group_type":"Room","group_class":"Living room","click_action":"scene","click_action_scene_id":"0jJ8PmvUWH4EVV8","click_action_scene_name":"Scene Yellow","click_action_scene_default_id":-1}</com.superthomaslab.hueessentials.intent.extra.TILE_DATA>
+					<com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>java.lang.String</com.superthomaslab.hueessentials.intent.extra.TILE_DATA-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Living room (Scene Yellow)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.superthomaslab.hueessentials</Str>
+			<Str sr="arg2" ve="3">com.superthomaslab.hueessentials.ui.tasker.TaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>1137823573</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<actionData>ACED00057372002F636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C69676874734F6E56313D73B4022240FADB02000649000A6272696768746E6573734C00046661646574002D4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4661646556313B4C00106C6967687447726F7570416374696F6E7400394C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F4C6967687447726F7570416374696F6E56313B4C000C706C617952696E67746F6E657400404C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F506C617952696E67746F6E6556313B4C001073686F774E6F74696669636174696F6E7400444C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F53686F774E6F74696669636174696F6E56313B4C00077669627261746574003B4C636F6D2F62656E636865766F6F722F68756570726F2F7461736B65722F616374696F6E732F737562616374696F6E732F5669627261746556313B7872002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E416374696F6E04AC405F92422ABF020002490008616374696F6E494449000E7472616E736974696F6E5261746578700000000100000000000000647372002B636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4661646556315E71411F3B25D5CC0200025A00096973456E61626C656449000E7472616E736974696F6E54696D657870010000000A73720037636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E4C6967687447726F7570416374696F6E5631B94961DF9FBC19D902000349000F67726F7570446174616261736549445A0007697347726F75704900076C6967687449447870FFFFFFFF00000000067372003E636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E506C617952696E67746F6E65563163EBDE38F48FFA630200025A00096973456E61626C65644C001072696E67746F6E6546696C65506174687400124C6A6176612F6C616E672F537472696E673B7870007073720042636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E53686F774E6F74696669636174696F6E56314BA63298338CE79A0200015A00096973456E61626C656478700073720039636F6D2E62656E636865766F6F722E68756570726F2E7461736B65722E616374696F6E732E737562616374696F6E732E5669627261746556317620B83C6DC1D8FD0200015A00096973456E61626C6564787000</actionData>
+					<actionData-type>java.lang.String</actionData-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Lights on
+to 100%
+1 second fade
+for 'Lamp Color'
+</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.benchevoor.huepro.tasker</Str>
+			<Str sr="arg2" ve="3">com.benchevoor.huepro.tasker.EditAction</Str>
+			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task37">
 		<cdate>1612167127526</cdate>
-		<edate>1612170585827</edate>
+		<edate>1612526200722</edate>
 		<id>37</id>
 		<nme>SMART.set.SunriseAndSunsetTimes</nme>
 		<pri>100</pri>
@@ -1076,6 +1487,12 @@ The converted value
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
 		</Action>
+		<Action sr="act7" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">sunrise_time: %sunrise_time
+sunset_time:  %sunset_time</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
 	</Task>
 	<Task sr="task39">
 		<cdate>1612167127526</cdate>
@@ -1150,6 +1567,57 @@ Time in seconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.and
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Str sr="arg4" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task4">
+		<cdate>1612115380029</cdate>
+		<edate>1612637800992</edate>
+		<id>4</id>
+		<nme>SMART.setup.morningTomorrowFree</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">SMART.setup.morningTomorrowFree</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SMART_TIME_WAKEUP</Str>
+			<Str sr="arg1" ve="3">5:00</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Lights  - Wakeup</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">SMART.setAlarm</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%SMART_TIME_WAKEUP</Str>
+			<Str sr="arg3" ve="3">Free day alarm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task40">
@@ -1351,7 +1819,7 @@ The converted value
 	</Task>
 	<Task sr="task5">
 		<cdate>1612098419401</cdate>
-		<edate>1612167807744</edate>
+		<edate>1612382584127</edate>
 		<id>5</id>
 		<nme>CAL.getEvents</nme>
 		<pri>100</pri>
@@ -1366,11 +1834,11 @@ The converted value
 					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
 					<com.balda.calendartask.extra.TIME>%par1</com.balda.calendartask.extra.TIME>
 					<com.balda.calendartask.extra.TIME-type>java.lang.String</com.balda.calendartask.extra.TIME-type>
-					<com.balda.calendartask.extra.VAR>ct_today</com.balda.calendartask.extra.VAR>
+					<com.balda.calendartask.extra.VAR>ct_event_range_start</com.balda.calendartask.extra.VAR>
 					<com.balda.calendartask.extra.VAR-type>java.lang.String</com.balda.calendartask.extra.VAR-type>
 					<com.twofortyfouram.locale.intent.extra.BLURB>%par1</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ct_today
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ct_event_range_start
 Time
 Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
@@ -1395,11 +1863,11 @@ Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.
 					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
 					<com.balda.calendartask.extra.TIME>%par2</com.balda.calendartask.extra.TIME>
 					<com.balda.calendartask.extra.TIME-type>java.lang.String</com.balda.calendartask.extra.TIME-type>
-					<com.balda.calendartask.extra.VAR>ct_tomorow</com.balda.calendartask.extra.VAR>
+					<com.balda.calendartask.extra.VAR>ct_event_range_end</com.balda.calendartask.extra.VAR>
 					<com.balda.calendartask.extra.VAR-type>java.lang.String</com.balda.calendartask.extra.VAR-type>
 					<com.twofortyfouram.locale.intent.extra.BLURB>%par2</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ct_tomorow
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ct_event_range_end
 Time
 Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
@@ -1414,23 +1882,73 @@ Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.
 			<Int sr="arg3" val="10"/>
 		</Action>
 		<Action sr="act2" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%ct_event_range_start</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%ct_event_range_end</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>1269159260</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<com.balda.calendartask.extra.CALENDAR>19</com.balda.calendartask.extra.CALENDAR>
+					<com.balda.calendartask.extra.CALENDAR>3</com.balda.calendartask.extra.CALENDAR>
 					<com.balda.calendartask.extra.CALENDAR-type>java.lang.String</com.balda.calendartask.extra.CALENDAR-type>
-					<com.balda.calendartask.extra.END>%ct_tomorow</com.balda.calendartask.extra.END>
+					<com.balda.calendartask.extra.END>%ct_event_range_end</com.balda.calendartask.extra.END>
 					<com.balda.calendartask.extra.END-type>java.lang.String</com.balda.calendartask.extra.END-type>
 					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
 					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
 					<com.balda.calendartask.extra.OPERATION>0</com.balda.calendartask.extra.OPERATION>
 					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
-					<com.balda.calendartask.extra.START>%ct_today</com.balda.calendartask.extra.START>
+					<com.balda.calendartask.extra.START>%ct_event_range_start</com.balda.calendartask.extra.START>
 					<com.balda.calendartask.extra.START-type>java.lang.String</com.balda.calendartask.extra.START-type>
 					<com.balda.calendartask.extra.TYPE>0</com.balda.calendartask.extra.TYPE>
 					<com.balda.calendartask.extra.TYPE-type>java.lang.Integer</com.balda.calendartask.extra.TYPE-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Work from %ct_today to %ct_tomorow</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Events from %ct_event_range_start to %ct_event_range_end</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ctevids()
+Event id list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ctoccurrenceids()
+Occurrence identifier list
+-1 for non recurring events, valid otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ctorgs()
+Email event owner list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%cttitles()
+Title list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%ctdescs()
+Description list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%ctstarts()
+Start time list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%ctends()
+End time list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%ctlocations()
+Location list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%cttimezones()
+Timezone list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%ctcolors()
+Events colors in hex format
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%ctendtimezones()
+End timezone list
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%ctalldays()
+All day list
+True if all day event, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%ctattendeeemails()
+Attendees email list
+List of list separated by semicolon&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%ctattendeenames()
+Attendees name list
+List of list separated by semicolon&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%ctavailable()
+Available list
+True if available for the this event, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%ctremids()
+List of reminder ids
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%ctremmethods()
+List of reminder methods
+Values are: ALERT, DEFAULT, SMS, EMAIL, ALARM&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%ctremminutes()
+List of reminder minutes
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.END com.balda.calendartask.extra.START</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
@@ -1441,7 +1959,7 @@ Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.
 			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireGetEvents</Str>
 			<Int sr="arg3" val="30"/>
 		</Action>
-		<Action sr="act3" ve="7">
+		<Action sr="act5" ve="7">
 			<code>126</code>
 			<Str sr="arg0" ve="3">%cttitles()</Str>
 			<Int sr="arg1" val="1"/>
@@ -1452,7 +1970,7 @@ Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.
 	</Task>
 	<Task sr="task7">
 		<cdate>1612100524498</cdate>
-		<edate>1612115161897</edate>
+		<edate>1612417373384</edate>
 		<id>7</id>
 		<nme>CAL.isWorkToday</nme>
 		<pri>100</pri>
@@ -1472,6 +1990,11 @@ Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.
 			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%events</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>126</code>
 			<Str sr="arg0" ve="3">true</Str>
 			<Int sr="arg1" val="1"/>
@@ -1486,7 +2009,7 @@ Midnight of selected day in seconds UTC&lt;/_array_net.dinglisch.android.tasker.
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act3" ve="7">
 			<code>126</code>
 			<Str sr="arg0" ve="3">false</Str>
 			<Int sr="arg1" val="1"/>

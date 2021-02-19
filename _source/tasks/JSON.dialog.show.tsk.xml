@@ -1,0 +1,21 @@
+<TaskerData sr="" dvi="1" tv="5.9.2">
+	<Task sr="task260">
+		<cdate>1580918549587</cdate>
+		<edate>1581928048071</edate>
+		<id>260</id>
+		<nme>JSON.dialog.show</nme>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">CAL.dialog</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="133"/>
+			<Int sr="arg3">
+				<var>10</var>
+			</Int>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+	</Task>
+</TaskerData>

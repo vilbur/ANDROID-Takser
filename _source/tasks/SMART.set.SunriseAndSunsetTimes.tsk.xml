@@ -1,0 +1,155 @@
+<TaskerData sr="" dvi="1" tv="5.11.14">
+	<Task sr="task37">
+		<cdate>1612167127526</cdate>
+		<edate>1613394034173</edate>
+		<id>37</id>
+		<nme>SMART.set.SunriseAndSunsetTimes</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<label>set %location_coordinates</label>
+			<Str sr="arg0" ve="3">SMART.getLocation</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%location_coordinates</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%location_coordinates</Str>
+			<Str sr="arg1" ve="3">,</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>1117885</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.balda.meteotask.extra.INT_VERSION_CODE>63</com.balda.meteotask.extra.INT_VERSION_CODE>
+					<com.balda.meteotask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.meteotask.extra.INT_VERSION_CODE-type>
+					<com.balda.meteotask.extra.LAT>%location_coordinates1</com.balda.meteotask.extra.LAT>
+					<com.balda.meteotask.extra.LAT-type>java.lang.String</com.balda.meteotask.extra.LAT-type>
+					<com.balda.meteotask.extra.LON>%location_coordinates2</com.balda.meteotask.extra.LON>
+					<com.balda.meteotask.extra.LON-type>java.lang.String</com.balda.meteotask.extra.LON-type>
+					<com.balda.meteotask.extra.OPERATION>2</com.balda.meteotask.extra.OPERATION>
+					<com.balda.meteotask.extra.OPERATION-type>java.lang.Integer</com.balda.meteotask.extra.OPERATION-type>
+					<com.balda.meteotask.extra.TIME>%TIMES</com.balda.meteotask.extra.TIME>
+					<com.balda.meteotask.extra.TIME-type>java.lang.String</com.balda.meteotask.extra.TIME-type>
+					<com.balda.meteotask.extra.TYPE>0</com.balda.meteotask.extra.TYPE>
+					<com.balda.meteotask.extra.TYPE-type>java.lang.Integer</com.balda.meteotask.extra.TYPE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Sunset and sunrise times with normal data</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%mtsunrise
+Sunrise time
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%mtsunset
+Sunset time
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%mtnight
+Night state
+True if it's night at input time, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.meteotask.extra.LAT com.balda.meteotask.extra.LON com.balda.meteotask.extra.TIME</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.balda.meteotask</Str>
+			<Str sr="arg2" ve="3">com.balda.meteotask.ui.FireGetTwilight</Str>
+			<Int sr="arg3" val="30"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>1384093265</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.balda.calendartask.extra.DATE>%mtsunrise</com.balda.calendartask.extra.DATE>
+					<com.balda.calendartask.extra.DATE-type>java.lang.String</com.balda.calendartask.extra.DATE-type>
+					<com.balda.calendartask.extra.DATE_FORMAT>HH:mm</com.balda.calendartask.extra.DATE_FORMAT>
+					<com.balda.calendartask.extra.DATE_FORMAT-type>java.lang.String</com.balda.calendartask.extra.DATE_FORMAT-type>
+					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
+					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
+					<com.balda.calendartask.extra.OPERATION>6</com.balda.calendartask.extra.OPERATION>
+					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
+					<com.balda.calendartask.extra.TYPE>1</com.balda.calendartask.extra.TYPE>
+					<com.balda.calendartask.extra.TYPE-type>java.lang.Integer</com.balda.calendartask.extra.TYPE-type>
+					<com.balda.calendartask.extra.VARIABLE>sunrise_time</com.balda.calendartask.extra.VARIABLE>
+					<com.balda.calendartask.extra.VARIABLE-type>java.lang.String</com.balda.calendartask.extra.VARIABLE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Convert %mtsunrise into HH:mm</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%sunrise_time
+The converted value
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.DATE com.balda.calendartask.extra.DATE_FORMAT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.balda.calendartask</Str>
+			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireDateFormatActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>1384093265</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.balda.calendartask.extra.DATE>%mtsunset</com.balda.calendartask.extra.DATE>
+					<com.balda.calendartask.extra.DATE-type>java.lang.String</com.balda.calendartask.extra.DATE-type>
+					<com.balda.calendartask.extra.DATE_FORMAT>HH:mm</com.balda.calendartask.extra.DATE_FORMAT>
+					<com.balda.calendartask.extra.DATE_FORMAT-type>java.lang.String</com.balda.calendartask.extra.DATE_FORMAT-type>
+					<com.balda.calendartask.extra.INT_VERSION_CODE>63</com.balda.calendartask.extra.INT_VERSION_CODE>
+					<com.balda.calendartask.extra.INT_VERSION_CODE-type>java.lang.Integer</com.balda.calendartask.extra.INT_VERSION_CODE-type>
+					<com.balda.calendartask.extra.OPERATION>6</com.balda.calendartask.extra.OPERATION>
+					<com.balda.calendartask.extra.OPERATION-type>java.lang.Integer</com.balda.calendartask.extra.OPERATION-type>
+					<com.balda.calendartask.extra.TYPE>1</com.balda.calendartask.extra.TYPE>
+					<com.balda.calendartask.extra.TYPE-type>java.lang.Integer</com.balda.calendartask.extra.TYPE-type>
+					<com.balda.calendartask.extra.VARIABLE>sunset_time</com.balda.calendartask.extra.VARIABLE>
+					<com.balda.calendartask.extra.VARIABLE-type>java.lang.String</com.balda.calendartask.extra.VARIABLE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Convert %mtsunset into HH:mm</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%sunset_time
+The converted value
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.balda.calendartask.extra.DATE com.balda.calendartask.extra.DATE_FORMAT</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.balda.calendartask</Str>
+			<Str sr="arg2" ve="3">com.balda.calendartask.ui.FireDateFormatActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SMART_TIME_SUNRISE</Str>
+			<Str sr="arg1" ve="3">%sunrise_time</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%SMART_TIME_SUNSET</Str>
+			<Str sr="arg1" ve="3">%sunset_time</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">sunrise_time: %sunrise_time
+sunset_time:  %sunset_time</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
