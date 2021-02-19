@@ -1,8 +1,8 @@
 <TaskerData sr="" dvi="1" tv="5.11.14">
 	<Project sr="proj0" ve="2">
 		<cdate>1613409369251</cdate>
-		<name>LIGHTS shortcuts</name>
-		<tids>166,397,168,167,148,169,400,175,62,370,401,369,366,170</tids>
+		<name>Project/Lights</name>
+		<tids>397,366,167,169,400,166,62,401,369,148,170,168,175,370</tids>
 		<tsort>Alpha</tsort>
 	</Project>
 	<Task sr="task148">
