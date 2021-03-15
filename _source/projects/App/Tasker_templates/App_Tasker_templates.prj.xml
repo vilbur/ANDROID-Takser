@@ -1,13 +1,33 @@
-<TaskerData sr="" dvi="1" tv="5.9.2">
+<TaskerData sr="" dvi="1" tv="5.11.14">
 	<Project sr="proj0" ve="2">
 		<cdate>1583226620585</cdate>
 		<name>App/Tasker templates</name>
-		<tids>277</tids>
+		<tids>112,6</tids>
 	</Project>
-	<Task sr="task277">
+	<Task sr="task112">
+		<cdate>1615703355475</cdate>
+		<edate>1615703382972</edate>
+		<id>112</id>
+		<nme>TEMPLATE.for</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%index</Str>
+			<Str sr="arg1" ve="3">1:3</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%index</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>40</code>
+		</Action>
+	</Task>
+	<Task sr="task6">
 		<cdate>1583226706649</cdate>
-		<edate>1583226894896</edate>
-		<id>277</id>
+		<edate>1612110585271</edate>
+		<id>6</id>
 		<nme>TEMPLATE.parameters</nme>
 		<Action sr="act0" ve="7">
 			<code>547</code>

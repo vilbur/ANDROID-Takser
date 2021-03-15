@@ -1,0 +1,1985 @@
+<TaskerData sr="" dvi="1" tv="5.11.14">
+	<dmetric>720.0,1502.0</dmetric>
+	<Profile sr="prof79" ve="2">
+		<cdate>1613379154178</cdate>
+		<clp>true</clp>
+		<edate>1613398734141</edate>
+		<flags>8</flags>
+		<id>79</id>
+		<limit>true</limit>
+		<mid0>80</mid0>
+		<Time sr="con0">
+			<fromvar>%SMART_ALARM_TIME</fromvar>
+			<th>-1</th>
+			<tm>-1</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof82" ve="2">
+		<cdate>1613379578914</cdate>
+		<clp>true</clp>
+		<edate>1613382944183</edate>
+		<flags>8</flags>
+		<id>82</id>
+		<mid0>83</mid0>
+		<nme>Alarm Activated</nme>
+		<Event sr="con0" ve="2">
+			<code>1730196985</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>false</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>true</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED>false</com.chlochlo.adaptativealarm.extra.BOOL_FIRED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED>false</com.chlochlo.adaptativealarm.extra.BOOL_MISSED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>false</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>false</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>-2</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>java.lang.Long</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>7</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100371</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>All alarms: When activated</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpTaskerEventEditActivity</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof84" ve="2">
+		<cdate>1613379578914</cdate>
+		<clp>true</clp>
+		<edate>1613400828232</edate>
+		<flags>8</flags>
+		<id>84</id>
+		<mid0>93</mid0>
+		<nme>Alarm Snoozed</nme>
+		<Event sr="con0" ve="2">
+			<code>1730196985</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>false</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED>false</com.chlochlo.adaptativealarm.extra.BOOL_FIRED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED>false</com.chlochlo.adaptativealarm.extra.BOOL_MISSED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>true</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>false</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>-2</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>java.lang.Long</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>7</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100371</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>All alarms: When snoozed</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpTaskerEventEditActivity</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof85" ve="2">
+		<cdate>1613379578914</cdate>
+		<clp>true</clp>
+		<edate>1615790408315</edate>
+		<flags>8</flags>
+		<id>85</id>
+		<mid0>134</mid0>
+		<nme>Alarm Dismissed</nme>
+		<Event sr="con0" ve="2">
+			<code>1730196985</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>true</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED>false</com.chlochlo.adaptativealarm.extra.BOOL_FIRED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED>false</com.chlochlo.adaptativealarm.extra.BOOL_MISSED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>false</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>false</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>-2</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>java.lang.Long</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>7</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100371</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>All alarms: When dismissed</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpTaskerEventEditActivity</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof87" ve="2">
+		<cdate>1613379578914</cdate>
+		<clp>true</clp>
+		<edate>1613398961639</edate>
+		<flags>8</flags>
+		<id>87</id>
+		<mid0>27</mid0>
+		<nme>Alarm Deactivated</nme>
+		<Event sr="con0" ve="2">
+			<code>1730196985</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>true</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>false</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED>false</com.chlochlo.adaptativealarm.extra.BOOL_FIRED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED>false</com.chlochlo.adaptativealarm.extra.BOOL_MISSED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>false</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>false</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>-2</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>java.lang.Long</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>7</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100371</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>All alarms: When deactivated</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpTaskerEventEditActivity</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof88" ve="2">
+		<cdate>1613379578914</cdate>
+		<clp>true</clp>
+		<edate>1613400834214</edate>
+		<flags>8</flags>
+		<id>88</id>
+		<mid0>92</mid0>
+		<nme>Alarm Fired</nme>
+		<Event sr="con0" ve="2">
+			<code>1730196985</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>false</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED>true</com.chlochlo.adaptativealarm.extra.BOOL_FIRED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED>false</com.chlochlo.adaptativealarm.extra.BOOL_MISSED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>false</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>false</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>-2</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>java.lang.Long</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>7</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100371</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>All alarms: When fired</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpTaskerEventEditActivity</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof89" ve="2">
+		<cdate>1613379578914</cdate>
+		<clp>true</clp>
+		<edate>1613383157689</edate>
+		<flags>8</flags>
+		<id>89</id>
+		<mid0>83</mid0>
+		<nme>Alarm Missed</nme>
+		<Event sr="con0" ve="2">
+			<code>1730196985</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>false</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED>false</com.chlochlo.adaptativealarm.extra.BOOL_FIRED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED>true</com.chlochlo.adaptativealarm.extra.BOOL_MISSED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>false</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>false</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>-2</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>java.lang.Long</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>7</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100371</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>All alarms: When missed</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpTaskerEventEditActivity</Str>
+		</Event>
+	</Profile>
+	<Profile sr="prof90" ve="2">
+		<cdate>1613379578914</cdate>
+		<clp>true</clp>
+		<edate>1613383157689</edate>
+		<flags>8</flags>
+		<id>90</id>
+		<mid0>83</mid0>
+		<nme>Alarm Time Changed</nme>
+		<Event sr="con0" ve="2">
+			<code>1730196985</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>false</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS>
+					<com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_DISMISS-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>false</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_ENABLED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED>false</com.chlochlo.adaptativealarm.extra.BOOL_FIRED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_FIRED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED>true</com.chlochlo.adaptativealarm.extra.BOOL_MISSED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_MISSED-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>false</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE>
+					<com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_SNOOZE-type>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>false</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED>
+					<com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>java.lang.Boolean</com.chlochlo.adaptativealarm.extra.BOOL_WHEN_TIME_CHANGED-type>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>-2</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>java.lang.Long</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>7</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100371</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>All alarms: When missed</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpTaskerEventEditActivity</Str>
+		</Event>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1613377408860</cdate>
+		<name>SMART/ Alarm</name>
+		<pids>90,84,88,89,79,87,82,85</pids>
+		<scenes>Set Nap</scenes>
+		<tids>363,366,369,93,92,364,76,134,77,360,91,83,75,370,27,362,80,104,74</tids>
+		<tsort>Alpha</tsort>
+	</Project>
+	<Scene sr="sceneSet Nap">
+		<cdate>1613404503140</cdate>
+		<edate>1613404504585</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>976</heightPort>
+		<nme>Set Nap</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>467</widthPort>
+	</Scene>
+	<Task sr="task104">
+		<cdate>1613377503083</cdate>
+		<edate>1613404377011</edate>
+		<id>104</id>
+		<nme>ALARM.setNap</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%add_minutes</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>1446679033</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AddUnit>1</AddUnit>
+					<AddUnit-type>java.lang.String</AddUnit-type>
+					<AddValue>%add_minutes</AddValue>
+					<AddValue-type>java.lang.String</AddValue-type>
+					<ConvertTimeSpan>&lt;null&gt;</ConvertTimeSpan>
+					<ConvertTimeSpan-type>java.lang.String</ConvertTimeSpan-type>
+					<DateDayCalculations>&lt;null&gt;</DateDayCalculations>
+					<DateDayCalculations-type>java.lang.String</DateDayCalculations-type>
+					<DateDayEnd>&lt;null&gt;</DateDayEnd>
+					<DateDayEnd-type>java.lang.String</DateDayEnd-type>
+					<DateDayStart>&lt;null&gt;</DateDayStart>
+					<DateDayStart-type>java.lang.String</DateDayStart-type>
+					<DateFormatCalculations>&lt;null&gt;</DateFormatCalculations>
+					<DateFormatCalculations-type>java.lang.String</DateFormatCalculations-type>
+					<DateFormatEnd>&lt;null&gt;</DateFormatEnd>
+					<DateFormatEnd-type>java.lang.String</DateFormatEnd-type>
+					<DateFormatStart>&lt;null&gt;</DateFormatStart>
+					<DateFormatStart-type>java.lang.String</DateFormatStart-type>
+					<DateHourCalculations>&lt;null&gt;</DateHourCalculations>
+					<DateHourCalculations-type>java.lang.String</DateHourCalculations-type>
+					<DateHourEnd>&lt;null&gt;</DateHourEnd>
+					<DateHourEnd-type>java.lang.String</DateHourEnd-type>
+					<DateHourStart>&lt;null&gt;</DateHourStart>
+					<DateHourStart-type>java.lang.String</DateHourStart-type>
+					<DateMillisCalculations>&lt;null&gt;</DateMillisCalculations>
+					<DateMillisCalculations-type>java.lang.String</DateMillisCalculations-type>
+					<DateMillisEnd>&lt;null&gt;</DateMillisEnd>
+					<DateMillisEnd-type>java.lang.String</DateMillisEnd-type>
+					<DateMillisStart>&lt;null&gt;</DateMillisStart>
+					<DateMillisStart-type>java.lang.String</DateMillisStart-type>
+					<DateMinuteCalculations>&lt;null&gt;</DateMinuteCalculations>
+					<DateMinuteCalculations-type>java.lang.String</DateMinuteCalculations-type>
+					<DateMinuteEnd>&lt;null&gt;</DateMinuteEnd>
+					<DateMinuteEnd-type>java.lang.String</DateMinuteEnd-type>
+					<DateMinuteStart>&lt;null&gt;</DateMinuteStart>
+					<DateMinuteStart-type>java.lang.String</DateMinuteStart-type>
+					<DateMonthCalculations>&lt;null&gt;</DateMonthCalculations>
+					<DateMonthCalculations-type>java.lang.String</DateMonthCalculations-type>
+					<DateMonthEnd>&lt;null&gt;</DateMonthEnd>
+					<DateMonthEnd-type>java.lang.String</DateMonthEnd-type>
+					<DateMonthStart>&lt;null&gt;</DateMonthStart>
+					<DateMonthStart-type>java.lang.String</DateMonthStart-type>
+					<DateSecondCalculations>&lt;null&gt;</DateSecondCalculations>
+					<DateSecondCalculations-type>java.lang.String</DateSecondCalculations-type>
+					<DateSecondEnd>&lt;null&gt;</DateSecondEnd>
+					<DateSecondEnd-type>java.lang.String</DateSecondEnd-type>
+					<DateSecondStart>&lt;null&gt;</DateSecondStart>
+					<DateSecondStart-type>java.lang.String</DateSecondStart-type>
+					<DateYearCalculations>&lt;null&gt;</DateYearCalculations>
+					<DateYearCalculations-type>java.lang.String</DateYearCalculations-type>
+					<DateYearEnd>&lt;null&gt;</DateYearEnd>
+					<DateYearEnd-type>java.lang.String</DateYearEnd-type>
+					<DateYearStart>&lt;null&gt;</DateYearStart>
+					<DateYearStart-type>java.lang.String</DateYearStart-type>
+					<DatesToFormat>&lt;null&gt;</DatesToFormat>
+					<DatesToFormat-type>java.lang.String</DatesToFormat-type>
+					<DatesToFormatFormat>yyyy-MM-dd HH:mm:ss</DatesToFormatFormat>
+					<DatesToFormatFormat-type>java.lang.String</DatesToFormatFormat-type>
+					<FieldsToGetTimeSpan>&lt;StringArray sr=""/&gt;</FieldsToGetTimeSpan>
+					<FieldsToGetTimeSpan-type>[Ljava.lang.String;</FieldsToGetTimeSpan-type>
+					<FieldsToGetTimespanDates>&lt;StringArray sr=""/&gt;</FieldsToGetTimespanDates>
+					<FieldsToGetTimespanDates-type>[Ljava.lang.String;</FieldsToGetTimespanDates-type>
+					<InputAsSeconds>false</InputAsSeconds>
+					<InputAsSeconds-type>java.lang.Boolean</InputAsSeconds-type>
+					<InputAsSeconds_time_span>false</InputAsSeconds_time_span>
+					<InputAsSeconds_time_span-type>java.lang.Boolean</InputAsSeconds_time_span-type>
+					<OutputCalculatedDateFormat>HH:mm</OutputCalculatedDateFormat>
+					<OutputCalculatedDateFormat-type>java.lang.String</OutputCalculatedDateFormat-type>
+					<TimeOutputVariableCalculation>time</TimeOutputVariableCalculation>
+					<TimeOutputVariableCalculation-type>java.lang.String</TimeOutputVariableCalculation-type>
+					<TimeOutputVariableDates>&lt;null&gt;</TimeOutputVariableDates>
+					<TimeOutputVariableDates-type>java.lang.String</TimeOutputVariableDates-type>
+					<TimeOutputVariableFormat>&lt;null&gt;</TimeOutputVariableFormat>
+					<TimeOutputVariableFormat-type>java.lang.String</TimeOutputVariableFormat-type>
+					<TimeOutputVariableTimespan>&lt;null&gt;</TimeOutputVariableTimespan>
+					<TimeOutputVariableTimespan-type>java.lang.String</TimeOutputVariableTimespan-type>
+					<UseNowCalculations>true</UseNowCalculations>
+					<UseNowCalculations-type>java.lang.Boolean</UseNowCalculations-type>
+					<UseNowEnd>false</UseNowEnd>
+					<UseNowEnd-type>java.lang.Boolean</UseNowEnd-type>
+					<UseNowStart>false</UseNowStart>
+					<UseNowStart-type>java.lang.Boolean</UseNowStart-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>
+---------Add Time---------
+Use Now: true
+Add Unit: Minutes
+Add Value: %add_minutes
+Output Format: HH:mm
+Output Variable: time</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%timedate
+Calculated Date
+Date resulting from the adding of units (hours, days, etc) properly formatted&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%timedateisweekday
+Calculated Date Is Week Day
+'true' if the calculated date is on a weekday, 'false' if it's on a weekend.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%timedatemillis
+Milliseconds
+The number of milliseconds that have elapsed since January 1, 1970 for the calculated date&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%timedateseconds
+Seconds
+The number of seconds that have elapsed since January 1, 1970 for the calculated date&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>TimeOutputVariableCalculation DatesToFormatFormat AddUnit AddValue OutputCalculatedDateFormat plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>6fe38312-8430-4f0c-bc24-2fc01b469712</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentDate</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigDate</Str>
+			<Int sr="arg3" val="30"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%timedate</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">ALARM.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%timedate</Str>
+			<Str sr="arg3" ve="3">Nap alarm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task134">
+		<cdate>1613379599758</cdate>
+		<edate>1615790372120</edate>
+		<id>134</id>
+		<nme>ALARM.onDismissed</nme>
+		<pri>6</pri>
+		<rty>2</rty>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">ALARM.onDismissed</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task27">
+		<cdate>1613379599758</cdate>
+		<edate>1615790328992</edate>
+		<id>27</id>
+		<nme>ALARM.onDeactivated</nme>
+		<pri>6</pri>
+		<rty>2</rty>
+		<Action sr="act0" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="30"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%fade_time</Str>
+			<Str sr="arg1" ve="3">5</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Alarm</Str>
+			<Str sr="arg1" ve="3">on deactivated</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">~Livingroom Light.brightness.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">128</Str>
+			<Str sr="arg3" ve="3">%fade_time</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.color.setWhite</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%fade_time</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">~Livingroom Light.brightness.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">255</Str>
+			<Str sr="arg3" ve="3">%fade_time</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task360">
+		<cdate>1613068876609</cdate>
+		<edate>1615826431929</edate>
+		<id>360</id>
+		<nme>~Livingroom Light.color.set</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>X,Y %par1 color</label>
+			<Str sr="arg0" ve="3">%color</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>int %par2 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">%par2*10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>544126650</code>
+			<label>{
+  "xy": [
+    %color
+  ],
+  "transitiontime": %fade
+}</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"xy\": [\n    %color\n  ],\n  \"transitiontime\": %fade\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"xy":[0.4406,0.5196],"transitiontime":4}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Livingroom Light
+Command: 
+{
+  "xy": [
+    %color
+  ],
+  "transitiontime": %fade
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>30</code>
+			<label>Wait until fade time ends</label>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%par2</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task362">
+		<cdate>1613068876609</cdate>
+		<edate>1613616478980</edate>
+		<id>362</id>
+		<nme>Livingroom Light.color.setYellow</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>int %par1 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">~Livingroom Light.color.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">0.52,0.46</Str>
+			<Str sr="arg3" ve="3">%par1</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task363">
+		<cdate>1613068876609</cdate>
+		<edate>1613638420910</edate>
+		<id>363</id>
+		<nme>Livingroom Light.color.setRed</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>int %par1 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">~Livingroom Light.color.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">0.7006,0.2993</Str>
+			<Str sr="arg3" ve="3">%par1</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task364">
+		<cdate>1613068876609</cdate>
+		<edate>1615826348297</edate>
+		<id>364</id>
+		<nme>Livingroom Light.color.setWhite</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>int %par1 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">~Livingroom Light.color.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">0.3,0.3</Str>
+			<Str sr="arg3" ve="3">%par1</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task366">
+		<cdate>1613068876609</cdate>
+		<edate>1615787859391</edate>
+		<id>366</id>
+		<nme>Livingroom Light.switch</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>boolean %par1 switch light true/false</label>
+			<Str sr="arg0" ve="3">%state</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>int %par1 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>set default state</label>
+			<Str sr="arg0" ve="3">%state</Str>
+			<Str sr="arg1" ve="3">true</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>set default fade time</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<label>Turn ON before fade</label>
+			<Str sr="arg0" ve="3">~Livingroom Light.switch.setState</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%state</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%state</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<label>Fade out effect</label>
+			<Str sr="arg0" ve="3">~Livingroom Light.brightness.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">0</Str>
+			<Str sr="arg3" ve="3">%fade</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%fade</lhs>
+					<op>7</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>130</code>
+			<label>Turn OFF after fade</label>
+			<Str sr="arg0" ve="3">~Livingroom Light.switch.setState</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%state</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%state</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>1099157652</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<DeletePaths>&lt;null&gt;</DeletePaths>
+					<DeletePaths-type>java.lang.String</DeletePaths-type>
+					<DeleteValues>&lt;null&gt;</DeleteValues>
+					<DeleteValues-type>java.lang.String</DeleteValues-type>
+					<FilterField>&lt;null&gt;</FilterField>
+					<FilterField-type>java.lang.String</FilterField-type>
+					<FilterValye>&lt;null&gt;</FilterValye>
+					<FilterValye-type>java.lang.String</FilterValye-type>
+					<JsonAddToArrayKey>&lt;null&gt;</JsonAddToArrayKey>
+					<JsonAddToArrayKey-type>java.lang.String</JsonAddToArrayKey-type>
+					<JsonAddToArrayValues>&lt;null&gt;</JsonAddToArrayValues>
+					<JsonAddToArrayValues-type>java.lang.String</JsonAddToArrayValues-type>
+					<JsonArrayClear>false</JsonArrayClear>
+					<JsonArrayClear-type>java.lang.Boolean</JsonArrayClear-type>
+					<JsonArrayObjectKeys>&lt;null&gt;</JsonArrayObjectKeys>
+					<JsonArrayObjectKeys-type>java.lang.String</JsonArrayObjectKeys-type>
+					<JsonArrayObjectValues>&lt;null&gt;</JsonArrayObjectValues>
+					<JsonArrayObjectValues-type>java.lang.String</JsonArrayObjectValues-type>
+					<JsonArrayObjectValuesSeparator>|</JsonArrayObjectValuesSeparator>
+					<JsonArrayObjectValuesSeparator-type>java.lang.String</JsonArrayObjectValuesSeparator-type>
+					<JsonInput>&lt;null&gt;</JsonInput>
+					<JsonInput-type>java.lang.String</JsonInput-type>
+					<JsonKeys>&lt;null&gt;</JsonKeys>
+					<JsonKeys-type>java.lang.String</JsonKeys-type>
+					<JsonResultPretty>false</JsonResultPretty>
+					<JsonResultPretty-type>java.lang.Boolean</JsonResultPretty-type>
+					<JsonResultVariable>atjsonresult</JsonResultVariable>
+					<JsonResultVariable-type>java.lang.String</JsonResultVariable-type>
+					<JsonValues>&lt;null&gt;</JsonValues>
+					<JsonValues-type>java.lang.String</JsonValues-type>
+					<MatchesCaseInsensitive>false</MatchesCaseInsensitive>
+					<MatchesCaseInsensitive-type>java.lang.Boolean</MatchesCaseInsensitive-type>
+					<MatchesCaseInsensitive_delete>false</MatchesCaseInsensitive_delete>
+					<MatchesCaseInsensitive_delete-type>java.lang.Boolean</MatchesCaseInsensitive_delete-type>
+					<MatchesContainsAll>false</MatchesContainsAll>
+					<MatchesContainsAll-type>java.lang.Boolean</MatchesContainsAll-type>
+					<MatchesContainsAll_delete>false</MatchesContainsAll_delete>
+					<MatchesContainsAll_delete-type>java.lang.Boolean</MatchesContainsAll_delete-type>
+					<MatchesExact>false</MatchesExact>
+					<MatchesExact-type>java.lang.Boolean</MatchesExact-type>
+					<MatchesExact_delete>false</MatchesExact_delete>
+					<MatchesExact_delete-type>java.lang.Boolean</MatchesExact_delete-type>
+					<MatchesRegex>false</MatchesRegex>
+					<MatchesRegex-type>java.lang.Boolean</MatchesRegex-type>
+					<MatchesRegex_delete>false</MatchesRegex_delete>
+					<MatchesRegex_delete-type>java.lang.Boolean</MatchesRegex_delete-type>
+					<Separator>,</Separator>
+					<Separator-type>java.lang.String</Separator-type>
+					<UpdatePaths>&lt;null&gt;</UpdatePaths>
+					<UpdatePaths-type>java.lang.String</UpdatePaths-type>
+					<UpdateValues>&lt;null&gt;</UpdateValues>
+					<UpdateValues-type>java.lang.String</UpdateValues-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Separator: ,
+Arrays Separator: |</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%atjsonresult
+Result Json
+Resulting Json that was written&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>JsonResultVariable Separator JsonArrayObjectValuesSeparator plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>ff09ec28-0a00-49ae-962b-841c7f7393fc</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentJsonWrite</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigJsonWrite</Str>
+			<Int sr="arg3" val="60"/>
+		</Action>
+	</Task>
+	<Task sr="task369">
+		<cdate>1613068876609</cdate>
+		<edate>1615787818974</edate>
+		<id>369</id>
+		<nme>~Livingroom Light.brightness.set</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>int %par1 0-255 brightness</label>
+			<Str sr="arg0" ve="3">%brightness</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>int %par2 fade time in seconds</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>Set default value</label>
+			<Str sr="arg0" ve="3">%fade</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>Format time</label>
+			<Str sr="arg0" ve="3">%fade_formatted</Str>
+			<Str sr="arg1" ve="3">%fade*10</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>544126650</code>
+			<label>{
+  "transitiontime": %fade_formatted,
+  "bri": %brightness
+}</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"transitiontime\": %fade_formatted,\n  \"bri\": %brightness\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"transitiontime":0,"bri":254}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Livingroom Light
+Command: 
+{
+  "transitiontime": %fade_formatted,
+  "bri": %brightness
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>30</code>
+			<label>Wait until fade time ends</label>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%par2</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task370">
+		<cdate>1613068876609</cdate>
+		<edate>1613707068549</edate>
+		<id>370</id>
+		<nme>~Livingroom Light.switch.setState</nme>
+		<pri>100</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>544126650</code>
+			<label>{
+  "on": %par1
+}</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"on\": %par1\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"on":false}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Livingroom Light
+Command: 
+{
+  "on": %par1
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+	</Task>
+	<Task sr="task74">
+		<cdate>1613377503083</cdate>
+		<edate>1615803643561</edate>
+		<id>74</id>
+		<nme>ALARM.temp</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>31422515</code>
+			<label>Delete OLD alarm</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>8</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100367</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL>%wmualarmname</com.chlochlo.adaptativealarm.extra.STRING_LABEL>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>java.lang.String</com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Deletes an alarm whose name is given as the variable %wmualarmname. It will delete the first alarm it finds with this name. Please, make sure the name is unique.</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.chlochlo.adaptativealarm.extra.STRING_LABEL</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpDeleteAlarmTaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task75">
+		<cdate>1613377503083</cdate>
+		<edate>1615790673694</edate>
+		<id>75</id>
+		<nme>ALARM.set</nme>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>%par2 HH:mm</label>
+			<Str sr="arg0" ve="3">%alarm_time</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>Set alarm Name</label>
+			<Str sr="arg0" ve="3">%wmualarmname</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>590</code>
+			<label>Split time to hours and minutes</label>
+			<Str sr="arg0" ve="3">%alarm_time</Str>
+			<Str sr="arg1" ve="3">:</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>Set alarm hours</label>
+			<Str sr="arg0" ve="3">%wmualarmhour</Str>
+			<Str sr="arg1" ve="3">%alarm_time1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>Set alarm minutes</label>
+			<Str sr="arg0" ve="3">%wmualarmminute</Str>
+			<Str sr="arg1" ve="3">%alarm_time2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>31422515</code>
+			<label>Delete OLD alarm</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>8</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100367</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL>%wmualarmname</com.chlochlo.adaptativealarm.extra.STRING_LABEL>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>java.lang.String</com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Deletes an alarm whose name is given as the variable %wmualarmname. It will delete the first alarm it finds with this name. Please, make sure the name is unique.</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.chlochlo.adaptativealarm.extra.STRING_LABEL</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpDeleteAlarmTaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>2056270274</code>
+			<label>Create NEW alarm</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>1</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM>%wmualarmampm</com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR>%wmualarmhour</com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES>%wmualarmminute</com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100367</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL>%wmualarmname</com.chlochlo.adaptativealarm.extra.STRING_LABEL>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>java.lang.String</com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Creates an alarm using the variables: %wmualarmname as the label (optionnal), %wmualarmhour as the hour, %wmualarmminute as the minutes, %wmualarmampm as am/pm (optionnal).</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.chlochlo.adaptativealarm.extra.STRING_LABEL com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpCreateAlarmTaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task76">
+		<cdate>1613377926548</cdate>
+		<edate>1615790679826</edate>
+		<id>76</id>
+		<nme>ALARM.delete</nme>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>Set alarm Name</label>
+			<Str sr="arg0" ve="3">%wmualarmname</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>31422515</code>
+			<label>Delete OLD alarm</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>8</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100367</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL>%wmualarmname</com.chlochlo.adaptativealarm.extra.STRING_LABEL>
+					<com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>java.lang.String</com.chlochlo.adaptativealarm.extra.STRING_LABEL-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Deletes an alarm whose name is given as the variable %wmualarmname. It will delete the first alarm it finds with this name. Please, make sure the name is unique.</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.chlochlo.adaptativealarm.extra.STRING_LABEL</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpDeleteAlarmTaskerEditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task77">
+		<cdate>1613377503083</cdate>
+		<edate>1615797387489</edate>
+		<id>77</id>
+		<nme>ALARM.~test</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>1446679033</code>
+			<label>Get now time +1</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AddUnit>1</AddUnit>
+					<AddUnit-type>java.lang.String</AddUnit-type>
+					<AddValue>1</AddValue>
+					<AddValue-type>java.lang.String</AddValue-type>
+					<ConvertTimeSpan>&lt;null&gt;</ConvertTimeSpan>
+					<ConvertTimeSpan-type>java.lang.String</ConvertTimeSpan-type>
+					<DateDayCalculations>&lt;null&gt;</DateDayCalculations>
+					<DateDayCalculations-type>java.lang.String</DateDayCalculations-type>
+					<DateDayEnd>&lt;null&gt;</DateDayEnd>
+					<DateDayEnd-type>java.lang.String</DateDayEnd-type>
+					<DateDayStart>&lt;null&gt;</DateDayStart>
+					<DateDayStart-type>java.lang.String</DateDayStart-type>
+					<DateFormatCalculations>&lt;null&gt;</DateFormatCalculations>
+					<DateFormatCalculations-type>java.lang.String</DateFormatCalculations-type>
+					<DateFormatEnd>&lt;null&gt;</DateFormatEnd>
+					<DateFormatEnd-type>java.lang.String</DateFormatEnd-type>
+					<DateFormatStart>&lt;null&gt;</DateFormatStart>
+					<DateFormatStart-type>java.lang.String</DateFormatStart-type>
+					<DateHourCalculations>&lt;null&gt;</DateHourCalculations>
+					<DateHourCalculations-type>java.lang.String</DateHourCalculations-type>
+					<DateHourEnd>&lt;null&gt;</DateHourEnd>
+					<DateHourEnd-type>java.lang.String</DateHourEnd-type>
+					<DateHourStart>&lt;null&gt;</DateHourStart>
+					<DateHourStart-type>java.lang.String</DateHourStart-type>
+					<DateMillisCalculations>&lt;null&gt;</DateMillisCalculations>
+					<DateMillisCalculations-type>java.lang.String</DateMillisCalculations-type>
+					<DateMillisEnd>&lt;null&gt;</DateMillisEnd>
+					<DateMillisEnd-type>java.lang.String</DateMillisEnd-type>
+					<DateMillisStart>&lt;null&gt;</DateMillisStart>
+					<DateMillisStart-type>java.lang.String</DateMillisStart-type>
+					<DateMinuteCalculations>&lt;null&gt;</DateMinuteCalculations>
+					<DateMinuteCalculations-type>java.lang.String</DateMinuteCalculations-type>
+					<DateMinuteEnd>&lt;null&gt;</DateMinuteEnd>
+					<DateMinuteEnd-type>java.lang.String</DateMinuteEnd-type>
+					<DateMinuteStart>&lt;null&gt;</DateMinuteStart>
+					<DateMinuteStart-type>java.lang.String</DateMinuteStart-type>
+					<DateMonthCalculations>&lt;null&gt;</DateMonthCalculations>
+					<DateMonthCalculations-type>java.lang.String</DateMonthCalculations-type>
+					<DateMonthEnd>&lt;null&gt;</DateMonthEnd>
+					<DateMonthEnd-type>java.lang.String</DateMonthEnd-type>
+					<DateMonthStart>&lt;null&gt;</DateMonthStart>
+					<DateMonthStart-type>java.lang.String</DateMonthStart-type>
+					<DateSecondCalculations>&lt;null&gt;</DateSecondCalculations>
+					<DateSecondCalculations-type>java.lang.String</DateSecondCalculations-type>
+					<DateSecondEnd>&lt;null&gt;</DateSecondEnd>
+					<DateSecondEnd-type>java.lang.String</DateSecondEnd-type>
+					<DateSecondStart>&lt;null&gt;</DateSecondStart>
+					<DateSecondStart-type>java.lang.String</DateSecondStart-type>
+					<DateYearCalculations>&lt;null&gt;</DateYearCalculations>
+					<DateYearCalculations-type>java.lang.String</DateYearCalculations-type>
+					<DateYearEnd>&lt;null&gt;</DateYearEnd>
+					<DateYearEnd-type>java.lang.String</DateYearEnd-type>
+					<DateYearStart>&lt;null&gt;</DateYearStart>
+					<DateYearStart-type>java.lang.String</DateYearStart-type>
+					<DatesToFormat>&lt;null&gt;</DatesToFormat>
+					<DatesToFormat-type>java.lang.String</DatesToFormat-type>
+					<DatesToFormatFormat>yyyy-MM-dd HH:mm:ss</DatesToFormatFormat>
+					<DatesToFormatFormat-type>java.lang.String</DatesToFormatFormat-type>
+					<FieldsToGetTimeSpan>&lt;StringArray sr=""/&gt;</FieldsToGetTimeSpan>
+					<FieldsToGetTimeSpan-type>[Ljava.lang.String;</FieldsToGetTimeSpan-type>
+					<FieldsToGetTimespanDates>&lt;StringArray sr=""/&gt;</FieldsToGetTimespanDates>
+					<FieldsToGetTimespanDates-type>[Ljava.lang.String;</FieldsToGetTimespanDates-type>
+					<InputAsSeconds>false</InputAsSeconds>
+					<InputAsSeconds-type>java.lang.Boolean</InputAsSeconds-type>
+					<InputAsSeconds_time_span>false</InputAsSeconds_time_span>
+					<InputAsSeconds_time_span-type>java.lang.Boolean</InputAsSeconds_time_span-type>
+					<OutputCalculatedDateFormat>HH:mm</OutputCalculatedDateFormat>
+					<OutputCalculatedDateFormat-type>java.lang.String</OutputCalculatedDateFormat-type>
+					<TimeOutputVariableCalculation>&lt;null&gt;</TimeOutputVariableCalculation>
+					<TimeOutputVariableCalculation-type>java.lang.String</TimeOutputVariableCalculation-type>
+					<TimeOutputVariableDates>&lt;null&gt;</TimeOutputVariableDates>
+					<TimeOutputVariableDates-type>java.lang.String</TimeOutputVariableDates-type>
+					<TimeOutputVariableFormat>&lt;null&gt;</TimeOutputVariableFormat>
+					<TimeOutputVariableFormat-type>java.lang.String</TimeOutputVariableFormat-type>
+					<TimeOutputVariableTimespan>&lt;null&gt;</TimeOutputVariableTimespan>
+					<TimeOutputVariableTimespan-type>java.lang.String</TimeOutputVariableTimespan-type>
+					<UseNowCalculations>true</UseNowCalculations>
+					<UseNowCalculations-type>java.lang.Boolean</UseNowCalculations-type>
+					<UseNowEnd>false</UseNowEnd>
+					<UseNowEnd-type>java.lang.Boolean</UseNowEnd-type>
+					<UseNowStart>false</UseNowStart>
+					<UseNowStart-type>java.lang.Boolean</UseNowStart-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>
+---------Add Time---------
+Use Now: true
+Add Unit: Minutes
+Add Value: 1
+Output Format: HH:mm</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%atcalculateddate
+Calculated Date
+Date resulting from the adding of units (hours, days, etc) properly formatted&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%atcalculateddateisweekday
+Calculated Date Is Week Day
+'true' if the calculated date is on a weekday, 'false' if it's on a weekend.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%atcalculateddatemillis
+Milliseconds
+The number of milliseconds that have elapsed since January 1, 1970 for the calculated date&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%atcalculateddateseconds
+Seconds
+The number of seconds that have elapsed since January 1, 1970 for the calculated date&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>DatesToFormatFormat AddUnit AddValue OutputCalculatedDateFormat plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>c36deecd-3158-4683-9674-7ffddcca6ad5</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentDate</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigDate</Str>
+			<Int sr="arg3" val="30"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>Alarm name</label>
+			<Str sr="arg0" ve="3">%alarm_name</Str>
+			<Str sr="arg1" ve="3">Test alarm</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">ALARM.delete</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%alarm_name</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">ALARM.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%atcalculateddate</Str>
+			<Str sr="arg3" ve="3">%alarm_name</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task80">
+		<cdate>1613379191944</cdate>
+		<edate>1615790382155</edate>
+		<id>80</id>
+		<nme>ALARM.onTime</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Alarm on</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>544126650</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"json":"{\n  \"on\": true\n}","selectedGroupIds":[],"selectedLightIds":["6"]}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<HUE_2.0_UI_STATE_JSON>{"on":true}</HUE_2.0_UI_STATE_JSON>
+					<HUE_2.0_UI_STATE_JSON-type>java.lang.String</HUE_2.0_UI_STATE_JSON-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Targeting: Lights
+Bridge IP: 10.0.0.12
+Selected Lights: Livingroom Light
+Command: 
+{
+  "on": true
+}</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_command
+Command
+The command that was send to the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_lights
+Lights Array
+Contains the light IDs targeted by this action. The i should be replaced by the index of the light starting at 1. So when targeting three lights you would have %hue_lights(1), %hue_lights(2), %hue_lights(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_nr_lights
+Nr. of Lights
+The number of lights that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_groups
+Groups Array
+Contains the group IDs targeted by this action. The i should be replaced by the index of the group starting at 1. So when targeting three groups you would have %hue_groups(1), %hue_groups(2), %hue_groups(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_nr_groups
+Nr. of Lights
+The number of groups that were targeted in this action. Useful to know how many %hue_response(i) to expect.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_response
+Response Array
+Contains the response(s) from the hue bridge. The i should be replaced by the index of the light starting at 1. So when targeting three lights or groups you would have %hue_response(1), %hue_response(2), %hue_response(3).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ACTION_EXTRA</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.hue.view.HueEditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">~Livingroom Light.brightness.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">100</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Alarm activated</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task83">
+		<cdate>1613379599758</cdate>
+		<edate>1615790408315</edate>
+		<id>83</id>
+		<nme>ALARM.onEvent</nme>
+		<pri>6</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Alarm.onEvent</Str>
+			<Str sr="arg1" ve="3">caller: %caller1</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task91">
+		<cdate>1613377503083</cdate>
+		<edate>1613383613253</edate>
+		<id>91</id>
+		<nme>ALARM.change</nme>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>Set alarm time by %par1</label>
+			<Str sr="arg0" ve="3">%alarm_time</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>Set alarm Name</label>
+			<Str sr="arg0" ve="3">%wmualarmname</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>590</code>
+			<label>Split time to hours and minutes</label>
+			<Str sr="arg0" ve="3">%alarm_time</Str>
+			<Str sr="arg1" ve="3">:</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>Set alarm hours</label>
+			<Str sr="arg0" ve="3">%wmualarmhour</Str>
+			<Str sr="arg1" ve="3">%alarm_time1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>Set alarm minutes</label>
+			<Str sr="arg0" ve="3">%wmualarmminute</Str>
+			<Str sr="arg1" ve="3">%alarm_time2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>1704879775</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>72</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID>
+					<com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>java.lang.Long</com.chlochlo.adaptativealarm.extra.INT_ALARM_ID-type>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>17</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE>
+					<com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_EVENT_TYPE-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM>%wmualarmampm</com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR>%wmualarmhour</com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR-type>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES>%wmualarmminute</com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES>
+					<com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES-type>java.lang.String</com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES-type>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>90100371</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE>
+					<com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>java.lang.Integer</com.chlochlo.adaptativealarm.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Change the alarm time for "Alarm Test alarm at 11:04"</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.chlochlo.adaptativealarm.extra.INT_TIME_HOUR com.chlochlo.adaptativealarm.extra.INT_TIME_MINUTES com.chlochlo.adaptativealarm.extra.INT_TIME_AMPM</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.chlochlo.adaptativealarm</Str>
+			<Str sr="arg2" ve="3">com.chlochlo.adaptativealarm.tasker.WakeMeUpTaskerChangeNextTimeActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task92">
+		<cdate>1613379599758</cdate>
+		<edate>1615790101184</edate>
+		<id>92</id>
+		<nme>ALARM.onFired</nme>
+		<pri>6</pri>
+		<rty>2</rty>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Alarm.onFired</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%fade_time</Str>
+			<Str sr="arg1" ve="3">5</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>984394624</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ACTION_EXTRA>{"bridge":{"id":"ECB5FAFFFE2D45E3","dbId":1,"internalipaddress":"10.0.0.12","secret":"Ut3MBgwnAyZgcsn8CpgaO2QPJo5iikGN7DMxzuZf"},"lightPosition":"6","lightUniqueId":"bc:33:ac:ff:fe:a0:f7:39-01"}</ACTION_EXTRA>
+					<ACTION_EXTRA-type>java.lang.String</ACTION_EXTRA-type>
+					<ACTION_TYPE:String>HUE_2.0_STATE_ACTION</ACTION_TYPE:String>
+					<ACTION_TYPE:String-type>java.lang.String</ACTION_TYPE:String-type>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE>202</com.cuberob.AutoHue.extra.INT_VERSION_CODE>
+					<com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>java.lang.Integer</com.cuberob.AutoHue.extra.INT_VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Bridge: 10.0.0.12
+Light: Livingroom Light</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%hue_type
+Type
+A fixed name describing the type of light e.g. “Extended color light”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%hue_name
+Name
+A unique, editable name given to the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%hue_modelid
+Model Id
+The hardware model of the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%hue_manufacturername
+Manufacturer Name
+The manufacturer name. (as of bridge version 1.7)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%hue_uniqueid
+Unique Id
+The MAC address of the device with a unique endpoint id in the form: AA:BB:CC:DD:EE:FF:00:11-XX (as of bridge version 1.4)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%hue_swversion
+Software version
+An identifier for the software version running on the light.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%hue_position
+Position
+The position (or id) of the light&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%hue_on
+On
+On/Off state of the light. On=true, Off=false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%hue_on_inverted
+On inverted
+Inverted On/Off state of the light. On=false, Off=true&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%hue_bri
+Brightness
+Brightness of the light. This is a scale from the minimum brightness the light is capable of, 1, to the maximum capable brightness, 254&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%hue_hue
+Hue
+Hue of the light. This is a wrapping value between 0 and 65535&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%hue_sat
+Saturation
+Saturation of the light. 254 is the most saturated (colored) and 0 is the least saturated (white).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%hue_effect
+Effect
+The dynamic effect of the light, can either be “none” or “colorloop”.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%hue_xy
+XY
+The x and y coordinates of a color in CIE color space.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%hue_ct
+CT
+The Mired Color temperature of the light. 2012 connected lights are capable of 153 (6500K) to 500 (2000K).&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%hue_alert
+Alert
+The current alert mode of the light (none|select|lselect)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%hue_colormode
+Colormode
+Indicates the color mode in which the light is working, this is the last command type it received.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%hue_reachable
+Reachable
+Indicates if a light can be reached by the bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;%hue_bridge_id
+Hue Bridge Id
+The id of the targeted bridge.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES18&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;%hue_bridge_ip
+Hue Bridge Ip
+The ip address of the bridge targeted with this action.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES19&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;%hue_light_id
+Light bulb Id
+The unique id of the light bulb.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES20&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;%hue_error
+Error message
+Contains an error explanation if something went wrong. (only available when ‘Continue Task After Error’ is set to true)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES21&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cuberob.autohue</Str>
+			<Str sr="arg2" ve="3">com.cuberob.autohue.Activities.EditVariablesActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>126</code>
+			<Str sr="arg0" ve="3">false</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%hue_on</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.switch</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">~Livingroom Light.brightness.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">1</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.color.setRed</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.color.setYellow</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">%fade_time</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">~Livingroom Light.brightness.set</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">128</Str>
+			<Str sr="arg3" ve="3">%fade_time</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task93">
+		<cdate>1613379599758</cdate>
+		<edate>1615790107447</edate>
+		<id>93</id>
+		<nme>ALARM.onSnoozed</nme>
+		<pri>6</pri>
+		<rty>1</rty>
+		<Action sr="act0" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">ALARM.onSnoozed</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Livingroom Light.switch</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">false</Str>
+			<Str sr="arg3" ve="3">15</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
